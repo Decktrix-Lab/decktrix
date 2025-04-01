@@ -1,0 +1,116 @@
+(footprint "RPI_Hat_B+"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 23.5 3.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "afdae096-6b14-424d-bf94-ebeb5771387c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "RPI_Hat_B+"
+		(at 23.5 5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "88d1f940-de7a-4b32-b8cf-ce2dd34e5134")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 4.5 24.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8b8aa4d-535e-4050-bc9f-dcabb690e890")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 4.5 24.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1afb0080-c3b6-49e5-9092-f477ce566462")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -67 -55)
+		(end 33 5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "437f8aaf-6634-4865-b885-d43c0d836b9c")
+	)
+	(fp_circle
+		(center -29 0)
+		(end -30.500001 -0.000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "3418ec28-5c3f-481a-b89a-4f80d3a3c070")
+	)
+	(fp_circle
+		(center 29 0)
+		(end 30.500001 -0.000001)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "d065591b-62b6-4f24-8857-375cecb57254")
+	)
+	(fp_text user "Select one of these board edges depending \nupon the type of socket that is used."
+		(at 50 -3.5 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "ebe46b1f-7699-40c9-9f74-b4c805071119")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 23.5 6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "51e61193-c461-4e46-b1e4-c2cccd7d3582")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
