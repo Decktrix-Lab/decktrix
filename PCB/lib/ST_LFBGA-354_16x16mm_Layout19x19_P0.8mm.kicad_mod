@@ -6,7 +6,7 @@
 	(descr "ST LFBGA-354, 16.0x16.0mm, 354 Ball, 19x19 Layout, 0.8mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.st.com/resource/en/datasheet/stm32mp151a.pdf")
 	(tags "BGA 354 0.8")
 	(property "Reference" "REF**"
-		(at 0 -9 0)
+		(at 0.5 -9 0)
 		(layer "F.SilkS")
 		(uuid "9666c89d-9436-4f5e-8fa1-abde6d0decf7")
 		(effects
@@ -324,6 +324,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 8.17)
 		(uuid "150c0132-0674-4eb7-9675-a4f1de448305")
 	)
 	(pad "A18" smd circle
@@ -331,6 +332,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 8.19)
 		(uuid "d87bda0a-81bf-41d5-b75b-bf697a88f9f6")
 	)
 	(pad "A19" smd circle
@@ -457,6 +459,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.97)
 		(uuid "05ebf7cd-f726-4ffa-960b-b5b72f1af4ed")
 	)
 	(pad "B18" smd circle
@@ -464,6 +467,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.47)
 		(uuid "183d4c94-4288-4710-987f-d37e96857d7e")
 	)
 	(pad "B19" smd circle
@@ -471,6 +475,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 8.09)
 		(uuid "3810df5c-517c-4ff5-a290-5d81b5745d32")
 	)
 	(pad "C1" smd circle
@@ -597,6 +602,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.76)
 		(uuid "8a97bb53-fbb2-4496-b697-f5148db06489")
 	)
 	(pad "C19" smd circle
@@ -604,6 +610,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 8.08)
 		(uuid "e9760ecc-652a-4799-91e1-b0de45d38c25")
 	)
 	(pad "D1" smd circle
@@ -723,6 +730,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.63)
 		(uuid "668e2f5c-e5e3-4c85-aae2-8aae986c8d5c")
 	)
 	(pad "D18" smd circle
@@ -730,6 +738,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.92)
 		(uuid "03136f95-3bbc-46af-8cc9-7212ee90baea")
 	)
 	(pad "D19" smd circle
@@ -737,6 +746,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.33)
 		(uuid "c1a9d002-c309-4b19-bcca-c0432beef19c")
 	)
 	(pad "E1" smd circle
@@ -856,6 +866,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.8)
 		(uuid "5118299c-276b-413e-a1e2-6af227538023")
 	)
 	(pad "E18" smd circle
@@ -863,6 +874,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.7)
 		(uuid "c7b0fa98-0d0c-4d39-852e-3c00bcd7e7a3")
 	)
 	(pad "F1" smd circle
@@ -975,6 +987,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.34)
 		(uuid "43a18f9d-7a06-4eae-87fb-8c3c18ed7ac4")
 	)
 	(pad "F18" smd circle
@@ -989,6 +1002,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.58)
 		(uuid "f4d2d2d3-823c-4bf7-a3ad-1ebb2365fde4")
 	)
 	(pad "G1" smd circle
@@ -1108,6 +1122,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 4.05)
 		(uuid "6094f690-2549-4d26-933a-75d4f3569bbe")
 	)
 	(pad "G18" smd circle
@@ -1115,6 +1130,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.63)
 		(uuid "8f7328b8-7cfb-440b-9381-da777cd50c2b")
 	)
 	(pad "G19" smd circle
@@ -1122,6 +1138,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.01)
 		(uuid "334ebe9f-e2be-41da-b52c-de59a501d66b")
 	)
 	(pad "H1" smd circle
@@ -1234,6 +1251,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 3.79)
 		(uuid "89633dc8-b599-4e29-adf5-0b3c184ee09a")
 	)
 	(pad "H18" smd circle
@@ -1241,6 +1259,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.19)
 		(uuid "b7a7dc4f-f1bf-49ae-b226-699208e12c50")
 	)
 	(pad "H19" smd circle
@@ -1248,6 +1267,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.47)
 		(uuid "36bebe67-d85a-46a5-a0ec-e889f0a21e87")
 	)
 	(pad "J1" smd circle
@@ -1360,6 +1380,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.81)
 		(uuid "db930839-f053-4abc-adf6-78e3c65e4b17")
 	)
 	(pad "J17" smd circle
@@ -1367,6 +1388,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 4.69)
 		(uuid "d4ad7ff7-a172-4a84-a7a1-105d582b9e04")
 	)
 	(pad "J18" smd circle
@@ -1374,6 +1396,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.86)
 		(uuid "8c19e695-6bd5-4ba5-a590-d05d89d759ba")
 	)
 	(pad "J19" smd circle
@@ -1493,6 +1516,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 4.85)
 		(uuid "34414e08-14ab-44b9-827c-00c850593ff9")
 	)
 	(pad "K18" smd circle
@@ -1507,6 +1531,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.03)
 		(uuid "e4413eb4-ce6a-439d-884a-76e28c732646")
 	)
 	(pad "L1" smd circle
@@ -1619,6 +1644,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 4.11)
 		(uuid "9471e4ee-889a-49e5-84e4-17a479b7f24d")
 	)
 	(pad "L17" smd circle
@@ -1626,6 +1652,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 4.57)
 		(uuid "7c313099-40a6-4de0-bc03-eab252aa4776")
 	)
 	(pad "L18" smd circle
@@ -1633,6 +1660,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.21)
 		(uuid "e1da79dc-b3ff-409e-944e-fe76f0bfe569")
 	)
 	(pad "L19" smd circle
@@ -1640,6 +1668,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.09)
 		(uuid "4cc52931-fe05-4802-b14b-a2617108f71a")
 	)
 	(pad "M1" smd circle
@@ -1752,6 +1781,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.31)
 		(uuid "7cae370e-01ac-4c4d-a97c-73c3c57833d6")
 	)
 	(pad "M18" smd circle
@@ -1759,6 +1789,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.69)
 		(uuid "1d0d7b40-83e2-41a9-acdb-ee4c52de4a86")
 	)
 	(pad "M19" smd circle
@@ -1766,6 +1797,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.59)
 		(uuid "cc8556f0-b796-4c79-8398-4c8b61ba60d1")
 	)
 	(pad "N1" smd circle
@@ -1878,6 +1910,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 4.06)
 		(uuid "0571409d-18a4-4fcb-a706-9baab03bb1e7")
 	)
 	(pad "N17" smd circle
@@ -1885,6 +1918,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.76)
 		(uuid "73100aff-7670-4d3f-9364-2687a3ed2e93")
 	)
 	(pad "N18" smd circle
@@ -1892,6 +1926,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.65)
 		(uuid "88ad4798-4e6f-4bcd-b482-ed93f0b44d1a")
 	)
 	(pad "N19" smd circle
@@ -2011,6 +2046,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.55)
 		(uuid "8c77721c-969e-41d3-9763-0a5732e54ba0")
 	)
 	(pad "P18" smd circle
@@ -2018,6 +2054,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 5.36)
 		(uuid "468a54bd-101e-4301-b801-91268778cd9c")
 	)
 	(pad "P19" smd circle
@@ -2025,6 +2062,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.66)
 		(uuid "9ae07291-e12c-43b6-b23a-237f96824801")
 	)
 	(pad "R1" smd circle
@@ -2144,6 +2182,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.62)
 		(uuid "0e3e8a3f-e0ba-4ea7-9171-fbca1d9662e6")
 	)
 	(pad "R18" smd circle
@@ -2151,6 +2190,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.67)
 		(uuid "350fb98f-52bb-4a2e-8be0-bd4219811281")
 	)
 	(pad "T1" smd circle
@@ -2270,6 +2310,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.37)
 		(uuid "1813b2b6-eca3-448b-b63b-6f695a695daa")
 	)
 	(pad "T18" smd circle
@@ -2277,6 +2318,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.8)
 		(uuid "aeda595a-c080-41cc-bcaa-f179adb19f13")
 	)
 	(pad "T19" smd circle
@@ -2284,6 +2326,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.26)
 		(uuid "04436c3e-43d0-4b1a-a6e0-e7db3ddcc2f0")
 	)
 	(pad "U1" smd circle
@@ -2410,6 +2453,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 6.83)
 		(uuid "2ae7a371-5553-42a1-ac19-3ae450087810")
 	)
 	(pad "U19" smd circle
@@ -2417,6 +2461,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.26)
 		(uuid "ecedd2a5-7f1f-40ad-8688-a988e8f93aa1")
 	)
 	(pad "V1" smd circle
@@ -2543,6 +2588,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.23)
 		(uuid "69919687-b1b2-4d40-9536-c2d2c2dff9be")
 	)
 	(pad "V19" smd circle
@@ -2550,6 +2596,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.66)
 		(uuid "d274f844-8424-43a1-83ce-85481af77420")
 	)
 	(pad "W1" smd circle
@@ -2669,6 +2716,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.9)
 		(uuid "38dfea5e-7906-43b8-b426-ef7596831f9f")
 	)
 	(pad "W18" smd circle
@@ -2676,6 +2724,7 @@
 		(size 0.32 0.32)
 		(property pad_prop_bga)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(die_length 7.85)
 		(uuid "47a32508-988c-4509-a700-233113093790")
 	)
 	(pad "W19" smd circle

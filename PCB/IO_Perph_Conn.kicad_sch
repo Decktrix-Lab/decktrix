@@ -23097,7 +23097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_BGA:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
+		(property "Footprint" "lib:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
 			(at 28.448 240.284 0)
 			(effects
 				(font
@@ -24362,7 +24362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_BGA:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
+		(property "Footprint" "lib:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
 			(at -70.612 213.614 0)
 			(effects
 				(font

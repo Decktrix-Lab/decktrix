@@ -15576,7 +15576,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 9852bca6-c834-43e6-9b21-442c2e4f35f8)
+			(uuid 424c875c-1eb6-4dd1-a996-7197078377bd)
 		)
 	)
 	(netclass_flag ""
@@ -17720,7 +17720,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_BGA:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
+		(property "Footprint" "lib:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
 			(at -61.722 205.994 0)
 			(effects
 				(font

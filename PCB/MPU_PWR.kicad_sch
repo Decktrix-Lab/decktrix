@@ -16603,7 +16603,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_BGA:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
+		(property "Footprint" "lib:ST_LFBGA-354_16x16mm_Layout19x19_P0.8mm"
 			(at 50.038 250.444 0)
 			(effects
 				(font
