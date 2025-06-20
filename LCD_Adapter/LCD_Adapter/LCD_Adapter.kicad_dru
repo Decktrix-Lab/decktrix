@@ -1,5 +1,12 @@
 (version 1)
 (rule "target length and skew"
-      (condition "A.hasNetclass('DSI')")
+      (condition "A.hasNetclass('STM_DSI')")
       (constraint length (min 53.25mm) (opt 53.25mm) (max 53.25mm))
+      (constraint skew (max 0.1mm)))
+
+
+
+(rule "target length and skew"
+      (condition "A.hasNetclass('RPI_DSI')")
+      (constraint length (min 58mm) (opt 58mm) (max 58mm))
       (constraint skew (max 0.1mm)))

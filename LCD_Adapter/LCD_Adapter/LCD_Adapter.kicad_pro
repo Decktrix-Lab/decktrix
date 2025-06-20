@@ -128,7 +128,7 @@
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
@@ -136,9 +136,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.1016,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -188,6 +188,7 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
         0.3,
         0.4,
         1.0,
@@ -498,13 +499,21 @@
       {
         "diff_pair_gap": 0.2,
         "diff_pair_width": 0.1232,
-        "name": "DSI",
+        "name": "RPI_DSI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgb(115, 255, 76)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 145, 17)",
         "track_width": 0.1232,
         "via_diameter": 0.4,
         "via_drill": 0.3
+      },
+      {
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.1232,
+        "name": "STM_DSI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(126, 255, 59)"
       }
     ],
     "meta": {
@@ -529,6 +538,42 @@
       ],
       "/D1_P": [
         "DSI"
+      ],
+      "/RPI2LCD/RPI_CLK_N": [
+        "RPI_DSI"
+      ],
+      "/RPI2LCD/RPI_CLK_P": [
+        "RPI_DSI"
+      ],
+      "/RPI2LCD/RPI_D0_N": [
+        "RPI_DSI"
+      ],
+      "/RPI2LCD/RPI_D0_P": [
+        "RPI_DSI"
+      ],
+      "/RPI2LCD/RPI_D1_N": [
+        "RPI_DSI"
+      ],
+      "/RPI2LCD/RPI_D1_P": [
+        "RPI_DSI"
+      ],
+      "/STM2LCD/CLK_N": [
+        "STM_DSI"
+      ],
+      "/STM2LCD/CLK_P": [
+        "STM_DSI"
+      ],
+      "/STM2LCD/D0_N": [
+        "STM_DSI"
+      ],
+      "/STM2LCD/D0_P": [
+        "STM_DSI"
+      ],
+      "/STM2LCD/D1_N": [
+        "STM_DSI"
+      ],
+      "/STM2LCD/D1_P": [
+        "STM_DSI"
       ]
     },
     "netclass_patterns": []
@@ -664,6 +709,18 @@
     [
       "90bbffcf-f1b0-4966-a1ef-be58cceb8518",
       "Root"
+    ],
+    [
+      "93bb586c-6b7f-48d9-8b6e-ad2450eb207a",
+      "STM2LCD"
+    ],
+    [
+      "ae10c709-9042-4208-b03c-2b90238aa406",
+      "RPI2LCD"
+    ],
+    [
+      "b0fb8bfa-f4e7-44f8-8167-420406ac11d5",
+      "PWR"
     ]
   ],
   "text_variables": {}
