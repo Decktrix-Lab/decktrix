@@ -8,5 +8,5 @@
 
 (rule "target length and skew"
       (condition "A.hasNetclass('RPI_DSI')")
-      (constraint length (min 57.5mm) (opt 58mm) (max 58.5mm))
+      (constraint length (min 29.6mm) (opt 29.8mm) (max 30mm))
       (constraint skew (max 0.1mm)))

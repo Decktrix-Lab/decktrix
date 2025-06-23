@@ -13397,6 +13397,45 @@
 		(layer "Edge.Cuts")
 		(uuid "58d8f229-aa99-4c82-a3e1-4b1db2f80e1d")
 	)
+	(gr_text "STM2LCD\n"
+		(at 113.15 67.8 0)
+		(layer "F.SilkS")
+		(uuid "c327c641-172c-43c5-a9f0-678ff3ef800f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Don't use two channels simultaneously"
+		(at 96.575 23.575 0)
+		(layer "F.SilkS")
+		(uuid "dd5f6395-19d3-4bca-85aa-812de0cc09c3")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "RPI2LCD\n"
+		(at 113.1 37.575 0)
+		(layer "F.SilkS")
+		(uuid "ecf46a88-91c3-4c38-b0e2-ae1a24227a4e")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 102.25 40.2)
 		(end 101 40.2)
