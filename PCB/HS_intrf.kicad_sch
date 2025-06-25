@@ -13354,7 +13354,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "USB4215-03-A_REVA:USB4215-03-A_REVA"
+		(symbol "USB4510-03-1-A_REVA:USB4510-03-1-A_REVA"
 			(pin_names
 				(offset 1.016)
 			)
@@ -13362,7 +13362,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -12.7 13.462 0)
+				(at -12.7 16.002 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -13370,8 +13370,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "USB4215-03-A_REVA"
-				(at -12.7 -16.002 0)
+			(property "Value" "USB4510-03-1-A_REVA"
+				(at -12.7 -18.542 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -13379,7 +13379,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "USB4215-03-A_REVA:GCT_USB4215-03-A_REVA"
+			(property "Footprint" "USB4510-03-1-A_REVA:GCT_USB4510-03-1-A_REVA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13417,7 +13417,7 @@
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "3.16mm"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "2.46mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13447,7 +13447,7 @@
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/USB4215-03-A/Global+Connector+Technology/view-part/?ref=eda"
+			(property "Check_prices" "https://www.snapeda.com/parts/USB4510031A/Global+Connector+Technology/view-part/?ref=eda"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13477,7 +13477,7 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/USB4215-03-A/Global+Connector+Technology/view-part/?ref=snap"
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/USB4510031A/Global+Connector+Technology/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13487,7 +13487,7 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "USB4215-03-A"
+			(property "MP" "USB4510031A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13497,17 +13497,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description_1" "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Global Connector Technology"
+			(property "Description_1" "USB CONN, 2.0 TYPE C, R/A RCPT, 16POS; USB Connector Type:USB Type C; USB Standard:USB 2.0; Gender:Receptacle; No. of Positions:16Positions; Connector Mounting:Surface Mount, Through Hole Mount; Orientation:Right Angle"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13527,7 +13517,7 @@
 					(hide yes)
 				)
 			)
-			(property "SNAPEDA_PN" "USB4215-03-A"
+			(property "MANUFACTURER" "GCT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13537,10 +13527,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB4215-03-A_REVA_0_0"
+			(symbol "USB4510-03-1-A_REVA_0_0"
 				(rectangle
-					(start -12.7 -15.24)
-					(end 12.7 12.7)
+					(start -12.7 -17.78)
+					(end 12.7 15.24)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -13550,7 +13540,7 @@
 					)
 				)
 				(pin power_in line
-					(at -17.78 10.16 0)
+					(at -17.78 12.7 0)
 					(length 5.08)
 					(name "VBUS_A"
 						(effects
@@ -13640,7 +13630,7 @@
 					)
 				)
 				(pin power_in line
-					(at -17.78 -7.62 0)
+					(at -17.78 -10.16 0)
 					(length 5.08)
 					(name "GND_A"
 						(effects
@@ -13657,80 +13647,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin power_in line
-					(at 17.78 10.16 180)
+					(at 17.78 12.7 180)
 					(length 5.08)
 					(name "VBUS_B"
 						(effects
@@ -13820,7 +13738,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -7.62 180)
+					(at 17.78 -10.16 180)
 					(length 5.08)
 					(name "GND_B"
 						(effects
@@ -13830,6 +13748,78 @@
 						)
 					)
 					(number "B1_A12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "SHELL_GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "SHELL_GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "SHELL_GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "SHELL_GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -14237,12 +14227,6 @@
 		(uuid "322babef-3300-4f8f-97b8-e2ee7153c1e7")
 	)
 	(junction
-		(at 162.56 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "361d360d-d140-4c2c-9a01-776bc8494e53")
-	)
-	(junction
 		(at 82.55 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14349,6 +14333,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f857a5eb-2f59-41cc-a3a1-414b30a0f3e9")
+	)
+	(junction
+		(at 203.2 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9115e4a-fdf3-46c9-9678-9f442da3dd39")
 	)
 	(junction
 		(at 121.92 39.37)
@@ -14488,16 +14478,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 62.23) (xy 162.56 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d9812cb-07e3-4f59-9636-d292993531c7")
-	)
-	(wire
-		(pts
 			(xy 231.14 49.53) (xy 256.54 49.53)
 		)
 		(stroke
@@ -14548,6 +14528,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 59.69) (xy 163.83 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f41030b-f4cf-4253-8527-1dd43122cb06")
+	)
+	(wire
+		(pts
 			(xy 203.2 29.21) (xy 208.28 29.21)
 		)
 		(stroke
@@ -14588,7 +14578,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 31.75) (xy 158.75 39.37)
+			(xy 158.75 31.75) (xy 158.75 36.83)
 		)
 		(stroke
 			(width 0)
@@ -14648,16 +14638,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 57.15) (xy 163.83 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cf18622-23a2-4dbc-8c30-218fa4cfdfc8")
-	)
-	(wire
-		(pts
 			(xy 102.87 158.75) (xy 104.14 158.75)
 		)
 		(stroke
@@ -14675,16 +14655,6 @@
 			(type default)
 		)
 		(uuid "55d20225-2daf-4719-a2b3-076e5daeb4ae")
-	)
-	(wire
-		(pts
-			(xy 162.56 62.23) (xy 163.83 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5619492f-02a4-4b48-8650-fb52b943648a")
 	)
 	(wire
 		(pts
@@ -14738,13 +14708,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 57.15) (xy 199.39 57.15)
+			(xy 158.75 36.83) (xy 163.83 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "625ee0a8-7962-4601-a7ef-ba6345c19a0c")
+		(uuid "633edbea-8b23-459c-8b1e-4742e5533e0b")
 	)
 	(wire
 		(pts
@@ -14768,7 +14738,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 29.21) (xy 203.2 39.37)
+			(xy 203.2 29.21) (xy 203.2 36.83)
 		)
 		(stroke
 			(width 0)
@@ -14798,7 +14768,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 68.58) (xy 162.56 62.23)
+			(xy 162.56 59.69) (xy 162.56 68.58)
 		)
 		(stroke
 			(width 0)
@@ -14855,6 +14825,16 @@
 			(type default)
 		)
 		(uuid "81fe1f11-d220-4ae9-bc81-aa163a4669f9")
+	)
+	(wire
+		(pts
+			(xy 199.39 64.77) (xy 203.2 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8371d921-e0a6-4613-b258-a5c21139ccb1")
 	)
 	(wire
 		(pts
@@ -14998,6 +14978,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 64.77) (xy 203.2 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9018c40-2004-4d19-a8c5-a1281ceb6457")
+	)
+	(wire
+		(pts
 			(xy 58.42 138.43) (xy 39.37 138.43)
 		)
 		(stroke
@@ -15048,6 +15038,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 59.69) (xy 203.2 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c78816ea-3774-4328-99b2-d6e1ee196231")
+	)
+	(wire
+		(pts
 			(xy 158.75 27.94) (xy 158.75 31.75)
 		)
 		(stroke
@@ -15068,7 +15068,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 68.58) (xy 203.2 57.15)
+			(xy 203.2 68.58) (xy 203.2 64.77)
 		)
 		(stroke
 			(width 0)
@@ -15095,6 +15095,16 @@
 			(type default)
 		)
 		(uuid "cb50637e-3922-4bf0-8e2c-92b379966801")
+	)
+	(wire
+		(pts
+			(xy 199.39 36.83) (xy 203.2 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfefeda0-32cb-497b-ac05-cd7fb15a1521")
 	)
 	(wire
 		(pts
@@ -15178,16 +15188,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 39.37) (xy 163.83 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2295a3a-c665-42a2-b87a-97af969d50e6")
-	)
-	(wire
-		(pts
 			(xy 60.96 157.48) (xy 60.96 154.94)
 		)
 		(stroke
@@ -15245,16 +15245,6 @@
 			(type default)
 		)
 		(uuid "f66aa4bc-49ea-467c-8f8b-d97fbd852cc9")
-	)
-	(wire
-		(pts
-			(xy 203.2 39.37) (xy 199.39 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc7a3586-61fb-48b7-aef0-91db8b794147")
 	)
 	(global_label "SYS_I2C4_SDA"
 		(shape input)
@@ -15576,7 +15566,7 @@
 			(fill
 				(type none)
 			)
-			(uuid a9b934ec-434c-47e7-8daf-14c2a0ad8d75)
+			(uuid dc641f3d-fcb8-4ed8-ba06-8e3e0188f20d)
 		)
 	)
 	(netclass_flag ""
@@ -17043,6 +17033,237 @@
 			(project ""
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/9899e005-10ba-4bf4-b936-8d0d8a1813b9"
 					(reference "U801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "USB4510-03-1-A_REVA:USB4510-03-1-A_REVA")
+		(at 181.61 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb47447f-f1bc-4921-a5bc-8cadeae458b3")
+		(property "Reference" "J3"
+			(at 181.61 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB4510-03-1-A_REVA"
+			(at 181.61 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:GCT_USB4510-03-1-A_REVA"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Global Connector Technology"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "2.46mm"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/USB4510031A/Global+Connector+Technology/view-part/?ref=eda"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/USB4510031A/Global+Connector+Technology/view-part/?ref=snap"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "USB4510031A"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "USB CONN, 2.0 TYPE C, R/A RCPT, 16POS; USB Connector Type:USB Type C; USB Standard:USB 2.0; Gender:Receptacle; No. of Positions:16Positions; Connector Mounting:Surface Mount, Through Hole Mount; Orientation:Right Angle"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "GCT"
+			(at 181.61 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "S1"
+			(uuid "31be4bc6-0196-4474-a2c2-fb0320cf9baa")
+		)
+		(pin "A7"
+			(uuid "dddf9227-2701-418e-b211-6a7bd8b3dff5")
+		)
+		(pin "S2"
+			(uuid "bebe4d6b-c9f8-49b9-9b0d-562a8500d6c2")
+		)
+		(pin "B1_A12"
+			(uuid "42b2bd65-04a4-430f-b80e-4896609b3e30")
+		)
+		(pin "B4_A9"
+			(uuid "d15ad107-296d-475f-810b-ff991410ea7c")
+		)
+		(pin "B6"
+			(uuid "cc5a1696-2c10-4a43-8d4e-77d111d05c76")
+		)
+		(pin "A5"
+			(uuid "66297973-abfc-4011-b38f-66f2189f2a3a")
+		)
+		(pin "B5"
+			(uuid "7557cf67-0b8b-4ec7-9d30-e91e34a89da9")
+		)
+		(pin "A1_B12"
+			(uuid "572e242b-01e3-481b-a2bd-33f806fa5590")
+		)
+		(pin "B7"
+			(uuid "c2cbe822-caff-4311-abc2-7c299371ec1e")
+		)
+		(pin "A8"
+			(uuid "28566828-ccc2-46fd-b4d2-c462177fc7ea")
+		)
+		(pin "B8"
+			(uuid "bf41f82f-16be-45d4-8170-361b34d7bb61")
+		)
+		(pin "A4_B9"
+			(uuid "0adea0b0-615d-48f6-aada-004f81212d68")
+		)
+		(pin "S4"
+			(uuid "621e7d3a-7953-43cc-8508-9d32d7d08136")
+		)
+		(pin "A6"
+			(uuid "bc6fe29d-9c12-48da-88db-836c43962619")
+		)
+		(pin "S3"
+			(uuid "eb2a8b7e-18e0-4d80-b887-6d9cab397c9a")
+		)
+		(instances
+			(project ""
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/9899e005-10ba-4bf4-b936-8d0d8a1813b9"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -18881,247 +19102,6 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/9899e005-10ba-4bf4-b936-8d0d8a1813b9"
 					(reference "TP803")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "USB4215-03-A_REVA:USB4215-03-A_REVA")
-		(at 181.61 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dde5b945-6a6f-42ee-a04f-fa82bea68e75")
-		(property "Reference" "J801"
-			(at 181.61 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB4215-03-A_REVA"
-			(at 181.61 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lib:GCT_USB4215-03-A_REVA"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Global Connector Technology"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "3.16mm"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/USB4215-03-A/Global+Connector+Technology/view-part/?ref=eda"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "A"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/USB4215-03-A/Global+Connector+Technology/view-part/?ref=snap"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "USB4215-03-A"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Global Connector Technology"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" "USB4215-03-A"
-			(at 181.61 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "SH4"
-			(uuid "effddf75-7cfc-43c9-a30f-0550c9f5bc58")
-		)
-		(pin "B8"
-			(uuid "aea2e572-a4c5-457b-b36b-1514c02878aa")
-		)
-		(pin "B7"
-			(uuid "8584968a-bf21-4604-94f3-da9de62cea2b")
-		)
-		(pin "SH1"
-			(uuid "ebaf4d8d-e3dd-44fc-96ed-958205a1a8bc")
-		)
-		(pin "A4_B9"
-			(uuid "f1b26612-361c-4603-8e45-5c2adbf45fc3")
-		)
-		(pin "B1_A12"
-			(uuid "de108661-8d93-4a08-8011-c0617f933903")
-		)
-		(pin "A8"
-			(uuid "e777903c-bdcb-44c3-8bf4-8662affe7411")
-		)
-		(pin "A7"
-			(uuid "3075fc05-02e3-4891-8b11-c06015a1355a")
-		)
-		(pin "SH2"
-			(uuid "54961718-c8ce-43df-9792-b4de34bb44e1")
-		)
-		(pin "B4_A9"
-			(uuid "9ee35c93-c8c3-4c29-96a2-363ee3ce3b9f")
-		)
-		(pin "B5"
-			(uuid "db39f5b2-e444-46bd-988e-d258bf326302")
-		)
-		(pin "A1_B12"
-			(uuid "792cc58a-234e-43d6-a4a4-a2bfdf369621")
-		)
-		(pin "SH3"
-			(uuid "689a95a1-8291-4b87-a873-645645f34612")
-		)
-		(pin "A6"
-			(uuid "b2689ed3-bff0-4982-8a4b-cf157ed9180e")
-		)
-		(pin "B6"
-			(uuid "53adcbbd-53e4-49a8-8295-93b956b4c0a4")
-		)
-		(pin "A5"
-			(uuid "91e51805-9b91-4f6c-ac6d-78549bacc177")
-		)
-		(instances
-			(project "MPU_MOD"
-				(path "/65890f61-d586-475b-928a-b635a5e4e59e/9899e005-10ba-4bf4-b936-8d0d8a1813b9"
-					(reference "J801")
 					(unit 1)
 				)
 			)

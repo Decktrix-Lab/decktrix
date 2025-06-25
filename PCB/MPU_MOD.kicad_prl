@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -128,8 +128,6 @@
       "Net-(D602-A)",
       "Net-(D602-K)",
       "Net-(J501-SWITCH)",
-      "unconnected-(J801-SBU1-PadA8)",
-      "unconnected-(J801-SBU2-PadB8)",
       "Net-(J901-Pad1)",
       "Net-(U203-VLX1)",
       "Net-(U203-VLX2)",
@@ -360,10 +358,8 @@
       "Net-(U3-PG_N)",
       "CHRG_PSEL",
       "unconnected-(J1-Pad2)",
-      "unconnected-(J1-Pad8)",
       "unconnected-(J1-Pad3)",
       "unconnected-(J1-Pad5)",
-      "unconnected-(J1-Pad7)",
       "unconnected-(J1-Pad1)",
       "unconnected-(J1-Pad6)",
       "unconnected-(J1-Pad4)",
@@ -411,7 +407,7 @@
       "unconnected-(J2-Pad29)",
       "/MPU_PWR/VDDA"
     ],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,

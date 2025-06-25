@@ -494,8 +494,8 @@
         "wire_width": 6
       },
       {
-        "diff_pair_gap": 0.13,
-        "diff_pair_width": 0.114,
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.1019,
         "name": "100_ohm_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
@@ -1225,6 +1225,12 @@
         "HS_intrf"
       ],
       "unconnected-(J2-Pad9)": [
+        "HS_intrf"
+      ],
+      "unconnected-(J3-SBU1-PadA8)": [
+        "HS_intrf"
+      ],
+      "unconnected-(J3-SBU2-PadB8)": [
         "HS_intrf"
       ],
       "unconnected-(J701-Pad01)": [
