@@ -215,7 +215,7 @@
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
           "single_sided": true,
-          "spacing": 0.5
+          "spacing": 0.6
         }
       },
       "via_dimensions": [
