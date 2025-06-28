@@ -1407,7 +1407,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "OUTPUT/MPU_MOD.step",
       "svg": "",
       "vrml": ""
     },
