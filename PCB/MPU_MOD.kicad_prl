@@ -407,7 +407,7 @@
       "unconnected-(J2-Pad29)",
       "/MPU_PWR/VDDA"
     ],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,

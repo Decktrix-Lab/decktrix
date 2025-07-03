@@ -9307,7 +9307,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 5172f620-8a79-4b0a-bc87-581928c43945)
+			(uuid ceb2218d-23a8-4441-a826-bf0d426a61f4)
 		)
 	)
 	(netclass_flag ""
@@ -9980,7 +9980,7 @@
 		(fields_autoplaced yes)
 		(uuid "2428f1d2-fa8a-4b3b-be5f-020a0ed0700d")
 		(property "Reference" "U203"
-			(at 336.042 26.162 0)
+			(at 335.28 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9988,7 +9988,7 @@
 			)
 		)
 		(property "Value" "STPMIC1APQR"
-			(at 336.042 28.702 0)
+			(at 335.28 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
