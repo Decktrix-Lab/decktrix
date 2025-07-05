@@ -10187,26 +10187,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "idk\n"
-		(exclude_from_sim no)
-		(at 109.22 142.24 0)
-		(size 11.43 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b9639302-e547-4688-85c3-5fef6c9c971b")
-	)
 	(junction
 		(at 370.84 124.46)
 		(diameter 0)
@@ -10711,6 +10691,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 146.05) (xy 127 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c9dc28c-b970-42a6-b1c9-f1c6b4b6e818")
+	)
+	(wire
+		(pts
 			(xy 153.67 160.02) (xy 153.67 158.75)
 		)
 		(stroke
@@ -10871,16 +10861,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 135.89) (xy 127 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56883d7c-9006-4ef9-9e21-09a1bd1b6020")
-	)
-	(wire
-		(pts
 			(xy 40.64 53.34) (xy 40.64 54.61)
 		)
 		(stroke
@@ -10898,16 +10878,6 @@
 			(type default)
 		)
 		(uuid "5cb0625e-f32f-4426-a88f-6ced4b031fbb")
-	)
-	(wire
-		(pts
-			(xy 132.08 146.05) (xy 147.32 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d3b6854-62cd-4af7-82f9-1061855f36c6")
 	)
 	(wire
 		(pts
@@ -11248,16 +11218,6 @@
 			(type default)
 		)
 		(uuid "898fe059-7df1-49d3-ad8f-e324df5b9fff")
-	)
-	(wire
-		(pts
-			(xy 127 156.21) (xy 127 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c8ce941-d55e-477b-9a79-02cea2fcf55d")
 	)
 	(wire
 		(pts
@@ -11861,6 +11821,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 146.05) (xy 147.32 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7556b78-97f6-41c5-8f28-a48967b4267a")
+	)
+	(wire
+		(pts
 			(xy 265.43 73.66) (xy 261.62 73.66)
 		)
 		(stroke
@@ -12236,7 +12206,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 571e6e69-8284-4c2b-9f5a-5f2a5164b48f)
+			(uuid c6ff19cc-5c1e-4ef0-b7ad-ab2cce36b845)
 		)
 	)
 	(netclass_flag ""
@@ -13678,83 +13648,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 127 140.97 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "41710aa2-cbea-4093-809e-59ee00981cdd")
-		(property "Reference" "R702"
-			(at 124.968 139.446 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 124.968 143.764 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.222 140.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 127 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser P/N" ""
-			(at 127 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "75cd587c-672a-450a-bef6-60cdb42476ea")
-		)
-		(pin "2"
-			(uuid "696bf16f-f8c2-4752-981a-e7b4600f5456")
-		)
-		(instances
-			(project "MPU_MOD"
-				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
-					(reference "R702")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 323.85 107.95 0)
 		(unit 1)
@@ -15132,72 +15025,6 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
 					(reference "R706")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+36V")
-		(at 127 135.89 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95a5dfa3-874f-43b5-8672-85e680d22f8a")
-		(property "Reference" "#PWR0704"
-			(at 127 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 127 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+36V\""
-			(at 127 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65a80481-ebf2-436d-acd5-f197d33c0549")
-		)
-		(instances
-			(project "MPU_MOD"
-				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
-					(reference "#PWR0704")
 					(unit 1)
 				)
 			)
@@ -17633,83 +17460,6 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
 					(reference "R704")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 127 151.13 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "de0138c9-aeec-4864-add0-0cef23157d25")
-		(property "Reference" "R703"
-			(at 124.968 149.606 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 124.968 153.924 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.222 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 127 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser P/N" ""
-			(at 127 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca39653e-6991-40e3-baae-ae5409fca3f2")
-		)
-		(pin "2"
-			(uuid "262757ac-aeec-4f09-9e38-be71db1d399c")
-		)
-		(instances
-			(project "MPU_MOD"
-				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
-					(reference "R703")
 					(unit 1)
 				)
 			)
