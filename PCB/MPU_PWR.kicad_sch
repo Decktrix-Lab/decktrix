@@ -14585,7 +14585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 147.0152 0)
 			(effects
 				(font
@@ -14736,7 +14736,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 185.1152 0)
 			(effects
 				(font
@@ -14886,7 +14886,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 197.8152 0)
 			(effects
 				(font
@@ -14971,7 +14971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 210.5152 0)
 			(effects
 				(font
@@ -15056,7 +15056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 246.0752 0)
 			(effects
 				(font
@@ -15272,7 +15272,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 140.6652 0)
 			(effects
 				(font
@@ -15422,7 +15422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 252.4252 0)
 			(effects
 				(font
@@ -15507,7 +15507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 129.54 261.3152 0)
 			(effects
 				(font
@@ -15657,7 +15657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 191.4652 0)
 			(effects
 				(font
@@ -15742,7 +15742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 49.2252 0)
 			(effects
 				(font
@@ -15893,7 +15893,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 153.3652 0)
 			(effects
 				(font
@@ -15978,7 +15978,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 216.8652 0)
 			(effects
 				(font
@@ -16063,7 +16063,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 145.7452 275.59 0)
 			(effects
 				(font
@@ -16148,7 +16148,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 42.8752 0)
 			(effects
 				(font
@@ -16428,7 +16428,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 55.5752 0)
 			(effects
 				(font
@@ -16513,7 +16513,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 239.7252 0)
 			(effects
 				(font
@@ -17796,7 +17796,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 172.4152 0)
 			(effects
 				(font
@@ -18077,7 +18077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 261.3152 0)
 			(effects
 				(font
@@ -18228,7 +18228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 127.9652 0)
 			(effects
 				(font
@@ -18313,7 +18313,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 143.51 103.8352 0)
 			(effects
 				(font
@@ -18398,7 +18398,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 129.2352 120.65 0)
 			(effects
 				(font
@@ -18483,7 +18483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 143.51 127.9652 0)
 			(effects
 				(font
@@ -18568,7 +18568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 166.0652 0)
 			(effects
 				(font
@@ -18653,7 +18653,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 134.3152 0)
 			(effects
 				(font
@@ -18803,7 +18803,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 122.8852 120.65 0)
 			(effects
 				(font
@@ -18888,7 +18888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 159.7152 0)
 			(effects
 				(font
@@ -18973,7 +18973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 143.51 117.8052 0)
 			(effects
 				(font
@@ -19058,7 +19058,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 233.3752 0)
 			(effects
 				(font
@@ -19208,7 +19208,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 61.9252 0)
 			(effects
 				(font
@@ -19293,7 +19293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 129.54 266.3952 0)
 			(effects
 				(font
@@ -19443,7 +19443,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 204.1652 0)
 			(effects
 				(font
@@ -19528,7 +19528,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 137.16 251.7648 0)
 			(effects
 				(font
@@ -19613,7 +19613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 143.51 92.4052 0)
 			(effects
 				(font
@@ -19980,7 +19980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 143.51 122.8852 0)
 			(effects
 				(font
@@ -20065,7 +20065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 178.7652 0)
 			(effects
 				(font
@@ -20496,7 +20496,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 27.94 267.6652 0)
 			(effects
 				(font
@@ -20581,7 +20581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 152.0952 275.59 0)
 			(effects
 				(font
@@ -20732,7 +20732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 129.54 246.0752 0)
 			(effects
 				(font

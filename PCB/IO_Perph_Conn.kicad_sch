@@ -21185,7 +21185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 145.7452 77.47 0)
 			(effects
 				(font
@@ -21416,7 +21416,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 145.7452 100.33 0)
 			(effects
 				(font

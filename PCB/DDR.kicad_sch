@@ -15347,7 +15347,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 167.64 140.97) (xy 167.64 157.48) (xy 175.26 157.48) (xy 175.26 140.97)
+				(xy 194.31 35.56) (xy 214.63 35.56) (xy 214.63 64.77) (xy 194.31 64.77)
 			)
 			(stroke
 				(width 0)
@@ -15356,37 +15356,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 2567a930-eda2-4488-af73-1ed51c9bf27f)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 281.94 109.22) (xy 293.37 109.22) (xy 293.37 167.64) (xy 281.305 167.64)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 3e539176-71b8-4163-b07a-0bceb57c5dbc)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 194.31 73.66) (xy 214.63 73.66) (xy 214.63 133.35) (xy 194.31 133.35)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 6b8558d7-37a6-4d70-b2ee-c51ef3107f02)
+			(uuid 050897b8-7bcb-4fec-92f8-d4ac97a31d2d)
 		)
 	)
 	(rule_area
@@ -15401,7 +15371,52 @@
 			(fill
 				(type none)
 			)
-			(uuid 7d8794aa-136f-420a-b2b2-ee333f161ab7)
+			(uuid 0f02804d-7a63-4f1b-a2b8-2ed277bdcc61)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 194.31 73.66) (xy 214.63 73.66) (xy 214.63 133.35) (xy 194.31 133.35)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 232fe6bd-5c4f-47d9-be50-df5f8f1b122b)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 281.94 109.22) (xy 293.37 109.22) (xy 293.37 167.64) (xy 281.305 167.64)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 610303f1-0617-4f6f-b19c-a1752ea502d5)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 167.64 140.97) (xy 167.64 157.48) (xy 175.26 157.48) (xy 175.26 140.97)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 8812b1e7-7b3a-4cb9-969e-b457b4e6ef71)
 		)
 	)
 	(rule_area
@@ -15416,22 +15431,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 90541b7e-30bc-47e6-8e21-210497b7be58)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 194.31 35.56) (xy 214.63 35.56) (xy 214.63 64.77) (xy 194.31 64.77)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 9578c0a5-5026-41a5-894a-b63b372f920d)
+			(uuid f06d1476-e3e2-4e7f-80c5-ce35bbefe13c)
 		)
 	)
 	(netclass_flag ""
@@ -16173,7 +16173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 348.2848 237.49 0)
 			(effects
 				(font
@@ -16258,7 +16258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 140.0048 0)
 			(effects
 				(font
@@ -16343,7 +16343,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 117.1448 0)
 			(effects
 				(font
@@ -16428,7 +16428,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 101.9048 0)
 			(effects
 				(font
@@ -16513,7 +16513,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 159.0548 0)
 			(effects
 				(font
@@ -16598,7 +16598,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 180.6448 139.7 0)
 			(effects
 				(font
@@ -16683,7 +16683,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 394.0048 237.49 0)
 			(effects
 				(font
@@ -18049,7 +18049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 371.1448 219.71 0)
 			(effects
 				(font
@@ -18504,7 +18504,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 124.7648 0)
 			(effects
 				(font
@@ -18731,7 +18731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 382.5748 219.71 0)
 			(effects
 				(font
@@ -18816,7 +18816,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 338.7852 213.36 0)
 			(effects
 				(font
@@ -19207,7 +19207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 132.3848 0)
 			(effects
 				(font
@@ -19371,7 +19371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 171.7548 0)
 			(effects
 				(font
@@ -19608,7 +19608,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 336.8548 237.49 0)
 			(effects
 				(font
@@ -19975,7 +19975,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 348.2848 219.71 0)
 			(effects
 				(font
@@ -20060,7 +20060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 382.5748 237.49 0)
 			(effects
 				(font
@@ -20221,7 +20221,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 294.3352 85.09 0)
 			(effects
 				(font
@@ -20306,7 +20306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 179.3748 0)
 			(effects
 				(font
@@ -20523,7 +20523,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 94.2848 0)
 			(effects
 				(font
@@ -22250,7 +22250,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 371.1448 237.49 0)
 			(effects
 				(font
@@ -22465,7 +22465,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 359.7148 219.71 0)
 			(effects
 				(font
@@ -22550,7 +22550,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 185.7248 0)
 			(effects
 				(font
@@ -22635,7 +22635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 151.4348 0)
 			(effects
 				(font
@@ -22861,7 +22861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 359.7148 237.49 0)
 			(effects
 				(font
@@ -22946,7 +22946,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 350.2152 213.36 0)
 			(effects
 				(font
@@ -23031,7 +23031,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 349.25 109.5248 0)
 			(effects
 				(font
@@ -23116,7 +23116,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 282.9052 85.09 0)
 			(effects
 				(font
@@ -23277,7 +23277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 336.8548 219.71 0)
 			(effects
 				(font

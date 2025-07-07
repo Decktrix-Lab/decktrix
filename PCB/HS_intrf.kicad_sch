@@ -15566,7 +15566,7 @@
 			(fill
 				(type none)
 			)
-			(uuid cf80eddc-6198-44f6-af99-060a3c23db88)
+			(uuid a600849a-c626-48fa-99cc-3dc46799daf1)
 		)
 	)
 	(netclass_flag ""
@@ -15691,7 +15691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 38.4048 138.43 0)
 			(effects
 				(font
@@ -15909,7 +15909,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 26.9748 146.05 0)
 			(effects
 				(font
@@ -16327,7 +16327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 133.6548 31.75 0)
 			(effects
 				(font
@@ -16741,7 +16741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 122.8852 39.37 0)
 			(effects
 				(font
