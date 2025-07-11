@@ -4245,6 +4245,26 @@
 		)
 		(uuid b04b3c8b-0baa-4765-b7df-b07f256a60f5)
 	)
+	(text_box "Check V order"
+		(exclude_from_sim no)
+		(at 341.63 17.78 0)
+		(size 19.05 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a777f8c6-2126-49be-89ee-6099aaf47224")
+	)
 	(junction
 		(at 386.08 63.5)
 		(diameter 0)
