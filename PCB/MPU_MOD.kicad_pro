@@ -1796,6 +1796,10 @@
     [
       "8e6695b4-f550-48fc-80fa-082e6ac5485e",
       "DAC"
+    ],
+    [
+      "ba2dc7bc-21cc-4648-b7c2-5eb24b24edf1",
+      "MODULE_CONNECTOR"
     ]
   ],
   "text_variables": {}

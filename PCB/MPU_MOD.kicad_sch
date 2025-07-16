@@ -3382,6 +3382,48 @@
 		)
 	)
 	(sheet
+		(at 323.85 204.47)
+		(size 54.61 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ba2dc7bc-21cc-4648-b7c2-5eb24b24edf1")
+		(property "Sheetname" "MODULE_CONNECTOR"
+			(at 323.85 203.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MODULE_CONNECTOR.kicad_sch"
+			(at 323.85 238.0746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 323.85 154.94)
 		(size 54.61 33.02)
 		(exclude_from_sim no)
