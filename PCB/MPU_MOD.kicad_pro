@@ -1142,6 +1142,14 @@
         "HS_intrf",
         "USB"
       ],
+      "USB_M_D+": [
+        "HS_intrf",
+        "USB"
+      ],
+      "USB_M_D-": [
+        "HS_intrf",
+        "USB"
+      ],
       "VDD": [
         "HS_intrf",
         "PWM",
@@ -1475,7 +1483,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "OUTPUT/MPU_MOD.step",
+      "step": "OUTPUT/MPU_MOD_new.step",
       "svg": "",
       "vrml": ""
     },
