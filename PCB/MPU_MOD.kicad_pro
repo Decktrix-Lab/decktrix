@@ -848,6 +848,9 @@
       "I2S1_WS": [
         "WIFI_BLE"
       ],
+      "INTLDO": [
+        "PWM"
+      ],
       "INT_USB_ctrl": [
         "HS_intrf"
       ],
@@ -878,6 +881,12 @@
       ],
       "Net-(J901-Pad1)": [
         "WIFI_BLE"
+      ],
+      "Net-(Q1-D)": [
+        "PWM"
+      ],
+      "Net-(Q1-G)": [
+        "PWM"
       ],
       "Net-(TP801-Pad1)": [
         "HS_intrf"

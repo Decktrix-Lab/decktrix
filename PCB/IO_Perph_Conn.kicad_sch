@@ -21895,6 +21895,28 @@
 			)
 		)
 	)
+	(global_label "PMIC_WAKEUP"
+		(shape input)
+		(at 162.56 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "85761d47-946b-4fe3-80e5-32d3a3ea9533")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 178.6685 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "INT_USB_ctrl"
 		(shape input)
 		(at 151.13 196.85 180)

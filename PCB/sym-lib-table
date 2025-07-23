@@ -30,4 +30,5 @@
   (lib (name "SJ3-35024K-SMT-TR")(type "KiCad")(uri "${KIPRJMOD}/lib/SJ3-35024K-SMT-TR.kicad_sym")(options "")(descr ""))
   (lib (name "2-1734248-0")(type "KiCad")(uri "${KIPRJMOD}/lib/2-1734248-0.kicad_sym")(options "")(descr ""))
   (lib (name "SJ-43504-SMT-TR")(type "KiCad")(uri "${KIPRJMOD}/lib/SJ-43504-SMT-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "CSD23381F4")(type "KiCad")(uri "${KIPRJMOD}/lib/CSD23381F4.kicad_sym")(options "")(descr ""))
 )
