@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -18,7 +18,8 @@
     ],
     "hidden_nets": [
       "",
-      "GND"
+      "GND",
+      "VDD"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -41,7 +42,7 @@
       "text": true,
       "tracks": true,
       "vias": true,
-      "zones": true
+      "zones": false
     },
     "visible_items": [
       "vias",
@@ -108,10 +109,10 @@
       13
     ],
     "col_widths": [
-      162,
-      147,
+      163,
+      148,
       91,
-      67,
+      68,
       91,
       91,
       91,
