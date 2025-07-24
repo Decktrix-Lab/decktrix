@@ -15050,7 +15050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "lib:C_0402_small"
 			(at 250.19 200.152 90)
 			(effects
 				(font
