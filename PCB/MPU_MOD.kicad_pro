@@ -1343,6 +1343,144 @@
       "unconnected-(R703-Pad2)": [
         "RCC_BOOT_RST_DEBUG"
       ],
+      "unconnected-(U1-ANT-Pad41)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_DEV_WAKE-Pad39)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_HOST_WAKE-Pad38)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_PCM_CLK-Pad11)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_PCM_IN-Pad9)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_PCM_OUT-Pad10)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_PCM_SYNC-Pad8)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_REG_ON-Pad14)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_UART_CTS_N-Pad4)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_UART_RTS_N-Pad5)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_UART_RXD-Pad2)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-BT_UART_TXD-Pad3)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND(SR_PVSS)-Pad32)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND(SR_PVSS)__1-Pad33)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND-Pad1)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__1-Pad12)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__10-Pad45)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__11-Pad46)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__2-Pad19)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__3-Pad21)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__4-Pad29)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__5-Pad35)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__6-Pad40)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__7-Pad42)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__8-Pad43)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-GND__9-Pad44)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-LPO_IN(32KHZ)-Pad37)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-NC-Pad6)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-NC__1-Pad7)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-NC__2-Pad13)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-NC__3-Pad15)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-NC__4-Pad16)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SDIO_CLK-Pad20)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SDIO_CMD-Pad22)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SDIO_DATA_0-Pad24)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SDIO_DATA_1-Pad26)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SDIO_DATA_2-Pad23)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SDIO_DATA_3-Pad25)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-SR_VLX-Pad34)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-VBAT-Pad30)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-VIN_LDO-Pad31)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-VIO-Pad36)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-WL_GPIO_0_HOST_WAKE-Pad27)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-WL_GPIO_1-Pad18)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-WL_GPIO_2-Pad17)": [
+        "WIFI_BLE"
+      ],
+      "unconnected-(U1-WL_REG_ON-Pad28)": [
+        "WIFI_BLE"
+      ],
       "unconnected-(U203-BSTOUT-Pad34)": [
         "PWM"
       ],
