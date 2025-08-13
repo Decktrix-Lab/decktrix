@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.127
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -1651,6 +1651,10 @@
     [
       "ba2dc7bc-21cc-4648-b7c2-5eb24b24edf1",
       "MODULE_CONNECTOR"
+    ],
+    [
+      "6d63342e-f801-4ef3-ba79-fab0475ee1d8",
+      "LCD"
     ]
   ],
   "text_variables": {}
