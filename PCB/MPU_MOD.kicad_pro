@@ -1091,11 +1091,9 @@
         "SDMMC1"
       ],
       "SYS_I2C4_SCL": [
-        "HS_intrf",
         "PWM"
       ],
       "SYS_I2C4_SDA": [
-        "HS_intrf",
         "PWM"
       ],
       "UART4_RX_STM": [
@@ -1127,7 +1125,6 @@
         "USB"
       ],
       "VDD": [
-        "HS_intrf",
         "PWM",
         "RCC_BOOT_RST_DEBUG"
       ],
