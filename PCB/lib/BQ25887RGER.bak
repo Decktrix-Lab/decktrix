@@ -513,26 +513,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 17.78 -43.18 180)
-				(length 5.08)
-				(name "CD"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 17.78 -45.72 180)
+				(at 17.78 -43.18 180)
 				(length 5.08)
 				(name "STAT"
 					(effects
@@ -542,6 +524,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -45.72 180)
+				(length 5.08)
+				(name "CD"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.016 1.016)

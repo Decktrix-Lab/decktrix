@@ -34,4 +34,6 @@
   (lib (name "SFV30R-4STBE1HLF")(type "KiCad")(uri "${KIPRJMOD}/lib/SFV30R-4STBE1HLF.kicad_sym")(options "")(descr ""))
   (lib (name "2460")(type "KiCad")(uri "${KIPRJMOD}/lib/2460.kicad_sym")(options "")(descr ""))
   (lib (name "BQ25887RGER")(type "KiCad")(uri "${KIPRJMOD}/lib/BQ25887RGER.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS563252DRLR")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS563252DRLR.kicad_sym")(options "")(descr ""))
+  (lib (name "IHLP1210BZEZ3R3M5A")(type "KiCad")(uri "${KIPRJMOD}/lib/IHLP1210BZEZ3R3M5A.kicad_sym")(options "")(descr ""))
 )

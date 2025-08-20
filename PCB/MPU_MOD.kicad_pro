@@ -881,6 +881,9 @@
       "/PWR/BATT_T": [
         "PWM"
       ],
+      "/PWR/CH_REGN": [
+        "PWM"
+      ],
       "/PWR/REGN": [
         "PWM"
       ],
@@ -918,6 +921,15 @@
         "PWM"
       ],
       "CHRG_PSEL_OUT": [
+        "PWM"
+      ],
+      "CH_EN": [
+        "PWM"
+      ],
+      "CH_INT": [
+        "PWM"
+      ],
+      "CH_PSEL": [
         "PWM"
       ],
       "DSI_CK_N": [
@@ -960,6 +972,12 @@
         "PWM",
         "RCC_BOOT_RST_DEBUG"
       ],
+      "Net-(BT2-+)": [
+        "PWM"
+      ],
+      "Net-(BT2--)": [
+        "PWM"
+      ],
       "Net-(BT201--)": [
         "PWM"
       ],
@@ -972,8 +990,14 @@
       "Net-(D1-K)": [
         "PWM"
       ],
+      "Net-(D10-K)": [
+        "PWM"
+      ],
       "Net-(D2-K)": [
         "PWM"
+      ],
+      "Net-(J2-Pad11)": [
+        "RCC_BOOT_RST_DEBUG"
       ],
       "Net-(J701-Pad11)": [
         "RCC_BOOT_RST_DEBUG"
@@ -986,6 +1010,36 @@
       ],
       "Net-(TP801-Pad1)": [
         "HS_intrf"
+      ],
+      "Net-(U15-BTST)": [
+        "PWM"
+      ],
+      "Net-(U15-CBSET)": [
+        "PWM"
+      ],
+      "Net-(U15-ILIM)": [
+        "PWM"
+      ],
+      "Net-(U15-MID)": [
+        "PWM"
+      ],
+      "Net-(U15-PMID)": [
+        "PWM"
+      ],
+      "Net-(U15-SNS)": [
+        "PWM"
+      ],
+      "Net-(U15-STAT)": [
+        "PWM"
+      ],
+      "Net-(U15-SW)": [
+        "PWM"
+      ],
+      "Net-(U15-TS)": [
+        "PWM"
+      ],
+      "Net-(U15-~{PG})": [
+        "PWM"
       ],
       "Net-(U201-BATD{slash}CD)": [
         "PWM"
@@ -1023,6 +1077,15 @@
       "Net-(U3-ILIM)": [
         "PWM"
       ],
+      "Net-(U3-LDO1OUT)": [
+        "PWM"
+      ],
+      "Net-(U3-LDO2OUT)": [
+        "PWM"
+      ],
+      "Net-(U3-LDO6OUT)": [
+        "PWM"
+      ],
       "Net-(U3-PG_N)": [
         "PWM"
       ],
@@ -1030,6 +1093,21 @@
         "PWM"
       ],
       "Net-(U3-STAT)": [
+        "PWM"
+      ],
+      "Net-(U3-VLX1)": [
+        "PWM"
+      ],
+      "Net-(U3-VLX2)": [
+        "PWM"
+      ],
+      "Net-(U3-VLX3)": [
+        "PWM"
+      ],
+      "Net-(U3-VLX4)": [
+        "PWM"
+      ],
+      "Net-(U3-~{RST})": [
         "PWM"
       ],
       "Net-(U301B-DDR_ZQ)": [
@@ -1052,6 +1130,33 @@
       ],
       "Net-(U301F-USB_RREF)": [
         "HS_intrf"
+      ],
+      "Net-(U4B-DDR_ZQ)": [
+        "DDR_AC"
+      ],
+      "Net-(U4E-BOOT0)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "Net-(U4E-BOOT1)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "Net-(U4E-BOOT2)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "Net-(U4E-NRST_CORE)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "Net-(U4E-PWR_LP)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "Net-(U4F-USB_RREF)": [
+        "HS_intrf"
+      ],
+      "Net-(Y2-Tri-State)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "Net-(Y2-VDD)": [
+        "RCC_BOOT_RST_DEBUG"
       ],
       "Net-(Y701-Tri-State)": [
         "RCC_BOOT_RST_DEBUG"
@@ -1143,6 +1248,9 @@
       "VIN": [
         "PWM"
       ],
+      "VIN_5V": [
+        "PWM"
+      ],
       "VREF_DDR": [
         "PWM"
       ],
@@ -1164,6 +1272,15 @@
       ],
       "unconnected-(BT2-PadP)": [
         "PWM"
+      ],
+      "unconnected-(J2-Pad01)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "unconnected-(J2-Pad02)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "unconnected-(J2-Pad09)": [
+        "RCC_BOOT_RST_DEBUG"
       ],
       "unconnected-(J2-Pad1)": [
         "HS_intrf"
@@ -1300,6 +1417,30 @@
       "unconnected-(J701-Pad09)": [
         "RCC_BOOT_RST_DEBUG"
       ],
+      "unconnected-(L8-Pad1)": [
+        "PWM"
+      ],
+      "unconnected-(L8-Pad2)": [
+        "PWM"
+      ],
+      "unconnected-(U16-EN-Pad5)": [
+        "PWM"
+      ],
+      "unconnected-(U16-FB-Pad6)": [
+        "PWM"
+      ],
+      "unconnected-(U16-GND-Pad3)": [
+        "PWM"
+      ],
+      "unconnected-(U16-PG-Pad4)": [
+        "PWM"
+      ],
+      "unconnected-(U16-SW-Pad2)": [
+        "PWM"
+      ],
+      "unconnected-(U16-VIN-Pad1)": [
+        "PWM"
+      ],
       "unconnected-(U203-BSTOUT-Pad34)": [
         "PWM"
       ],
@@ -1315,13 +1456,34 @@
       "unconnected-(U203-VLXBST-Pad33)": [
         "PWM"
       ],
+      "unconnected-(U3-BSTOUT-Pad34)": [
+        "PWM"
+      ],
       "unconnected-(U3-QON-Pad12)": [
+        "PWM"
+      ],
+      "unconnected-(U3-SWIN-Pad37)": [
+        "PWM"
+      ],
+      "unconnected-(U3-SWOUT-Pad38)": [
+        "PWM"
+      ],
+      "unconnected-(U3-VBUSOTG-Pad35)": [
+        "PWM"
+      ],
+      "unconnected-(U3-VLXBST-Pad33)": [
         "PWM"
       ],
       "unconnected-(U301E-NJTRST-PadD12)": [
         "RCC_BOOT_RST_DEBUG"
       ],
       "unconnected-(U301F-OTG_VBUS-PadU15)": [
+        "HS_intrf"
+      ],
+      "unconnected-(U4E-NJTRST-PadD12)": [
+        "RCC_BOOT_RST_DEBUG"
+      ],
+      "unconnected-(U4F-OTG_VBUS-PadU15)": [
         "HS_intrf"
       ]
     },
@@ -1664,6 +1826,10 @@
     [
       "6d63342e-f801-4ef3-ba79-fab0475ee1d8",
       "LCD"
+    ],
+    [
+      "e858ea8a-86d0-4700-bf02-f0e8f8d24e5c",
+      "USB"
     ]
   ],
   "text_variables": {}
