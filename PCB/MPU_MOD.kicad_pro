@@ -1453,9 +1453,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "OUTPUT/MPU_MOD_new.step",
+      "step": "OUTPUT/MPU_MOD_lcd size.ply",
       "svg": "",
-      "vrml": ""
+      "vrml": "MPU_MOD.wrl"
     },
     "page_layout_descr_file": ""
   },
