@@ -6,4 +6,6 @@
   (lib (name "1-1734248-5")(type "KiCad")(uri "${KIPRJMOD}/lib/1-1734248-5.kicad_sym")(options "")(descr ""))
   (lib (name "RPi_Hat")(type "KiCad")(uri "${KIPRJMOD}/lib/RPi_Hat.kicad_sym")(options "")(descr ""))
   (lib (name "PCA9306DCURG4")(type "KiCad")(uri "${KIPRJMOD}/lib/PCA9306DCURG4.kicad_sym")(options "")(descr ""))
+  (lib (name "2-84953-0")(type "KiCad")(uri "${KIPRJMOD}/lib/2-84953-0.kicad_sym")(options "")(descr ""))
+  (lib (name "BAS70-06.215")(type "KiCad")(uri "${KIPRJMOD}/lib/BAS70-06.215.kicad_sym")(options "")(descr ""))
 )
