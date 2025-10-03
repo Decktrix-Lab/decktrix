@@ -1,7 +1,7 @@
 (version 1)
 (rule "target length and skew"
       (condition "A.hasNetclass('STM_DSI')")
-      (constraint length (min 30.2mm) (opt 30.4mm) (max 30.2mm))
+      (constraint length (min 28.5mm) (opt 28.69mm) (max 29mm))
       (constraint skew (max 0.1mm)))
 
 

@@ -1646,6 +1646,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 162.56) (xy 124.46 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b63470-8caa-47d1-b213-768db9e43cad")
+	)
+	(wire
+		(pts
 			(xy 142.24 35.56) (xy 142.24 36.83)
 		)
 		(stroke
@@ -1963,6 +1973,16 @@
 			(type default)
 		)
 		(uuid "9b0b6185-d86c-4cef-9540-e557e3f9ad1d")
+	)
+	(wire
+		(pts
+			(xy 124.46 171.45) (xy 124.46 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b84b998-a6fa-4605-8a1f-b9a2719abc87")
 	)
 	(wire
 		(pts
@@ -6403,7 +6423,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8"
+		(property "Value" "2"
 			(at 128.27 160.528 0)
 			(effects
 				(font
@@ -6493,6 +6513,15 @@
 			)
 		)
 		(property "TE_PURCHASE_URL" ""
+			(at 124.46 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC#" "C22977"
 			(at 124.46 158.75 0)
 			(effects
 				(font
@@ -7163,7 +7192,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8"
+		(property "Value" "4.7"
 			(at 128.27 169.418 0)
 			(effects
 				(font
@@ -7253,6 +7282,15 @@
 			)
 		)
 		(property "TE_PURCHASE_URL" ""
+			(at 124.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC#" "C23164"
 			(at 124.46 167.64 0)
 			(effects
 				(font
