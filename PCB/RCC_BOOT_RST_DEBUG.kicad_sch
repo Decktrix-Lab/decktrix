@@ -9763,6 +9763,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "powering from st link is wrong\n"
+		(exclude_from_sim no)
+		(at 380.492 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d9e30a31-7770-4fd3-b80e-5a2d22b869a8")
+	)
 	(junction
 		(at 297.18 52.07)
 		(diameter 0)

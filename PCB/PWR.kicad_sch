@@ -2980,6 +2980,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "150mA LDO max\n"
+		(exclude_from_sim no)
+		(at 395.986 235.712 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5490f92c-0998-46c9-90c6-e741b81d364c")
+	)
+	(text "350mA LDO max\n"
+		(exclude_from_sim no)
+		(at 396.748 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "63bde5d6-4282-4c26-b929-6566a4e8ca7d")
+	)
+	(text "50mA LDO max\n"
+		(exclude_from_sim no)
+		(at 396.748 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9177d2fc-6577-4118-a254-2cc043c4d3e1")
+	)
+	(text "120mA LDO max\n"
+		(exclude_from_sim no)
+		(at 398.272 190.754 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d800b938-d63d-453e-b895-aa3187e39989")
+	)
 	(text_box "Check V order"
 		(exclude_from_sim no)
 		(at 341.63 17.78 0)
@@ -3025,6 +3065,12 @@
 		(uuid "2885084d-059a-4096-b3f2-4f189d46f31d")
 	)
 	(junction
+		(at 375.92 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28bebce6-a665-4cb6-84fa-6578bcc31528")
+	)
+	(junction
 		(at 232.41 270.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3041,6 +3087,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fdc3429-aa61-49ff-9783-3ff5887ddb5d")
+	)
+	(junction
+		(at 377.19 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31b3ea92-11a7-4bb1-8491-8e983e7df7ab")
 	)
 	(junction
 		(at 375.92 149.86)
@@ -3642,7 +3694,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 233.68) (xy 372.11 233.68)
+			(xy 367.03 233.68) (xy 377.19 233.68)
 		)
 		(stroke
 			(width 0)
@@ -3782,6 +3834,16 @@
 	)
 	(wire
 		(pts
+			(xy 375.92 163.83) (xy 387.35 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "655c9ee7-93df-40a6-9049-5ec8028e2281")
+	)
+	(wire
+		(pts
 			(xy 360.68 49.53) (xy 364.49 49.53)
 		)
 		(stroke
@@ -3859,6 +3921,16 @@
 			(type default)
 		)
 		(uuid "736024b4-dc06-40a1-be74-a69c7cbddd35")
+	)
+	(wire
+		(pts
+			(xy 377.19 233.68) (xy 388.62 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75e82609-2f07-4dc8-9726-9f01149bcbd5")
 	)
 	(wire
 		(pts
@@ -4142,7 +4214,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 163.83) (xy 372.11 163.83)
+			(xy 367.03 163.83) (xy 375.92 163.83)
 		)
 		(stroke
 			(width 0)
@@ -7089,6 +7161,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+36V")
+		(at 387.35 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1412b027-8091-41c6-9473-9adc4305df1d")
+		(property "Reference" "#PWR03"
+			(at 387.35 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "2V8"
+			(at 387.35 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 387.35 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 387.35 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+36V\""
+			(at 387.35 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2012333b-645f-4be7-9634-d71128bf2c23")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5VA")
 		(at 295.91 195.58 0)
 		(unit 1)
@@ -7673,6 +7811,73 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 375.92 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ce8cbf9-6344-4ae3-ba14-73ee9c581bfe")
+		(property "Reference" "TP1"
+			(at 377.19 161.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 378.46 161.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "lib:TP_0.5"
+			(at 381 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 375.92 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b6825a1-159d-4e6a-894d-f8621ab9491c")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9003,6 +9208,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 377.19 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57f8e402-e265-4796-9d66-c6e159122653")
+		(property "Reference" "TP2"
+			(at 378.46 231.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 379.73 231.6479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "lib:TP_0.5"
+			(at 382.27 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 382.27 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 377.19 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e8f2a47-1616-4690-bdc9-4e479ad82a8e")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 306.07 182.88 0)
 		(unit 1)
@@ -10078,6 +10350,72 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+36V")
+		(at 388.62 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8673484f-ceae-4b11-9606-9bc4834d64d6")
+		(property "Reference" "#PWR04"
+			(at 388.62 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1V8"
+			(at 388.62 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 388.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 388.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+36V\""
+			(at 388.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8b8fd87-9d1b-4b90-a7ec-8a6f79e64681")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)

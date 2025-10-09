@@ -16896,7 +16896,7 @@
 		(fields_autoplaced yes)
 		(uuid "3607dd42-cf72-4ad3-bb05-f2928c343ef2")
 		(property "Reference" "U5"
-			(at 241.3 20.32 0)
+			(at 241.3 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16904,7 +16904,7 @@
 			)
 		)
 		(property "Value" "MT41K256M16TW-107_P"
-			(at 241.3 22.86 0)
+			(at 241.3 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16968,30 +16968,27 @@
 			)
 		)
 		(property "PARTREV" "P"
-			(at 241.3 81.28 0)
+			(at 241.3 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 241.3 81.28 0)
+			(at 241.3 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.20mm"
-			(at 241.3 81.28 0)
+			(at 241.3 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(pin "N8"

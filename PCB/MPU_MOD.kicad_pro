@@ -874,6 +874,12 @@
       "/RCC_BOOT_RST_DEBUG/T_JTMS{slash}T_SWDIO": [
         "RCC_BOOT_RST_DEBUG"
       ],
+      "1V8": [
+        "PWR"
+      ],
+      "2V8": [
+        "PWR"
+      ],
       "3V3": [
         "PWR"
       ],

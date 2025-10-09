@@ -21852,28 +21852,6 @@
 			)
 		)
 	)
-	(global_label "PMIC_WAKEUP"
-		(shape input)
-		(at 158.75 171.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bcfd0497-1019-4cea-96ff-aee78050aaa9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.6415 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "BAT_FUEL_RSDTIO"
 		(shape input)
 		(at 121.92 156.21 180)

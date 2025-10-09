@@ -1412,6 +1412,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "need cc control\n"
+		(exclude_from_sim no)
+		(at 325.882 89.154 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c0821ea0-38c9-472c-b703-8351ae59aee9")
+	)
 	(junction
 		(at 342.9 123.19)
 		(diameter 0)
