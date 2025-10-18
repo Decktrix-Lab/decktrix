@@ -922,6 +922,9 @@
       "DSI_D1_N": [
         "DSI_100ohm_DIFF"
       ],
+      "DSI_D1_P": [
+        "DSI_100ohm_DIFF"
+      ],
       "DSI_D2_P": [
         "DSI_100ohm_DIFF"
       ],

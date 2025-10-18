@@ -1,25 +1,13 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
-      "100_ohm_diff",
-      "DDR_AC",
-      "DDR_DQ",
-      "DSI_100ohm_DIFF",
-      "HS_intrf",
-      "MPU_PWR",
-      "PWM",
-      "PWR",
-      "RCC_BOOT_RST_DEBUG",
-      "SDMMC1",
-      "SDMMC2",
-      "USB",
-      "WIFI_BLE"
+      "PWM"
     ],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -58,7 +46,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0aaaaaaa_aaaabfef",
+    "visible_layers": "00000000_00000000_0aaaaaaa_aaaaabef",
     "zone_display_mode": 0
   },
   "git": {
@@ -109,14 +97,16 @@
       15
     ],
     "col_widths": [
-      163,
-      148,
+      162,
+      147,
       91,
-      68,
+      67,
       91,
       91,
       91,
       71,
+      91,
+      91,
       91,
       91,
       91,

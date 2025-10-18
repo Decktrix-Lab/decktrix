@@ -16499,6 +16499,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 63.5) (xy 95.25 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d08e4a2-c4d6-4d8b-98f6-9806320c4e27")
+	)
+	(wire
+		(pts
 			(xy 67.31 73.66) (xy 67.31 76.2)
 		)
 		(stroke
@@ -16599,6 +16609,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 60.96) (xy 105.41 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d8af58-ac4f-43f7-89a5-f8fe000d2c3e")
+	)
+	(wire
+		(pts
 			(xy 205.74 180.34) (xy 219.71 180.34)
 		)
 		(stroke
@@ -16646,6 +16666,26 @@
 			(type default)
 		)
 		(uuid "c0be3515-207a-4f3a-8eed-e2c3891f7dc3")
+	)
+	(wire
+		(pts
+			(xy 92.71 60.96) (xy 95.25 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5017fb6-95dc-48ce-9eea-407fef4c8571")
+	)
+	(wire
+		(pts
+			(xy 102.87 63.5) (xy 105.41 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfbde5cb-3e2c-497c-a673-38fdd9201b61")
 	)
 	(wire
 		(pts
@@ -22028,6 +22068,28 @@
 			)
 		)
 	)
+	(global_label "USB_CC2"
+		(shape input)
+		(at 92.71 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5ed2663-24e6-485a-a5ad-a8cfe00640ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.1977 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDMMC1_CK"
 		(shape input)
 		(at 162.56 81.28 0)
@@ -22046,6 +22108,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_CC1"
+		(shape input)
+		(at 92.71 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e901ad39-a298-4693-ab91-88ccaea6cff0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.1977 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -23478,6 +23562,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 99.06 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1d85ff7-65d8-4eab-9196-82bdbfcc66ca")
+		(property "Reference" "R4"
+			(at 94.488 62.484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 103.378 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 99.06 61.722 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 99.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" ""
+			(at 99.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d07c95d-b998-4a15-82fb-e9db405f51a1")
+		)
+		(pin "2"
+			(uuid "d49e59b0-5078-4c45-9ae9-568175aee14b")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/fb3927f9-2e38-40e3-962e-323526569853"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 67.31 80.01 90)
 		(unit 1)
@@ -23616,6 +23776,82 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/fb3927f9-2e38-40e3-962e-323526569853"
 					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7477a04-60ab-4ed5-8290-d5f7932a4844")
+		(property "Reference" "R3"
+			(at 94.488 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 103.124 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 99.06 59.182 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 99.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" ""
+			(at 99.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c71b4a13-4c96-49d5-91eb-8b56f9a7cb32")
+		)
+		(pin "2"
+			(uuid "803773f6-2bee-4a8e-a012-27ca354ac036")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/fb3927f9-2e38-40e3-962e-323526569853"
+					(reference "R3")
 					(unit 1)
 				)
 			)

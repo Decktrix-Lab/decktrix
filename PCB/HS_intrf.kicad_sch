@@ -8055,7 +8055,7 @@
 			)
 		)
 	)
-	(global_label "DSI_D2_P"
+	(global_label "DSI_D1_P"
 		(shape input)
 		(at 137.16 78.74 0)
 		(fields_autoplaced yes)
