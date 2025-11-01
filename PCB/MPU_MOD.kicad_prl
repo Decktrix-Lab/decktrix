@@ -4,9 +4,22 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
-      "PWM"
+      "100_ohm_diff",
+      "DDR_AC",
+      "DDR_DQ",
+      "DSI_100ohm_DIFF",
+      "HS_intrf",
+      "MPU_PWR",
+      "PWM",
+      "RCC_BOOT_RST_DEBUG",
+      "SDMMC1",
+      "SDMMC2",
+      "USB",
+      "WIFI_BLE"
     ],
-    "hidden_nets": [],
+    "hidden_nets": [
+      ""
+    ],
     "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
@@ -22,7 +35,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -46,7 +59,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0aaaaaaa_aaaabfef",
+    "visible_layers": "00000000_00000000_55555555_57555545",
     "zone_display_mode": 0
   },
   "git": {
@@ -97,16 +110,14 @@
       15
     ],
     "col_widths": [
-      162,
-      147,
+      163,
+      148,
       91,
-      67,
+      68,
       91,
       91,
       91,
       71,
-      91,
-      91,
       91,
       91,
       91,
