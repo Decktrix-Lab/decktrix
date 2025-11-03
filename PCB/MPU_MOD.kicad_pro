@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -560,8 +560,8 @@
       },
       {
         "bus_width": 12,
-        "diff_pair_gap": 0.12,
-        "diff_pair_width": 0.1019,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -653,7 +653,7 @@
       {
         "bus_width": 12,
         "diff_pair_gap": 0.12,
-        "diff_pair_width": 0.1252,
+        "diff_pair_width": 0.1184,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -926,7 +926,8 @@
         "DSI_100ohm_DIFF"
       ],
       "DSI_D2_P": [
-        "DSI_100ohm_DIFF"
+        "DSI_100ohm_DIFF",
+        "HS_intrf"
       ],
       "GND": [
         "DDR_AC",
@@ -1682,36 +1683,6 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "EU_ROHS_COMPLIANCE",
-          "name": "EU_ROHS_COMPLIANCE",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC#",
-          "name": "LCSC#",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC #",
-          "name": "LCSC #",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "TE_PURCHASE_URL",
-          "name": "TE_PURCHASE_URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "COMMENT",
-          "name": "COMMENT",
           "show": false
         }
       ],

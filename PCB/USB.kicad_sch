@@ -1630,6 +1630,14 @@
 		(color 0 0 0 0)
 		(uuid "d67eec9b-7cd2-4143-a8e7-10c901368557")
 	)
+	(no_connect
+		(at 285.75 128.27)
+		(uuid "073cc9e4-ebcf-4075-b594-c97f76d709d4")
+	)
+	(no_connect
+		(at 321.31 120.65)
+		(uuid "efdace4f-56d5-4b18-b675-a0a4d97bce3f")
+	)
 	(wire
 		(pts
 			(xy 280.67 113.03) (xy 285.75 113.03)

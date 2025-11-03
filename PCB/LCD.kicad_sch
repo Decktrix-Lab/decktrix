@@ -3411,16 +3411,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 154.94) (xy 96.52 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf5752b1-beab-4fe0-8986-09477b4c4bf6")
-	)
-	(wire
-		(pts
 			(xy 44.45 151.13) (xy 55.88 151.13)
 		)
 		(stroke
@@ -3631,6 +3621,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 154.94) (xy 105.41 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06939ee-eca0-4324-82ed-6f7c1f373be6")
+	)
+	(wire
+		(pts
 			(xy 254 115.57) (xy 264.16 115.57)
 		)
 		(stroke
@@ -3820,22 +3820,22 @@
 		(uuid "fd0afbbf-b412-4cd4-afe2-a25f772234c5")
 	)
 	(label "LED_K"
-		(at 99.06 154.94 0)
+		(at 105.41 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "05342ca3-d4c7-4689-99c5-989d3db7628d")
 	)
 	(label "LED_A"
-		(at 127 134.62 0)
+		(at 133.35 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "0a310ef4-af04-41b7-a7e3-f1da3dd8fb8d")
 	)
