@@ -7372,6 +7372,48 @@
 		)
 	)
 	(sheet
+		(at 189.23 117.475)
+		(size 53.975 31.115)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4988eac5-6207-4695-88c2-59584fd8c847")
+		(property "Sheetname" "WIFI"
+			(at 189.23 116.7634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "WIFI.kicad_sch"
+			(at 189.23 149.1746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 323.85 115.57)
 		(size 54.61 31.75)
 		(exclude_from_sim no)

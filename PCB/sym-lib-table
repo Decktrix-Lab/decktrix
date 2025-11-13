@@ -36,4 +36,7 @@
   (lib (name "BQ25887RGER")(type "KiCad")(uri "${KIPRJMOD}/lib/BQ25887RGER.kicad_sym")(options "")(descr ""))
   (lib (name "TPS563252DRLR")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS563252DRLR.kicad_sym")(options "")(descr ""))
   (lib (name "IHLP1210BZEZ3R3M5A")(type "KiCad")(uri "${KIPRJMOD}/lib/IHLP1210BZEZ3R3M5A.kicad_sym")(options "")(descr ""))
+  (lib (name "MAYA-W166-00B")(type "KiCad")(uri "${KIPRJMOD}/lib/MAYA-W166-00B.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS62840DLCR")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS62840DLCR.kicad_sym")(options "")(descr ""))
+  (lib (name "DFE201612E-2R2M_P2")(type "KiCad")(uri "${KIPRJMOD}/lib/DFE201612E-2R2M_P2.kicad_sym")(options "")(descr ""))
 )

@@ -223,7 +223,6 @@
       "unconnected-(U4C-PA10-PadT16)",
       "unconnected-(U4C-PB0-PadW3)",
       "unconnected-(U4D-PE13-PadC2)",
-      "unconnected-(U4C-PD6-PadE3)",
       "unconnected-(U4E-NJTRST-PadD12)",
       "Net-(U4C-PA5)",
       "unconnected-(U4C-PD3-PadC6)",
@@ -264,7 +263,7 @@
       "LCD_TP_RST",
       "unconnected-(U4D-PG6-PadA6)"
     ],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -279,7 +278,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -303,7 +302,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_55555555_57555575",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -354,14 +353,16 @@
       15
     ],
     "col_widths": [
-      163,
-      148,
+      162,
+      147,
       91,
-      68,
+      67,
       91,
       91,
       91,
       71,
+      91,
+      91,
       91,
       91,
       91,

@@ -16331,6 +16331,17 @@
 		)
 		(uuid "52ce7411-aa41-49e0-aacb-01dff3a25b7d")
 	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 162.814 143.764 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 41 58 1)
+			)
+		)
+		(uuid "63bf3e64-43a5-472c-a4f4-e2b400e5149b")
+	)
 	(junction
 		(at 78.74 83.82)
 		(diameter 0)
@@ -16454,10 +16465,6 @@
 	(no_connect
 		(at 105.41 96.52)
 		(uuid "aee96100-266f-427b-9f86-abf7b3289e5b")
-	)
-	(no_connect
-		(at 162.56 109.22)
-		(uuid "ba402b44-17a5-4958-ad51-1ae888360175")
 	)
 	(no_connect
 		(at 271.78 107.95)
@@ -19123,7 +19130,7 @@
 				)
 				(uuid "827692da-920b-44ba-90a3-ba3d5f2cf84c")
 			)
-			(table_cell "PA8"
+			(table_cell "PD6"
 				(exclude_from_sim no)
 				(at 354.33 127 0)
 				(size 24.13 2.54)
@@ -19140,7 +19147,7 @@
 				)
 				(uuid "ac146f43-9e6e-4788-ac99-f7c74c8c86c0")
 			)
-			(table_cell "V2"
+			(table_cell "E3"
 				(exclude_from_sim no)
 				(at 378.46 127 0)
 				(size 24.13 2.54)
@@ -21050,7 +21057,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
@@ -21156,22 +21162,22 @@
 	)
 	(global_label "I2S3_SDO"
 		(shape input)
-		(at 105.41 71.12 180)
+		(at 162.56 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "149d9b40-16c6-4f52-bdac-4f9fedac04cb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.4139 71.12 0)
+			(at 174.5561 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -21296,7 +21302,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
@@ -21341,7 +21346,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
@@ -21488,6 +21492,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WIFI_SLP_CLK"
+		(shape input)
+		(at 105.41 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60f5166f-6d3f-400d-93a7-38b977996012")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.6643 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -21950,7 +21976,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
@@ -22019,7 +22044,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
@@ -22132,7 +22156,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
@@ -22309,7 +22332,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 42 55 255 1)
 			)
 			(justify right)
 		)
