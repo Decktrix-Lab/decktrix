@@ -19130,7 +19130,7 @@
 				)
 				(uuid "827692da-920b-44ba-90a3-ba3d5f2cf84c")
 			)
-			(table_cell "PD6"
+			(table_cell "PA8"
 				(exclude_from_sim no)
 				(at 354.33 127 0)
 				(size 24.13 2.54)
@@ -19147,7 +19147,7 @@
 				)
 				(uuid "ac146f43-9e6e-4788-ac99-f7c74c8c86c0")
 			)
-			(table_cell "E3"
+			(table_cell "B8"
 				(exclude_from_sim no)
 				(at 378.46 127 0)
 				(size 24.13 2.54)
@@ -21162,22 +21162,22 @@
 	)
 	(global_label "I2S3_SDO"
 		(shape input)
-		(at 162.56 109.22 0)
+		(at 105.41 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "149d9b40-16c6-4f52-bdac-4f9fedac04cb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 174.5561 109.22 0)
+			(at 93.4139 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -21498,7 +21498,7 @@
 	)
 	(global_label "WIFI_SLP_CLK"
 		(shape input)
-		(at 105.41 71.12 180)
+		(at 73.66 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21508,7 +21508,7 @@
 		)
 		(uuid "60f5166f-6d3f-400d-93a7-38b977996012")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.6643 71.12 0)
+			(at 57.9143 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)

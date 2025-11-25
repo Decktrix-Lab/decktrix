@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 6,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -268,8 +268,7 @@
       "unconnected-(U402-NC__2-PadL1)",
       "unconnected-(U402-A15-PadM7)",
       "unconnected-(U402-NC__1-PadJ9)",
-      "unconnected-(U501-I{slash}O_4-Pad5)",
-      "WIFI_SLP_CLK"
+      "unconnected-(U501-I{slash}O_4-Pad5)"
     ],
     "high_contrast_mode": 1,
     "net_color_mode": 1,
@@ -312,7 +311,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_f7ffbfef",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_f7ffbbef",
     "zone_display_mode": 0
   },
   "git": {
