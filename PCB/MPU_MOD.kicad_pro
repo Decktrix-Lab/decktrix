@@ -742,11 +742,11 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "SDMMC2",
+        "name": "SDMMC3",
         "pcb_color": "rgb(247, 255, 121)",
         "priority": 9,
         "schematic_color": "rgb(88, 208, 255)",
-        "track_width": 0.1443,
+        "track_width": 0.1184,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -1308,6 +1308,24 @@
       ],
       "SDMMC1_D3": [
         "SDMMC1"
+      ],
+      "SDMMC3_CK": [
+        "SDMMC3"
+      ],
+      "SDMMC3_CMD": [
+        "SDMMC3"
+      ],
+      "SDMMC3_D0": [
+        "SDMMC3"
+      ],
+      "SDMMC3_D1": [
+        "SDMMC3"
+      ],
+      "SDMMC3_D2": [
+        "SDMMC3"
+      ],
+      "SDMMC3_D3": [
+        "SDMMC3"
       ],
       "SYS_I2C4_SCL": [
         "PWR"

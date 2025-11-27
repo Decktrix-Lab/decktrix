@@ -40,4 +40,5 @@
   (lib (name "TPS62840DLCR")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS62840DLCR.kicad_sym")(options "")(descr ""))
   (lib (name "DFE201612E-2R2M_P2")(type "KiCad")(uri "${KIPRJMOD}/lib/DFE201612E-2R2M_P2.kicad_sym")(options "")(descr ""))
   (lib (name "SM3ZS067U310AMR1200")(type "KiCad")(uri "${KIPRJMOD}/lib/SM3ZS067U310AMR1200.kicad_sym")(options "")(descr ""))
+  (lib (name "SIT1533AI-H4-DCC-32.768E")(type "KiCad")(uri "${KIPRJMOD}/lib/SIT1533AI-H4-DCC-32.768E.kicad_sym")(options "")(descr ""))
 )

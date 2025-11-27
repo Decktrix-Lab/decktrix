@@ -21807,6 +21807,28 @@
 			)
 		)
 	)
+	(global_label "1V8_WIFI_EN"
+		(shape input)
+		(at 162.56 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e5eecde-82e5-408c-88c5-9acd41be1c27")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 177.2171 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LCD_RST"
 		(shape input)
 		(at 162.56 121.92 0)
