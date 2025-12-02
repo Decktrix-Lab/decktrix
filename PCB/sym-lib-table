@@ -42,4 +42,6 @@
   (lib (name "SM3ZS067U310AMR1200")(type "KiCad")(uri "${KIPRJMOD}/lib/SM3ZS067U310AMR1200.kicad_sym")(options "")(descr ""))
   (lib (name "SIT1533AI-H4-DCC-32.768E")(type "KiCad")(uri "${KIPRJMOD}/lib/SIT1533AI-H4-DCC-32.768E.kicad_sym")(options "")(descr ""))
   (lib (name "B3U-3000P")(type "KiCad")(uri "${KIPRJMOD}/lib/B3U-3000P.kicad_sym")(options "")(descr ""))
+  (lib (name "M40-3101045R")(type "KiCad")(uri "${KIPRJMOD}/lib/M40-3101045R.kicad_sym")(options "")(descr ""))
+  (lib (name "M40-3100645R")(type "KiCad")(uri "${KIPRJMOD}/lib/M40-3100645R.kicad_sym")(options "")(descr ""))
 )

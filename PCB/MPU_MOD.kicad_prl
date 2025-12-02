@@ -204,10 +204,8 @@
       "unconnected-(U4C-PC6-PadD10)",
       "unconnected-(U4C-PA3-PadP3)",
       "unconnected-(U4C-PC0-PadT7)",
-      "unconnected-(U4C-PA6-PadT5)",
       "unconnected-(U4D-PG12-PadF1)",
       "unconnected-(U4C-PD15-PadG1)",
-      "unconnected-(U4C-PB1-PadV3)",
       "unconnected-(U4D-PF11-PadU5)",
       "unconnected-(U4D-PE4-PadB11)",
       "unconnected-(U4D-PG14-PadU1)",
@@ -216,14 +214,12 @@
       "unconnected-(U4D-PE5-PadB7)",
       "unconnected-(U4D-PF10-PadU9)",
       "unconnected-(U4C-PA10-PadT16)",
-      "unconnected-(U4C-PB0-PadW3)",
       "unconnected-(U4E-NJTRST-PadD12)",
       "Net-(U4C-PA5)",
       "unconnected-(U4D-PG9-PadT14)",
       "unconnected-(U4C-PC7-PadA9)",
       "unconnected-(U4D-PG10-PadV7)",
       "unconnected-(U4C-PB10-PadW5)",
-      "unconnected-(U4D-PE9-PadW7)",
       "unconnected-(U4D-PG8-PadU7)",
       "unconnected-(U4C-PC3-PadT3)",
       "Net-(U901A-SD_DAT0)",
@@ -264,7 +260,7 @@
       "unconnected-(U402-NC__1-PadJ9)",
       "unconnected-(U501-I{slash}O_4-Pad5)"
     ],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -305,7 +301,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_aaaaaaa0_a2aabfff",
+    "visible_layers": "ffffffff_ffffffff_aaaaaaa0_a2aabbef",
     "zone_display_mode": 0
   },
   "git": {

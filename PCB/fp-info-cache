@@ -1,4 +1,4 @@
-26119596495429237
+26123125519237461
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -104244,6 +104244,13 @@ MOLEX_73412-0110
 4
 4
 lib
+PinHeader_2x10_P1.00mm_Vertical_SMD
+surface-mounted straight pin header, 2x10, 1.00mm pitch, double rows
+Surface mounted pin header SMD 2x10 1.00mm double row
+0
+20
+20
+lib
 QFN40P600X500X80-45N
 
 
@@ -104306,6 +104313,13 @@ BGA 354 0.8
 0
 354
 354
+lib
+SW_B3U-3000P
+
+
+0
+2
+2
 lib
 SW_DS04-254-2-03BK-SMT
 
