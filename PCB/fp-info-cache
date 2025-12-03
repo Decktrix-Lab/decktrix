@@ -1,4 +1,4 @@
-26123125519237461
+26126654834298323
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -104166,6 +104166,20 @@ GCT_USB4510-03-1-A_REVA
 0
 16
 16
+lib
+HARWIN_M40-3100645R
+
+
+0
+12
+12
+lib
+HARWIN_M40-3101045R
+
+
+0
+20
+20
 lib
 HIROSE_FH12-30S-0.5SH_55_
 

@@ -9028,6 +9028,293 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PTVS3V3S1UR:PTVS3V3S1UR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -5.08 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "PTVS3V3S1UR:TVS_PTVS3V3S1UR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "NXP Semiconductors"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1.1 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/PTVS3V3S1UR/NXP+Semiconductors/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "Rev. 3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTVS3V3S1UR/NXP+Semiconductors/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "PTVS3V3S1UR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "TVS Diode Single Uni-Dir 3.3V 400W Automotive 2-Pin SOD-123W T/R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Nexperia"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "PTVS3V3S1UR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PTVS3V3S1UR_1_0"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+36V"
 			(power)
 			(pin_numbers
@@ -9370,6 +9657,12 @@
 		(uuid "99312b5c-f4fb-4aa0-9af1-4e52890c6483")
 	)
 	(junction
+		(at 370.84 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cb5aabc-4b3a-4fb5-8e83-88a58ee15a14")
+	)
+	(junction
 		(at 250.19 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9410,12 +9703,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "deafe125-17dc-445d-a253-9b103e4e4481")
-	)
-	(junction
-		(at 320.04 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e03d3564-dbc4-4896-ae3a-0b7a2c28cd71")
 	)
 	(junction
 		(at 276.86 116.84)
@@ -9577,6 +9864,16 @@
 	)
 	(wire
 		(pts
+			(xy 370.84 114.3) (xy 396.24 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35e17d2d-7733-4a3d-b593-91265a8097a0")
+	)
+	(wire
+		(pts
 			(xy 180.34 111.76) (xy 173.99 111.76)
 		)
 		(stroke
@@ -9587,7 +9884,7 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 114.3) (xy 365.76 114.3)
+			(xy 358.14 114.3) (xy 370.84 114.3)
 		)
 		(stroke
 			(width 0)
@@ -9604,6 +9901,16 @@
 			(type default)
 		)
 		(uuid "37636032-0ee3-49fd-acb8-2cf13f8457fd")
+	)
+	(wire
+		(pts
+			(xy 396.24 124.46) (xy 396.24 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38c4fc9e-703d-47a4-b3f7-d7a33f159f63")
 	)
 	(wire
 		(pts
@@ -9677,16 +9984,6 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 167.64) (xy 320.04 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f666953-089b-4356-aed1-4771ec7574d3")
-	)
-	(wire
-		(pts
 			(xy 139.7 118.11) (xy 180.34 118.11)
 		)
 		(stroke
@@ -9714,16 +10011,6 @@
 			(type default)
 		)
 		(uuid "507bc5eb-f8ef-4561-929b-d0d16ec92717")
-	)
-	(wire
-		(pts
-			(xy 320.04 182.88) (xy 320.04 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5119671b-028a-4fc9-801a-7ec5f708fbc4")
 	)
 	(wire
 		(pts
@@ -9917,16 +10204,6 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 167.64) (xy 365.76 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f2bc1b1-8fa7-497f-8371-2365e09ee36c")
-	)
-	(wire
-		(pts
 			(xy 381 125.73) (xy 381 124.46)
 		)
 		(stroke
@@ -9944,16 +10221,6 @@
 			(type default)
 		)
 		(uuid "816ad8be-163d-4ea9-b6b2-773a55424afe")
-	)
-	(wire
-		(pts
-			(xy 320.04 182.88) (xy 336.55 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83b0f03a-6e16-46cf-a928-686e3ffd516d")
 	)
 	(wire
 		(pts
@@ -10047,16 +10314,6 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 167.64) (xy 365.76 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "950496e9-e70d-4fef-b44c-161639563d90")
-	)
-	(wire
-		(pts
 			(xy 280.67 27.94) (xy 280.67 30.48)
 		)
 		(stroke
@@ -10074,16 +10331,6 @@
 			(type default)
 		)
 		(uuid "976bc9c1-f2e0-4da2-9d6d-5c7447fd7932")
-	)
-	(wire
-		(pts
-			(xy 336.55 180.34) (xy 336.55 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "979acf58-b1fb-40a6-af46-8b569559c620")
 	)
 	(wire
 		(pts
@@ -10114,6 +10361,16 @@
 			(type default)
 		)
 		(uuid "9c77e56e-2fc9-417f-b9d4-5d091cd45f9f")
+	)
+	(wire
+		(pts
+			(xy 370.84 110.49) (xy 370.84 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f09ac43-1d92-4a22-bce0-2d4dafcaae5d")
 	)
 	(wire
 		(pts
@@ -11377,6 +11634,260 @@
 		)
 	)
 	(symbol
+		(lib_id "PTVS3V3S1UR:PTVS3V3S1UR")
+		(at 396.24 119.38 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13af5592-5800-4ccd-b0bd-e8ba2f2d8f2b")
+		(property "Reference" "D6"
+			(at 393.7 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DF2S5M4CT,L3F"
+			(at 400.558 120.142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "NXP Semiconductors"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PTVS3V3S1UR/NXP+Semiconductors/view-part/?ref=eda"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "Rev. 3"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTVS3V3S1UR/NXP+Semiconductors/view-part/?ref=snap"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "TVS Diode Single Uni-Dir 3.3V 400W Automotive 2-Pin SOD-123W T/R"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Nexperia"
+			(at 396.24 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "BUILT_BY" ""
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "COPYRIGHT" ""
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C556302"
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOURCELIBRARY" ""
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VENDOR" ""
+			(at 396.24 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "684f70d8-680b-43d0-a077-6ff0ad3a3f5e")
+		)
+		(pin "1"
+			(uuid "c20743be-8de5-475d-a72a-45edb0642af4")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 294.64 41.91 0)
 		(unit 1)
@@ -12150,7 +12661,7 @@
 	)
 	(symbol
 		(lib_id "power:+36V")
-		(at 336.55 180.34 0)
+		(at 370.84 110.49 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12160,7 +12671,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d76cb7d-22f8-445f-b34e-c60001541bca")
 		(property "Reference" "#PWR0719"
-			(at 336.55 184.15 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12169,7 +12680,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 336.55 175.26 0)
+			(at 370.84 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12177,7 +12688,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 336.55 180.34 0)
+			(at 370.84 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12186,7 +12697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 336.55 180.34 0)
+			(at 370.84 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12195,7 +12706,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+36V\""
-			(at 336.55 180.34 0)
+			(at 370.84 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16934,6 +17445,72 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 396.24 135.89 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d88359e6-574e-4495-8219-b2cad3c10ba1")
+		(property "Reference" "#PWR027"
+			(at 396.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 396.24 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 396.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 396.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 396.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7a17737-f41c-4df3-a921-cba7380e90b1")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/89de852b-0235-4524-80ff-6a19f9022d3f"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)

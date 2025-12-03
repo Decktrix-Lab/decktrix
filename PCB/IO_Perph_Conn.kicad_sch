@@ -18567,6 +18567,12 @@
 		(uuid "0b6539ca-ba9b-44fa-8984-a2862eb5cdcb")
 	)
 	(junction
+		(at 68.58 276.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24825ba4-75f2-452e-b075-1a36f3e3755b")
+	)
+	(junction
 		(at 237.49 236.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -18693,10 +18699,6 @@
 		(uuid "5e5db022-7469-4dfd-9b35-4bc9b6599f29")
 	)
 	(no_connect
-		(at 271.78 92.71)
-		(uuid "64921dbb-731b-45c3-aa15-62343cb1d1c3")
-	)
-	(no_connect
 		(at 162.56 55.88)
 		(uuid "64a7f85e-21e8-4e8c-99c0-9816d84dd3e5")
 	)
@@ -18814,13 +18816,23 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 238.76) (xy 74.93 248.92)
+			(xy 74.93 238.76) (xy 74.93 245.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0a5e0a49-a456-440e-be9c-620374551b83")
+	)
+	(wire
+		(pts
+			(xy 67.31 276.86) (xy 68.58 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "132f194c-51d9-48a1-8749-cf37938ff8df")
 	)
 	(wire
 		(pts
@@ -18994,6 +19006,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 275.59) (xy 67.31 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c77a445-0088-41c7-9dc8-ba95127408e7")
+	)
+	(wire
+		(pts
 			(xy 46.99 73.66) (xy 46.99 76.2)
 		)
 		(stroke
@@ -19054,7 +19076,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 233.68) (xy 82.55 248.92)
+			(xy 82.55 233.68) (xy 82.55 245.11)
 		)
 		(stroke
 			(width 0)
@@ -19104,6 +19126,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 276.86) (xy 69.85 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75231caf-548f-466b-8bb9-91415cedd5be")
+	)
+	(wire
+		(pts
 			(xy 201.93 182.88) (xy 212.09 182.88)
 		)
 		(stroke
@@ -19134,6 +19166,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 278.13) (xy 68.58 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "821b71f7-5f9a-4a1f-99fe-8850234c2e93")
+	)
+	(wire
+		(pts
 			(xy 57.15 233.68) (xy 82.55 233.68)
 		)
 		(stroke
@@ -19161,6 +19203,16 @@
 			(type default)
 		)
 		(uuid "88b30bda-1e60-4eee-af96-c5c0da7a0ca7")
+	)
+	(wire
+		(pts
+			(xy 68.58 276.86) (xy 69.85 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ae72fdf-15c9-4ec0-b216-d09096bdc861")
 	)
 	(wire
 		(pts
@@ -19204,7 +19256,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 241.3) (xy 72.39 248.92)
+			(xy 72.39 241.3) (xy 72.39 245.11)
 		)
 		(stroke
 			(width 0)
@@ -19414,7 +19466,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 236.22) (xy 85.09 248.92)
+			(xy 85.09 236.22) (xy 85.09 245.11)
 		)
 		(stroke
 			(width 0)
@@ -24421,6 +24473,28 @@
 			)
 		)
 	)
+	(global_label "WIFI_PDn"
+		(shape input)
+		(at 271.78 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "64559485-19c3-43b8-a71e-2b60c32b5f73")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 283.1714 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "UART7_RX_STM"
 		(shape input)
 		(at 227.33 92.71 180)
@@ -27986,7 +28060,7 @@
 	)
 	(symbol
 		(lib_id "HSP051-4M10:HSP051-4M10")
-		(at 77.47 264.16 270)
+		(at 77.47 260.35 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27994,7 +28068,7 @@
 		(dnp no)
 		(uuid "84088281-4f87-43d4-95e7-49d6150346e3")
 		(property "Reference" "U3"
-			(at 95.25 264.16 0)
+			(at 95.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28002,7 +28076,7 @@
 			)
 		)
 		(property "Value" "HSP051-4M10"
-			(at 92.71 264.16 0)
+			(at 92.71 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28010,7 +28084,7 @@
 			)
 		)
 		(property "Footprint" "lib:IC_HSP051-4M10"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28020,7 +28094,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28029,7 +28103,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28038,7 +28112,7 @@
 			)
 		)
 		(property "MF" "STMicroelectronics"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28048,7 +28122,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "0.5mm"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28058,7 +28132,7 @@
 			)
 		)
 		(property "Package" "UQFN-10 STMicroelectronics"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28068,7 +28142,7 @@
 			)
 		)
 		(property "Description_1" "10V Clamp 1A (8/20µs) Ipp Tvs Diode Surface Mount 10-UQFN (2.5x1)"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28078,7 +28152,7 @@
 			)
 		)
 		(property "MANUFACTURER" "STMicroelectronics"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28088,7 +28162,7 @@
 			)
 		)
 		(property "Mouser P/N" "511-HSP051-4M10"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28097,7 +28171,7 @@
 			)
 		)
 		(property "BUILT_BY" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28106,7 +28180,7 @@
 			)
 		)
 		(property "COPYRIGHT" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28115,7 +28189,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1973641"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28124,7 +28198,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28133,7 +28207,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28142,7 +28216,7 @@
 			)
 		)
 		(property "SOURCELIBRARY" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28151,7 +28225,7 @@
 			)
 		)
 		(property "VENDOR" ""
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28160,7 +28234,7 @@
 			)
 		)
 		(property "REC P/N" " HSP051-4M10"
-			(at 77.47 264.16 0)
+			(at 77.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28867,6 +28941,71 @@
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/fb3927f9-2e38-40e3-962e-323526569853"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 278.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9c86327-9a01-4b09-aa4c-06406e5adb60")
+		(property "Reference" "#PWR028"
+			(at 68.58 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "938c9f8d-21ac-4375-bb6b-10e4cb9ec563")
+		)
+		(instances
+			(project "MPU_MOD"
+				(path "/65890f61-d586-475b-928a-b635a5e4e59e/fb3927f9-2e38-40e3-962e-323526569853"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
