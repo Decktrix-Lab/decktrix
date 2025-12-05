@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 12,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -332,7 +332,7 @@
       "MOD_ADC9{slash}TIM3_CH3",
       "unconnected-(U4D-PE9-PadW7)"
     ],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 2,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,

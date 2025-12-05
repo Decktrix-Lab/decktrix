@@ -2596,7 +2596,7 @@
 		)
 		(uuid "fd88ff70-9122-48d1-9c45-4b5de29d632b")
 	)
-	(global_label "USB_CC1"
+	(global_label "USB_M_CC1"
 		(shape input)
 		(at 88.9 118.11 180)
 		(fields_autoplaced yes)
@@ -2608,7 +2608,7 @@
 		)
 		(uuid "068d9dc3-1a50-4e92-90c8-8622c3fee9ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.3877 118.11 0)
+			(at 74.9687 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
