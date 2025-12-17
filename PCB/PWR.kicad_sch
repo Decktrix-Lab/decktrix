@@ -3283,6 +3283,16 @@
 		)
 		(uuid "9177d2fc-6577-4118-a254-2cc043c4d3e1")
 	)
+	(text "only PC13\n"
+		(exclude_from_sim no)
+		(at 210.058 205.232 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "97680452-57d4-4c63-8d80-aa8f82d1aacb")
+	)
 	(text "ENABLE later than  1.15 ms after 3.3V"
 		(exclude_from_sim no)
 		(at 70.104 55.88 0)
@@ -3293,6 +3303,17 @@
 		)
 		(uuid "a17ea520-b3c8-4f34-a93b-f78b3e7a39d9")
 	)
+	(text "CHECKED 2.0 MG\n"
+		(exclude_from_sim no)
+		(at 175.514 139.7 0)
+		(effects
+			(font
+				(size 12.7 12.7)
+				(color 97 255 51 1)
+			)
+		)
+		(uuid "ace43278-1b61-4976-9dd7-3e7d97d9fe5c")
+	)
 	(text "120mA LDO max\n"
 		(exclude_from_sim no)
 		(at 398.272 190.754 0)
@@ -3302,6 +3323,16 @@
 			)
 		)
 		(uuid "d800b938-d63d-453e-b895-aa3187e39989")
+	)
+	(text "only PA0\n\n"
+		(exclude_from_sim no)
+		(at 267.97 235.204 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fb110815-064e-4025-ab25-7cfa0b0d48d3")
 	)
 	(junction
 		(at 386.08 63.5)
