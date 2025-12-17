@@ -1,0 +1,10 @@
+debootstrap/
+debootstrap-prefetched/
+deploy/
+toolchain/extracted
+
+# Kicad files
+*.csv
+*.tsv
+*.xml
+*.bak

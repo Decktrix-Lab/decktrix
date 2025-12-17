@@ -1,0 +1,9 @@
+[submodule "bsp/linux/linux-v6.17"]
+	path = board/linux/linux-v6.17
+	url = git@github.com:torvalds/linux.git
+[submodule "bsp/tfa/trusted-firmware-a-v2.10.19"]
+	path = board/tfa/trusted-firmware-a-v2.10.19
+	url = git@github.com:TrustedFirmware-A/trusted-firmware-a.git
+[submodule "bsp/u-boot/u-boot-v2025.04"]
+	path = board/u-boot/u-boot-v2025.04
+	url = git@github.com:u-boot/u-boot.git
