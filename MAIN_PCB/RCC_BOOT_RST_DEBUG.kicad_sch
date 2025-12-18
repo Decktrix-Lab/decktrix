@@ -5,7 +5,12 @@
 	(uuid "53a1b0e3-837c-4cee-a341-a0b3b0084045")
 	(paper "A3")
 	(title_block
+		(company "COMPANY_NAME")
 		(comment 1 "Author: Mykola Grodskyi")
+		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
+		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
+		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
+		(comment 5 "Source: github.com/")
 	)
 	(lib_symbols
 		(symbol "B3U-3000P:B3U-3000P"

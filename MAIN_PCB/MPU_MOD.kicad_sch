@@ -5,7 +5,12 @@
 	(uuid "65890f61-d586-475b-928a-b635a5e4e59e")
 	(paper "A3")
 	(title_block
+		(company "COMPANY_NAME")
 		(comment 1 "Author: Mykola Grodskyi")
+		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
+		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
+		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
+		(comment 5 "Source: github.com/")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
@@ -12385,4 +12390,25 @@
 		)
 	)
 	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "DRW_temp.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WBlCuUVACbgZCEA1TZqxSYpBF8GGYqrWTcBDIEjUINrUFyHRrZZ+u8GCiZbAFUAXgCUY7Eb
+				/8Nb1P/aI/V3OHnT6mPm7E7U/AaHhlsn9c6DWYTHHBrurI5LufwR/gIAEBCQoMclnRiloTKINSFJ
+				+dbfbTxijuGqtVaWWh91LjcOFQABQfkRacDuy59CnkdrVQD8qDfVr/VSk1Sl/Ef4vb+0utbpJY32
+				N2b/DpPY6cbj1t+HTp1Sn0+HnuPw8zvuvIMjSO/OKf8Ri6L+KKXTunVwxNbeamKVYwk7aa3+u/uS
+				CuBG+Xfi1hvfmOwoFY2SUXApW8BQe46wG0arhHDluih/1IlwjFbJZLNUNIyGkS22h4lw553Xaa3Y
+				TLh1nTQuY2i0i8WymQiuwN8x9t6kjX/En5M2+UuQ51qvGclep14BgcGyELOyjmHYvK5N2ItV1iKs
+				ZSetqk3MylJLrapyEi1CGjtS1AtqM5KMEpksLAeXUThNc1iuq5qISCbRIFsjN74cdp/dYN1ak1YN
+				wm1c+Jmz1VYw+2PcsQwOp0GAgaDBQIccmhIRSZIkHXBEpOaqGyjgzs4ZGyz8sNfxNc9ii5QvUs9Y
+				RgB4zIRzAW8KvSXuNBhIYNDxjB0Bfc7ELNk0TK7wH+Gys+9lyqfkHeQCKw+CS0Jny0OQQqg5pmcn
+				nkw4cvu6PPNd/GFyH8r1HkIWYhJr2AUAfASFPsed7cXnrCvPjhAI6NNTAk8QNsSiomAmV5ZmQNFL
+				KYrJsnHqID7gfs7U0mOb6UP2oA4DWvrUg6qiNA25bCz3EdVMemroDwtCtIf0F5WKvHKGA/r2Ue7D
+				CoLMIqzGojNfewJ9Yw03bYKA5qokSQ3a+vIFPUSYO935cJEvZpNA+9WHIarns/8gKVNFB2ktS8vE
+				jAw9xTOGNSo06Wk6c9a/4bgI2shHA/wx6FU=|
+			)
+			(checksum "3D64512B81BB96C8D2B410F2295823A1")
+		)
+	)
 )

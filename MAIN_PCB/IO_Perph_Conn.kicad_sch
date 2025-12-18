@@ -5,7 +5,12 @@
 	(uuid "1ab4311e-2bd0-440b-bf72-70bdc634194b")
 	(paper "A3")
 	(title_block
+		(company "COMPANY_NAME")
 		(comment 1 "Author: Mykola Grodskyi")
+		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
+		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
+		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
+		(comment 5 "Source: github.com/")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"

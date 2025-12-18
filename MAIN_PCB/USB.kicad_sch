@@ -4,6 +4,14 @@
 	(generator_version "9.0")
 	(uuid "84dd094f-7ad7-45df-b964-c9564e8945ad")
 	(paper "A3")
+	(title_block
+		(company "COMPANY_NAME")
+		(comment 1 "Author: Mykola Grodskyi")
+		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
+		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
+		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
+		(comment 5 "Source: github.com/")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
