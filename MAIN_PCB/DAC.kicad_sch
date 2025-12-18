@@ -1,0 +1,11 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c5ee5594-ca2c-46f5-bb01-76dd931b53c3")
+	(paper "A4")
+	(title_block
+		(comment 1 "Author: Mykola Grodskyi")
+	)
+	(lib_symbols)
+)
