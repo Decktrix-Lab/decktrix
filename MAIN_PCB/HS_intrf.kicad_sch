@@ -7788,6 +7788,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "CHECKED 2.0 MG\n"
+		(exclude_from_sim no)
+		(at 101.346 44.45 0)
+		(effects
+			(font
+				(size 12.7 12.7)
+				(color 97 255 51 1)
+			)
+		)
+		(uuid "962a4719-2717-4179-8bbb-4a3fd9875216")
+	)
 	(text_box "VSS_USBHS\n"
 		(exclude_from_sim no)
 		(at 62.23 87.63 0)
@@ -7807,6 +7818,10 @@
 			(justify left top)
 		)
 		(uuid "313edac1-cc6a-4864-85de-1caa1b24d0d4")
+	)
+	(no_connect
+		(at 83.82 66.04)
+		(uuid "34cb9979-9f4e-4493-98ef-d3ce600c8bac")
 	)
 	(wire
 		(pts
@@ -8457,7 +8472,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "db96544f-1581-432b-8ac4-47657841669b")
 		(property "Reference" "U4"
 			(at -68.58 240.03 0)
@@ -8469,7 +8483,7 @@
 			)
 		)
 		(property "Value" "STM32MP157FABx"
-			(at 63.5 160.02 90)
+			(at 106.68 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
