@@ -1,4 +1,15 @@
-# Build steps
+## Overview
+
+Decktrix is a compact, modular handheld cyberdeck designed to fit in your pocket.
+It features a universal connector that allows you to attach modules and extend
+its functionality.
+
+The project is in an early development phase, so significant changes to the
+design and features are expected.
+
+![decktrix](photos/front-landscape.png)
+
+## Build steps
 
 1. Init submodules
 
@@ -22,25 +33,6 @@ sudo ./build-image.sh --use-prefetch-debootstrap
 
 ```
 sudo dd if=deploy/sdcard.img of=<sd-card-dev> bs=8M conv=fdatasync status=progress
-```
-
-## Docker (WIP)
-
-1. Build docker container
-
-```
-docker build -t decktrix .
-```
-
-2. Run docker container and login to shell
-
-```
-docker run -it --volume /etc/passwd:/etc/passwd:ro \
-               --volume /etc/group:/etc/group:ro \
-               --volume /etc/shadow:/etc/shadow:ro \
-               --volume .:/home/${USER} \
-               --user $(id -u) \
-               decktrix bash
 ```
 
 ## Wifi
