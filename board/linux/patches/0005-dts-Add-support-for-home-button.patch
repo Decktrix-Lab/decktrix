@@ -1,0 +1,61 @@
+From b6e976dc00462e5b9c838e6566ca6a71f3cd97da Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Mon, 15 Dec 2025 21:27:12 +0100
+Subject: dts: Add support for home button
+
+Use "USER1" button located on the devboard to handle home btn.
+Custom PCB would probably have different button(gpio)
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+ arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts | 11 +++++++++++
+ arch/arm/boot/dts/st/stm32mp157c-dk2.dts        | 11 +++++++++++
+ 2 files changed, 22 insertions(+)
+
+diff --git a/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts b/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
+index 4d96ffcc4d5f..e3a3ed1f93d6 100644
+--- a/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
++++ b/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
+@@ -28,6 +28,17 @@ wifi_pwrseq: wifi-pwrseq {
+ 		compatible = "mmc-pwrseq-simple";
+ 		reset-gpios = <&gpioh 4 GPIO_ACTIVE_LOW>;
+ 	};
++
++	gpio-keys {
++		compatible = "gpio-keys";
++		autorepeat;
++
++		home {
++			label = "GPIO Key HOME";
++			linux,code = <102>; // KEY_HOME
++			gpios = <&gpioa 14 GPIO_ACTIVE_LOW>;
++		};
++	};
+ };
+ 
+ &cryp1 {
+diff --git a/arch/arm/boot/dts/st/stm32mp157c-dk2.dts b/arch/arm/boot/dts/st/stm32mp157c-dk2.dts
+index 1b34fbe10b4f..69bf776c0420 100644
+--- a/arch/arm/boot/dts/st/stm32mp157c-dk2.dts
++++ b/arch/arm/boot/dts/st/stm32mp157c-dk2.dts
+@@ -29,6 +29,17 @@ wifi_pwrseq: wifi-pwrseq {
+ 		compatible = "mmc-pwrseq-simple";
+ 		reset-gpios = <&gpioh 4 GPIO_ACTIVE_LOW>;
+ 	};
++
++	gpio-keys {
++		compatible = "gpio-keys";
++		autorepeat;
++
++		home {
++			label = "GPIO Key HOME";
++			linux,code = <102>; // KEY_HOME
++			gpios = <&gpioa 14 GPIO_ACTIVE_LOW>;
++		};
++	};
+ };
+ 
+ &cryp1 {
+-- 
+2.43.0
+

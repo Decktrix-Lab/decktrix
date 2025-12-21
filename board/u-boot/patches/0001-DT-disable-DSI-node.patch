@@ -1,0 +1,41 @@
+From adf7834d5a490090ab2f404ac11b9f0405efcb09 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Sun, 9 Nov 2025 12:15:35 +0100
+Subject: DT: disable DSI node
+
+The reason is because in case if jadard display is used this node
+conflicts with kernel's dsi node which initializes display differently.
+
+Add mkimage artifacts to .gitignore
+---
+ .gitignore                       | 3 +++
+ arch/arm/dts/stm32mp157c-dk2.dts | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/.gitignore b/.gitignore
+index e93c33da1bd..cd891d5f393 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -133,3 +133,6 @@ __pycache__
+ 
+ # Clang's compilation database file
+ /compile_commands.json
++
++mkimage.u-boot-stm32.mkimage
++mkimage-out.u-boot-stm32.mkimage
+diff --git a/arch/arm/dts/stm32mp157c-dk2.dts b/arch/arm/dts/stm32mp157c-dk2.dts
+index 510cca5acb7..ea7de7bd2e3 100644
+--- a/arch/arm/dts/stm32mp157c-dk2.dts
++++ b/arch/arm/dts/stm32mp157c-dk2.dts
+@@ -40,7 +40,7 @@
+ 		reg = <0>;
+ 		reset-gpios = <&gpioe 4 GPIO_ACTIVE_LOW>;
+ 		power-supply = <&v3v3>;
+-		status = "okay";
++		status = "disabled";
+ 
+ 		port {
+ 			panel_in: endpoint {
+-- 
+2.43.0
+
