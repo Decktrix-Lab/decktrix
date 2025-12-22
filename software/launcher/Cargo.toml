@@ -1,0 +1,10 @@
+[package]
+name = "slint-rust-template"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+slint = "1.14.1"
+
+[build-dependencies]
+slint-build = "1.14.1"

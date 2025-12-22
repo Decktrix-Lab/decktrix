@@ -1,0 +1,5 @@
+[editor]
+workspace-lsp-roots = [
+  "software/launcher"
+]
+
