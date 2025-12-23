@@ -5,12 +5,13 @@
 	(uuid "84dd094f-7ad7-45df-b964-c9564e8945ad")
 	(paper "A3")
 	(title_block
-		(company "COMPANY_NAME")
+		(title "DECKTRIX")
+		(company "DECKTRIX-LAB")
 		(comment 1 "Author: Mykola Grodskyi")
 		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
 		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
 		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
-		(comment 5 "Source: github.com/")
+		(comment 5 "Source: https://github.com/Decktrix-Lab/decktrix")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -1726,6 +1727,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "CHECKED 2.0 MG\n"
+		(exclude_from_sim no)
+		(at 178.308 54.864 0)
+		(effects
+			(font
+				(size 12.7 12.7)
+				(color 97 255 51 1)
+			)
+		)
+		(uuid "61a692ef-bd1d-4c56-987d-145eb8b2b34b")
 	)
 	(text "Need R calc\n"
 		(exclude_from_sim no)

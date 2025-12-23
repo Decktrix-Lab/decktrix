@@ -5,12 +5,13 @@
 	(uuid "65890f61-d586-475b-928a-b635a5e4e59e")
 	(paper "A3")
 	(title_block
-		(company "COMPANY_NAME")
+		(title "DECKTRIX")
+		(company "DECKTRIX-LAB")
 		(comment 1 "Author: Mykola Grodskyi")
 		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
 		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
 		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
-		(comment 5 "Source: github.com/")
+		(comment 5 "Source: https://github.com/Decktrix-Lab/decktrix")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"

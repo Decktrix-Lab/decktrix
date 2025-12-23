@@ -5,12 +5,13 @@
 	(uuid "5cc93eb9-0465-410e-be45-795b14a5f600")
 	(paper "A3")
 	(title_block
-		(company "COMPANY_NAME")
+		(title "DECKTRIX")
+		(company "DECKTRIX-LAB")
 		(comment 1 "Author: Mykola Grodskyi")
 		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
 		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
 		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
-		(comment 5 "Source: github.com/")
+		(comment 5 "Source: https://github.com/Decktrix-Lab/decktrix")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2383,17 +2384,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "NEED REVIEW"
-		(exclude_from_sim no)
-		(at 88.646 99.822 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(color 255 41 58 1)
-			)
-		)
-		(uuid "b8fd9624-ec8a-4588-beae-1ab6c56ef7e6")
-	)
 	(text "The traces use the **VDD_DDR** reference plane."
 		(exclude_from_sim no)
 		(at 159.004 150.368 0)
@@ -2403,6 +2393,17 @@
 			)
 		)
 		(uuid "ccda9074-8eb1-45cd-91de-637c0841b014")
+	)
+	(text "CHECKED 2.0 MG\n"
+		(exclude_from_sim no)
+		(at 178.562 235.712 0)
+		(effects
+			(font
+				(size 12.7 12.7)
+				(color 97 255 51 1)
+			)
+		)
+		(uuid "f3b19e09-bc6f-4a37-b28e-d577a415b49f")
 	)
 	(junction
 		(at 222.25 33.02)

@@ -5,12 +5,13 @@
 	(uuid "fa65986a-ed0f-4409-a940-e52d44b1ae86")
 	(paper "A3")
 	(title_block
-		(company "COMPANY_NAME")
+		(title "DECKTRIX")
+		(company "DECKTRIX-LAB")
 		(comment 1 "Author: Mykola Grodskyi")
 		(comment 2 "Copyright © 2025 Mykola Grodskyi.")
 		(comment 3 "Licensed under CERN-OHL-S v2 (see LICENSE for details)")
 		(comment 4 "PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND")
-		(comment 5 "Source: github.com/")
+		(comment 5 "Source: https://github.com/Decktrix-Lab/decktrix")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -2471,6 +2472,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "CHECKED 2.0 MG\n"
+		(exclude_from_sim no)
+		(at 95.25 34.544 0)
+		(effects
+			(font
+				(size 12.7 12.7)
+				(color 97 255 51 1)
+			)
+		)
+		(uuid "45d46162-93c3-491a-8d18-614e9f8166da")
 	)
 	(text "Conf settings during boot. internal pull-up exist. \nDon't interfere with it through UART or a pull-down on the input."
 		(exclude_from_sim no)
