@@ -1,0 +1,42 @@
+import "../assets/fonts/vt323.ttf";
+
+export component Datetime {
+    in property <image> icon;
+    in property <string> date;
+    in property <string> time;
+    in property <string> meridiem;
+
+    HorizontalLayout {
+        VerticalLayout {
+            alignment: center;
+            
+            Image {
+                source: @image-url("../assets/icons/sun.svg");
+                width: 50px;
+                height: 50px;
+            }
+        }
+    
+        VerticalLayout {
+            alignment: center;
+            padding-left: 10px;
+
+            Text {
+                text: "10:30 AM";
+                font-size: 36pt;
+                font-family: "VT323";
+            }
+
+            HorizontalLayout {
+                padding-left: 5px;
+                
+                Text {
+                    text: "Tuesday, Jul 22";
+                    font-size: 18pt;
+                    font-family: "VT323";
+                }
+            }
+        }
+    }
+
+}
