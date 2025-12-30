@@ -1,0 +1,70 @@
+import { Style } from "../style.slint";
+
+export component UsageBar inherits HorizontalLayout {
+    in property <string> label;
+    in property <color> value-color;
+    in property <percent> value;
+    in property <length> radius;
+
+    alignment: center;
+    spacing: 20px;
+
+    Text {
+        text: label;
+        font-size: 20pt;
+        font-family: Style.default-font-family;
+        color: Style.theme.text;
+    }
+
+    Rectangle {
+        height: 22px;
+        width: 70%;
+        background: Style.theme.background;
+        border-color: value-color;
+        border-radius: radius;
+        border-width: 3px;
+        clip: true;
+
+        Rectangle {
+            x: 0;
+            background: value-color;
+            width: value;
+            height: parent.height;
+            border-radius: radius;
+        }
+    }
+}
+
+export component CpuUsage inherits VerticalLayout {
+    spacing: Style.default-spacing;
+
+    UsageBar {
+        label: "CPU 0:";
+        value-color: Style.theme.bar-1;
+        radius: 10px;
+        value: 35%;
+    }
+    UsageBar {
+        label: "CPU 1:";
+        value-color: Style.theme.bar-1;
+        radius: 10px;
+        value: 50%;
+    }
+}
+
+export component MemoryUsage inherits VerticalLayout {
+    spacing: 15px;
+
+    UsageBar {
+        label: "MEM:";
+        value-color: Style.theme.bar-2;
+        radius: 6px;
+        value: 65%;
+    }
+    UsageBar {
+        label: "SWP:";
+        value-color: Style.theme.bar-2;
+        radius: 6px;
+        value: 20%;
+    }
+}
