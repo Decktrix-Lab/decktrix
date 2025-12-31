@@ -1,0 +1,29 @@
+import { Datetime } from "../components/datetime.slint";
+import { Module } from "../components/module.slint";
+import { CpuUsage, MemoryUsage } from "../components/usage.slint";
+
+
+export component Home inherits VerticalLayout {
+    Datetime {
+        max-height: 250px;
+        icon: @image-url("../assets/icons/sun.svg");
+        date: "Tuesday, Dec 30";
+        time: "14:30";
+        meridiem: "PM";
+    }
+    Module {
+        padding: 10px;
+    }
+    CpuUsage {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        padding-top: 90px;
+    }
+    MemoryUsage {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+}

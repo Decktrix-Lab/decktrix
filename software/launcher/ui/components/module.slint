@@ -1,0 +1,57 @@
+import { Style } from "../style.slint";
+
+export component ModuleCard inherits Rectangle {
+    width: 170px;
+    height: 130px;
+    border-radius: 25px;
+    drop-shadow-blur: 10px;
+    drop-shadow-offset-y: 5px;
+    drop-shadow-color: Style.theme.card-shadow;
+
+    Rectangle {
+        width: parent.width - parent.drop-shadow-offset-y;
+        height: parent.height - parent.drop-shadow-offset-y;
+        background: Style.theme.background;
+        border-radius: parent.border-radius;
+
+        Rectangle {
+            background: Style.theme.card;
+            border-radius: parent.border-radius;
+            @children
+        }
+    }
+}
+
+export component Module inherits HorizontalLayout {
+    alignment: center;
+    spacing: 80px;
+
+    ModuleCard {
+        VerticalLayout {
+            alignment: center;
+            spacing: 5px;
+
+            Text {
+                text: "MODULE";
+                font-size: 20pt;
+                font-family: Style.default-font-family;
+                horizontal-alignment: center;
+            }
+            HorizontalLayout {
+                alignment: center;
+                Image {
+                    source: @image-url("../assets/icons/keyboard.svg");
+                    width: 80px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+    ModuleCard {
+        Text {
+            text: "SELECT\nACTION";
+            font-size: 20pt;
+            font-family: Style.default-font-family;
+        }
+    }
+}

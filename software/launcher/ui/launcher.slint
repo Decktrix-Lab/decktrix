@@ -1,9 +1,31 @@
-import { VerticalBox } from "std-widgets.slint";
+import { Style } from "./style.slint";
+import { Home } from "./pages/home.slint";
+
+component Menu inherits HorizontalLayout {
+    alignment: end;
+    spacing: Style.default-spacing;
+    padding: Style.default-padding;
+
+    Image {
+        source: @image-url("./assets/icons/wifi.svg");
+        width: 50px;
+        height: 50px;
+    }
+
+    Image {
+        source: @image-url("./assets/icons/battery.svg");
+        width: 50px;
+        height: 50px;
+    }
+}
 
 export component Launcher inherits Window {
-    VerticalBox {
-        Text {
-            text: "WIP";
-        }
+    width: 540px;
+    height: 960px;
+    background: Style.theme.background;
+
+    VerticalLayout {
+        Menu {}
+        Home {}
     }
 }

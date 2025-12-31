@@ -1,0 +1,24 @@
+import "./assets/fonts/vt323.ttf";
+
+export struct ColorTheme {
+    background: color,
+    text: color,
+    card: color, 
+    card-shadow: color,
+    bar-1: color,
+    bar-2: color,
+}
+
+export global Style {   
+    out property <length> default-spacing: 15px;
+    out property <length> default-padding: 15px;
+    out property <string> default-font-family: "VT323";
+    out property <ColorTheme> theme: {
+        background: #ececf9,
+        text: #1a1a2e,
+        card: #bfbfef.with_alpha(0.35),
+        card-shadow: #000000.with-alpha(0.25), 
+        bar-1: #93ddef,
+        bar-2: #b85fce,
+    };
+}
