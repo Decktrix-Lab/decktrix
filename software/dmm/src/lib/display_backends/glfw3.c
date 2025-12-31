@@ -78,6 +78,7 @@ int backend_init_glfw3(backend_t * backend)
     backend->type = BACKEND_DISPLAY;
 
     return 0;
+
 }
 
 /**********************

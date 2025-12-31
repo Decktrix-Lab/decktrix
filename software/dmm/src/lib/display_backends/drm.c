@@ -40,6 +40,8 @@
 static void run_loop_drm(void);
 static lv_display_t * init_drm(void);
 
+
+
 /**********************
  *  STATIC VARIABLES
  **********************/
@@ -96,6 +98,8 @@ static lv_display_t * init_drm(void)
 
     return disp;
 }
+
+
 
 /**
  * The run loop of the DRM driver
