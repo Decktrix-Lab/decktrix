@@ -7,3 +7,6 @@
 [submodule "bsp/u-boot/u-boot-v2025.04"]
 	path = board/u-boot/u-boot-v2025.04
 	url = git@github.com:u-boot/u-boot.git
+[submodule "software/dmm/lvgl"]
+	path = software/dmm/lvgl
+	url = https://github.com/lvgl/lvgl.git
