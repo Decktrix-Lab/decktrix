@@ -6,6 +6,7 @@ edition = "2024"
 [dependencies]
 chrono = "0.4.42"
 slint = "1.14.1"
+sysinfo = { version = "0.37.2", default-features = false, features = ["system"] }
 
 [build-dependencies]
 slint-build = "1.14.1"
