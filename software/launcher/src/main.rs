@@ -1,10 +1,19 @@
+mod home;
+
 use std::error::Error;
 
-slint::include_modules!();
+use slint::ComponentHandle;
+
+pub mod ui {
+    slint::include_modules!();
+}
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let ui = Launcher::new()?;
-    ui.run()?;
+    let launcher = ui::Launcher::new()?;
+
+    let _timer = home::setup(&launcher);
+
+    launcher.run()?;
 
     Ok(())
 }
