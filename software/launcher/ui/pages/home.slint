@@ -1,7 +1,8 @@
-import { Datetime } from "../components/datetime.slint";
+import { Datetime, DatetimeAdapter } from "../components/datetime.slint";
 import { Module } from "../components/module.slint";
-import { CpuUsage, MemoryUsage } from "../components/usage.slint";
+import { CpuUsage, MemoryUsage, UsageAdapter } from "../components/usage.slint";
 
+export { DatetimeAdapter, UsageAdapter }
 
 export component Home inherits VerticalLayout {
     Datetime {
