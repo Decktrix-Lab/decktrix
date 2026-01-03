@@ -10,7 +10,6 @@ pub mod ui {
 
 fn main() -> Result<(), Box<dyn Error>> {
     let launcher = ui::Launcher::new()?;
-
     let _timer = home::setup(&launcher);
 
     launcher.run()?;
