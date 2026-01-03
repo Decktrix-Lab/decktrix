@@ -1,10 +1,32 @@
 import { Style } from "../style.slint";
 
+export global DatetimeAdapter {
+    in property <int> hour12: 0;
+    in property <int> minute: 0;
+    in property <string> meridiem: "--";
+    in property <string> date: "loading...";
+
+    public pure function time() -> string {
+        let datetime = self.meridiem == "--" ? "--:--" : self.hour12 + ":" + self.minute;
+        return datetime + " " + self.meridiem;
+    }
+
+    public pure function icon() -> image {
+        let sun = @image-url("../assets/icons/sun.svg");
+        let moon = @image-url("../assets/icons/moon.svg");
+
+        if (self.hour12 >= 6) {
+            return self.meridiem == "AM" ? sun : moon;
+        }
+
+        return self.meridiem == "PM" ? sun : moon;
+    }
+}
+
 export component Datetime inherits HorizontalLayout {
-    in property <image> icon;
-    in property <string> date;
-    in property <string> time;
-    in property <string> meridiem;
+    in property <string> date: DatetimeAdapter.date;
+    in property <string> time: DatetimeAdapter.time();
+    in property <image> icon: DatetimeAdapter.icon();
 
     alignment: center;
 
@@ -23,7 +45,7 @@ export component Datetime inherits HorizontalLayout {
         padding-left: 10px;
 
         Text {
-            text: time + " " + meridiem;
+            text: time;                
             font-size: 45pt;
             font-family: Style.default-font-family;
         }
