@@ -1,5 +1,13 @@
 import { Style } from "../style.slint";
 
+
+export global UsageAdapter {
+    in property <[percent]> cpus_usage;
+    in property <percent> memory_usage;
+    in property <percent> swap_usage;
+}
+
+
 export component UsageBar inherits HorizontalLayout {
     in property <string> label;
     in property <color> value-color;
@@ -38,33 +46,26 @@ export component UsageBar inherits HorizontalLayout {
 export component CpuUsage inherits VerticalLayout {
     spacing: Style.default-spacing;
 
-    UsageBar {
-        label: "CPU 0:";
+    for usage[index] in UsageAdapter.cpus_usage: UsageBar {
+        label: "CPU " + index + ":";
         value-color: Style.theme.bar-1;
         radius: 10px;
-        value: 35%;
-    }
-    UsageBar {
-        label: "CPU 1:";
-        value-color: Style.theme.bar-1;
-        radius: 10px;
-        value: 50%;
+        value: usage;
     }
 }
 
 export component MemoryUsage inherits VerticalLayout {
-    spacing: 15px;
+    spacing: Style.default-spacing;
 
-    UsageBar {
-        label: "MEM:";
+    property <[{label: string, value: percent}]> data: [
+        {label: "MEM:", value: UsageAdapter.memory_usage },
+        {label: "SWP:", value: UsageAdapter.swap_usage },
+    ];
+
+    for usage in data: UsageBar {
+        label: usage.label;
         value-color: Style.theme.bar-2;
         radius: 6px;
-        value: 65%;
-    }
-    UsageBar {
-        label: "SWP:";
-        value-color: Style.theme.bar-2;
-        radius: 6px;
-        value: 20%;
+        value: usage.value;
     }
 }

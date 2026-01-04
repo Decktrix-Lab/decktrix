@@ -1,15 +1,12 @@
-import { Datetime } from "../components/datetime.slint";
+import { Datetime, DatetimeAdapter } from "../components/datetime.slint";
 import { Module } from "../components/module.slint";
-import { CpuUsage, MemoryUsage } from "../components/usage.slint";
+import { CpuUsage, MemoryUsage, UsageAdapter } from "../components/usage.slint";
 
+export { DatetimeAdapter, UsageAdapter }
 
 export component Home inherits VerticalLayout {
     Datetime {
         max-height: 250px;
-        icon: @image-url("../assets/icons/sun.svg");
-        date: "Tuesday, Dec 30";
-        time: "14:30";
-        meridiem: "PM";
     }
     Module {
         padding: 10px;
