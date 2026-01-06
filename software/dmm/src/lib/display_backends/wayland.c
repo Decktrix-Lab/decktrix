@@ -100,8 +100,7 @@ static lv_display_t * init_wayland(void)
 
     if(settings.fullscreen) {
         lv_wayland_window_set_fullscreen(disp, true);
-    }
-    else if(settings.maximize) {
+    } else if(settings.maximize) {
         lv_wayland_window_set_maximized(disp, true);
     }
 
@@ -111,7 +110,6 @@ static lv_display_t * init_wayland(void)
     lv_indev_set_group(lv_wayland_get_pointeraxis(disp), g);
 
     return disp;
-
 }
 
 /**

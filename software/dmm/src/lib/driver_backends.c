@@ -189,8 +189,7 @@ int driver_backends_init_backend(char * backend_name)
                 LV_LOG_INFO("Initialized %s display backend", b->name);
                 break;
 
-            }
-            else if(b->type == BACKEND_INDEV) {
+            } else if(b->type == BACKEND_INDEV) {
                 /* Initialize input device */
 
                 indevb = b->handle->indev;
@@ -241,7 +240,6 @@ int driver_backends_print_supported(void)
 
     fprintf(stdout, "\n");
     return 0;
-
 }
 
 int driver_backends_is_supported(char * backend_name)
@@ -274,8 +272,7 @@ void driver_backends_run_loop(void)
         dispb = sel_display_backend->handle->display;
         dispb->run_loop();
 
-    }
-    else {
+    } else {
         LV_LOG_ERROR("No backend has been selected - initialize the backend first");
     }
 }

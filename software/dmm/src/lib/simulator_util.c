@@ -48,8 +48,6 @@ const char * getenv_default(const char * name, const char * default_val)
     return value ? value : default_val;
 }
 
-
-
 void die(const char * msg, ...)
 {
     va_list args;
@@ -59,7 +57,6 @@ void die(const char * msg, ...)
     va_end(args);
 
     exit(EXIT_FAILURE);
-
 }
 
 /**********************
