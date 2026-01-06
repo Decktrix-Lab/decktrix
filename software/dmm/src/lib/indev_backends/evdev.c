@@ -75,7 +75,6 @@ int backend_init_evdev(backend_t * backend)
     return 0;
 }
 
-
 /**********************
  *   STATIC FUNCTIONS
  **********************/
@@ -93,7 +92,6 @@ static void indev_deleted_cb(lv_event_t * e)
     lv_obj_t * cursor_obj = lv_event_get_user_data(e);
     lv_obj_delete(cursor_obj);
 }
-
 
 /*
  * Set cursor icon
@@ -136,7 +134,6 @@ static void set_mouse_cursor_icon(lv_indev_t * indev, lv_display_t * display)
 
     /* delete the mouse cursor icon if the device is removed */
     lv_indev_add_event_cb(indev, indev_deleted_cb, LV_EVENT_DELETE, cursor_obj);
-
 }
 
 /*
