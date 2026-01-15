@@ -15691,36 +15691,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 294.9575 109.22) (xy 309.5625 109.22) (xy 309.5625 123.19) (xy 294.9575 123.19)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 120124bf-c54f-4411-8af2-25d4ec5ecbbe)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 194.31 35.56) (xy 214.63 35.56) (xy 214.63 64.77) (xy 194.31 64.77)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 125e0a16-3954-4e0c-afba-bfa8e0ccc00b)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 194.31 73.66) (xy 214.63 73.66) (xy 214.63 133.35) (xy 194.31 133.35)
 			)
 			(stroke
@@ -15730,7 +15700,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 1661fe23-f991-4282-9b64-5b73f07adc7c)
+			(uuid 12508e62-3a67-44de-a75d-a10bd40448f5)
 		)
 	)
 	(rule_area
@@ -15745,13 +15715,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 2cff4c1a-caaa-4503-bff7-078270548501)
+			(uuid 133884ee-d329-4a51-beb2-dcd2aaa26127)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 281.94 109.22) (xy 293.37 109.22) (xy 293.37 167.64) (xy 281.305 167.64)
+				(xy 294.9575 109.22) (xy 309.5625 109.22) (xy 309.5625 123.19) (xy 294.9575 123.19)
 			)
 			(stroke
 				(width 0)
@@ -15760,7 +15730,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 892fd2d1-7f7a-441a-810f-d1164da4b727)
+			(uuid 2e9b540b-21d3-4d7f-bdd6-df190031cac8)
 		)
 	)
 	(rule_area
@@ -15775,7 +15745,37 @@
 			(fill
 				(type none)
 			)
-			(uuid ac0d1a4d-7e85-410c-87e9-1ca41a03f396)
+			(uuid 41a4244f-f54d-4790-9647-da128f3da638)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 281.305 110.49) (xy 292.735 110.49) (xy 293.37 167.64) (xy 281.305 167.64)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 6b8bcf1b-bb8f-44fb-ab31-25736ef6ae65)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 194.31 35.56) (xy 214.63 35.56) (xy 214.63 64.77) (xy 194.31 64.77)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid f629ebaa-4f6c-4131-b33c-fe2095b486e2)
 		)
 	)
 	(netclass_flag ""
@@ -15902,16 +15902,16 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 293.37 138.43 270)
+		(at 284.48 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6f8db4b4-0550-42d5-ae29-a5ccc6f77b84")
 		(property "Netclass" "DDR_DQ"
-			(at 294.132 140.462 0)
+			(at 286.512 109.728 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15920,7 +15920,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 427.99 454.66 90)
+			(at 600.71 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
