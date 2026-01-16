@@ -44,7 +44,7 @@
 )
 
 (rule "Diff Pair Width/Gap for Outer Layers"
-    (condition "A.NetClass == '100_ohm_diff' && A.Layer == '8.Cu'")
+    (condition "A.NetClass == '100_ohm_diff' && A.Layer == '8L.Cu'")
     (constraint track_width (opt 0.1034mm))
     (constraint diff_pair_gap (opt 0.15mm))
 )

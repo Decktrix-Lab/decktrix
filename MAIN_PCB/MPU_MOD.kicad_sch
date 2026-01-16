@@ -225,7 +225,7 @@
 	)
 	(text "GOOD extra fee\n"
 		(exclude_from_sim no)
-		(at 639.826 305.308 0)
+		(at 1508.125 -120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1246,7 +1246,7 @@
 		)
 	)
 	(image
-		(at 586.105 525.145)
+		(at 1454.404 99.187)
 		(uuid "4642d934-5f84-4590-a36b-7afb1085f8c4")
 		(data "iVBORw0KGgoAAAANSUhEUgAABZQAAAFNCAIAAAAYT32SAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"AA50AAAOdAFrJLPWAAAgAElEQVR4nOzdf3hU13kv+u9aI6xRMGagijwqIXg4KmFQ/NARDgGF2Ich"
@@ -4230,7 +4230,7 @@
 		)
 	)
 	(image
-		(at 618.49 350.52)
+		(at 1486.789 -75.438)
 		(uuid "7d8aaec1-6127-4cb0-a4a8-c70e8aa658fa")
 		(data "iVBORw0KGgoAAAANSUhEUgAABWoAAANJCAIAAAAaxJKHAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"AA50AAAOdAFrJLPWAAAgAElEQVR4nOzde1xU1f438M+eMQepQU0oaaSCPEfAW2heMASOkBzRzMA0"
