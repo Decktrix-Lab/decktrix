@@ -1,4 +1,15 @@
 (version 1)
+# Default trace wide @ layers ///////////////////////////////////////////////////////////
+
+(rule "Track Width for Default at 1L @ 50ohm"
+    (condition "A.NetClass == 'Default' && A.Layer == '1L.Cu'")
+    (constraint track_width (opt 0.1427mm))
+)
+
+(rule "Track Width for Default at 3L @ 50ohm"
+    (condition "A.NetClass == 'Default' && A.Layer == '3L.Cu'")
+    (constraint track_width (opt 0.1148mm))
+)
 
 
 # DDR ////////////////////////////////////////////////////////////////////////////////////////
@@ -8,14 +19,14 @@
 # That said, the longest signal trace is DDR_DQ0 at 27.9mm, so the DDR_CLK should 
 # 	be length-matched to at least 28mm.
 
-(rule "target length and skew"
+(rule "target length and skew for DDR_CLK_class"
       (condition "A.hasNetclass('DDR_CLK_class')")
       (constraint length (min 32mm) (opt 33mm) (max 33mm))
       (constraint skew (max 0.1mm)))
 
 # Length of A/C must be from 0 to 40 mils (1.016 mm) shorter than CLK_N / CLK_P length 
 
-(rule "target length and skew"
+(rule "target length and skew for DDR_AC"
       (condition "A.hasNetclass('DDR_AC')")
       (constraint length (min 32mm) (opt 33mm) (max 33mm))
       (constraint skew (max 0.1mm)))
@@ -23,7 +34,7 @@
 # Length of DQS_N/DQS_P must be from 0 to 590 mils (14.986 mm) shorter than CLK_N / CLK_P length 
 # DQ/DQM to DQS_N/DQS_P +/- 40 mils (1.016 mm)
 
-(rule "target length and skew"
+(rule "target length and skew for DDR_DQ"
       (condition "A.hasNetclass('DDR_DQ')")
       (constraint length (min 32mm) (opt 33mm) (max 33mm))
       (constraint skew (max 0.1mm)))
@@ -31,19 +42,19 @@
 #DDR width setting /////////////////////////////////////////////////////////////////////////
 
 #100_ohm_diff
-(rule "Diff Pair Width/Gap for Inner Layers"
+(rule "Track Width for 100_ohm_diff at 1L"
     (condition "A.NetClass == '100_ohm_diff' && A.Layer == '1L.Cu'")
     (constraint track_width (opt 0.1034mm))
     (constraint diff_pair_gap (opt 0.15mm))
 )
 
-(rule "Diff Pair Width/Gap for Inner Layers"
+(rule "Track Width for 100_ohm_diff at 3L"
     (condition "A.NetClass == '100_ohm_diff' && A.Layer == '3L.Cu'")
     (constraint track_width (opt 0.1029mm))
     (constraint diff_pair_gap (opt 0.17mm))
 )
 
-(rule "Diff Pair Width/Gap for Outer Layers"
+(rule "Track Width for 100_ohm_diff at 8L"
     (condition "A.NetClass == '100_ohm_diff' && A.Layer == '8L.Cu'")
     (constraint track_width (opt 0.1034mm))
     (constraint diff_pair_gap (opt 0.15mm))
@@ -51,44 +62,62 @@
 
 #DDR_DQ///////////////////////////////////////////
 
-(rule "Diff Pair Width/Gap for Inner Layers"
+(rule "Track Width for DDR_DQ at 1L"
     (condition "A.NetClass == 'DDR_DQ' && A.Layer == '1L.Cu'")
     (constraint track_width (opt 0.1102mm))
 )
 
-(rule "Diff Pair Width/Gap for Inner Layers"
+(rule "Track Width for DDR_DQ at 3L"
     (condition "A.NetClass == 'DDR_DQ' && A.Layer == '3L.Cu'")
     (constraint track_width (opt 0.1054mm))
 )
 
-(rule "Diff Pair Width/Gap for Inner Layers"
+(rule "Track Width for DDR_DQ at 8L"
     (condition "A.NetClass == 'DDR_DQ' && A.Layer == '8L.Cu'")
     (constraint track_width (opt 0.1102mm))
 )
 
-# SDMMC1 /////////////////////////////////////////////////////////////////////////////////////
-# CLK to DAT0-7 or CMD or RST_N mismatch < 250 mil (6.3mm)
-# Mismatch within DAT0~DAT7 < 250 mil (6.3mm)
+# SDMMC /////////////////////////////////////////////////////////////////////////////////////
+#           SDMMC 3 
+# AN200002
+# Signal trace length skew constraints 
 
-(rule "target length and skew"
-      (condition "A.hasNetclass('SDMMC1')")
-      (constraint length (min 27mm) (opt 28mm) (max 28mm))
-      (constraint skew (max 0.1mm)))
+# Mismatch within DAT0~DAT7 <= 250 mil 6.35mm 
+# CLK to DAT0-7 mismatch <= 250 mil 6.35mm 
+# CLK to CMD mismatch <= 250 mil 6.35mm 
+# CLK to RST_N mismatch <= 1000 mil
+
+# The maximum speed is 50MHz; nevertheless, let's keep the differences under 1mm for convenience if possible. 
+# This has been calculated for each line in the table since the traces are interrupted.
+# 
+
+(rule "Track Width for SDMMC3 at 3L"
+    (condition "A.NetClass == 'SDMMC3' && A.Layer == '3L.Cu'")
+    (constraint track_width (opt 0.1148mm))
+)
+
 
 
 #DSI
-(rule "target length and skew"
+(rule "target length and skew for DSI"
       (condition "A.hasNetclass('DSI_100ohm_DIFF')")
       (constraint length (min 34mm) (opt 34.5mm) (max 35mm))
       (constraint skew (max 0.1mm)))
 
 
-#USB
-(rule "target length and skew"
+#USB ///////////////////////////////////////////////////////////////////////////////////////////////
+(rule "target length and skew for USB"
       (condition "A.hasNetclass('USB')")
-      (constraint skew (max 0.5mm)))
+      (constraint skew (max 0.5mm))
+)
 
-# SDMMC3
+(rule "USB_diff_fixed"
+    (condition "A.hasNetclass('USB') && A.Layer == '1L.Cu'")
+    (constraint track_width (min 0.1227mm) (max 0.1227mm))
+    (constraint diff_pair_gap (min 0.13mm) (max 0.13mm))
+)
+
+# SDMMC3 ///////////////////////////////////////////////////////////////////////////////////////////
 # CLK to DAT0-7 or CMD or RST_N mismatch < 250 mil (6.3mm)
 # Mismatch within DAT0~DAT7 < 250 mil (6.3mm)
 
@@ -96,3 +125,4 @@
       (condition "A.hasNetclass('SDMMC3')")
       (constraint length (min 30mm) (opt 33mm) (max 36mm))
       (constraint skew (max 0.1mm)))
+
