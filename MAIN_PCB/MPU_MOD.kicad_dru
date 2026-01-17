@@ -2,15 +2,14 @@
 # Default trace wide @ layers ///////////////////////////////////////////////////////////
 
 (rule "Track Width for Default at 1L @ 50ohm"
-    (condition "A.NetClass == 'Default' && A.Layer == '1L.Cu'")
+    (condition "A.hasNetclass('Default') && !A.hasNetclass('USB') && !A.hasNetclass('DDR*') && A.Layer == '1L.Cu'")
     (constraint track_width (opt 0.1427mm))
 )
 
 (rule "Track Width for Default at 3L @ 50ohm"
-    (condition "A.NetClass == 'Default' && A.Layer == '3L.Cu'")
+    (condition "A.hasNetclass('Default') && !A.hasNetclass('USB') && !A.hasNetclass('DDR*') && A.Layer == '3L.Cu'")
     (constraint track_width (opt 0.1148mm))
 )
-
 
 # DDR ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -113,10 +112,9 @@
 
 (rule "USB_diff_fixed"
     (condition "A.hasNetclass('USB') && A.Layer == '1L.Cu'")
-    (constraint track_width (min 0.1227mm) (max 0.1227mm))
-    (constraint diff_pair_gap (min 0.13mm) (max 0.13mm))
+    (constraint track_width (min 0.1227mm) (opt 0.1227mm) (max 0.1227mm))
+    (constraint diff_pair_gap (min 0.13mm) (opt 0.13mm) (max 0.13mm))
 )
-
 # SDMMC3 ///////////////////////////////////////////////////////////////////////////////////////////
 # CLK to DAT0-7 or CMD or RST_N mismatch < 250 mil (6.3mm)
 # Mismatch within DAT0~DAT7 < 250 mil (6.3mm)
