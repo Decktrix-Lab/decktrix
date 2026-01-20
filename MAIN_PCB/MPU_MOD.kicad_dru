@@ -21,14 +21,15 @@
 (rule "target length and skew for DDR_CLK_class"
       (condition "A.hasNetclass('DDR_CLK_class')")
       (constraint length (min 32mm) (opt 33mm) (max 33mm))
-      (constraint skew (max 0.1mm)))
-
+      (constraint skew (max 0.1mm))
+)
 # Length of A/C must be from 0 to 40 mils (1.016 mm) shorter than CLK_N / CLK_P length 
 
 (rule "target length and skew for DDR_AC"
       (condition "A.hasNetclass('DDR_AC')")
       (constraint length (min 32mm) (opt 33mm) (max 33mm))
-      (constraint skew (max 0.1mm)))
+      (constraint skew (max 0.1mm))
+)
 
 # Length of DQS_N/DQS_P must be from 0 to 590 mils (14.986 mm) shorter than CLK_N / CLK_P length 
 # DQ/DQM to DQS_N/DQS_P +/- 40 mils (1.016 mm)
@@ -36,7 +37,8 @@
 (rule "target length and skew for DDR_DQ"
       (condition "A.hasNetclass('DDR_DQ')")
       (constraint length (min 32mm) (opt 33mm) (max 33mm))
-      (constraint skew (max 0.1mm)))
+     (constraint skew (max 0.1mm))
+)
 
 #DDR width setting /////////////////////////////////////////////////////////////////////////
 
@@ -97,12 +99,24 @@
 
 
 
-#DSI
+#DSI /////////////////////////////////////////////////////////////////////////////////////////////////////////
 (rule "target length and skew for DSI"
       (condition "A.hasNetclass('DSI_100ohm_DIFF')")
       (constraint length (min 34mm) (opt 34.5mm) (max 35mm))
       (constraint skew (max 0.1mm)))
 
+#DSI_100_ohm_diff
+(rule "Track Width for DSI_100_ohm_diff at 1L"
+    (condition "A.NetClass == 'DSI_100ohm_DIFF' && A.Layer == '1L.Cu'")
+    (constraint track_width (opt 0.1034mm))
+    (constraint diff_pair_gap (opt 0.15mm))
+)
+
+(rule "Track Width for 100_ohm_diff at 3L"
+    (condition "A.NetClass == 'DSI_100ohm_DIFF' && A.Layer == '3L.Cu'")
+    (constraint track_width (opt 0.1029mm))
+    (constraint diff_pair_gap (opt 0.17mm))
+)
 
 #USB ///////////////////////////////////////////////////////////////////////////////////////////////
 (rule "target length and skew for USB"

@@ -320,7 +320,7 @@
       "pads": false,
       "text": false,
       "tracks": true,
-      "vias": false,
+      "vias": true,
       "zones": false
     },
     "visible_items": [
@@ -341,7 +341,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_f7ffba4f",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_f7fffb4f",
     "zone_display_mode": 0
   },
   "git": {
