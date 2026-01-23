@@ -3,8 +3,6 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
-        "apply_defaults_to_fp_barcodes": false,
-        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -79,7 +77,6 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
-        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -98,7 +95,6 @@
         "mirrored_text_on_front_layer": "ignore",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
-        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "ignore",
         "npth_inside_courtyard": "ignore",
@@ -118,11 +114,9 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
-        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -250,15 +244,6 @@
     "viewports": []
   },
   "boards": [],
-  "component_class_settings": {
-    "assignments": [],
-    "meta": {
-      "version": 0
-    },
-    "sheet_component_classes": {
-      "enabled": false
-    }
-  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -506,7 +491,6 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1184,
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -521,7 +505,6 @@
         "priority": 1,
         "schematic_color": "rgb(255, 172, 24)",
         "track_width": 0.1184,
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -530,8 +513,7 @@
         "name": "DDR_DQ",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "bus_width": 12,
@@ -544,7 +526,6 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -560,7 +541,6 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -576,7 +556,6 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -592,7 +571,6 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -608,7 +586,6 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -625,7 +602,6 @@
         "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1102,
-        "tuning_profile": "",
         "wire_width": 6
       },
       {
@@ -640,7 +616,6 @@
         "priority": 8,
         "schematic_color": "rgb(88, 208, 255)",
         "track_width": 0.1102,
-        "tuning_profile": "",
         "wire_width": 6
       },
       {
@@ -654,14 +629,13 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 5
+      "version": 4
     },
     "net_colors": {
       "VDD_DDR": "rgb(255, 233, 136)"
@@ -1797,7 +1771,6 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -1836,14 +1809,7 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0,
-    "top_level_sheets": [
-      {
-        "filename": "MPU_MOD.kicad_sch",
-        "name": "MPU_MOD",
-        "uuid": "00000000-0000-0000-0000-000000000000"
-      }
-    ]
+    "subpart_id_separator": 0
   },
   "sheets": [
     [
@@ -1891,11 +1857,5 @@
       "USB"
     ]
   ],
-  "text_variables": {},
-  "tuning_profiles": {
-    "meta": {
-      "version": 0
-    },
-    "tuning_profiles_impedance_geometric": []
-  }
+  "text_variables": {}
 }
