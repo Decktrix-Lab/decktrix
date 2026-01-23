@@ -133,8 +133,8 @@
 # CLK to DAT0-7 or CMD or RST_N mismatch < 250 mil (6.3mm)
 # Mismatch within DAT0~DAT7 < 250 mil (6.3mm)
 
-(rule "target length and skew"
+(rule "SDMMC3 target length and skew"
       (condition "A.hasNetclass('SDMMC3')")
       (constraint length (min 30mm) (opt 33mm) (max 36mm))
-      (constraint skew (max 0.1mm)))
+      )
 
