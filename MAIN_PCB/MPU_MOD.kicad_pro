@@ -104,10 +104,6 @@
           ""
         ],
         [
-          "diff_pair_gap_out_of_range|103872283|94721468|b52b5b34-1fe7-4665-b34a-c91b41d5c9ff|937063eb-2d4a-410b-8085-eda9a0202f10",
-          ""
-        ],
-        [
           "diff_pair_gap_out_of_range|87150000|121872500|a3917ede-f887-41ff-92a8-2ea047fe5c7b|b1254dce-f2fc-4ba3-85ba-926b9e6be3b4",
           ""
         ],
@@ -296,31 +292,11 @@
           ""
         ],
         [
-          "skew_out_of_range|101267400|90516585|d9fac807-d740-4a37-93a3-71182d509acf|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "skew_out_of_range|101267400|91316585|65e06472-f6f4-4f1b-9ad1-4b2404a5e956|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "skew_out_of_range|102067400|89716585|6a9d0401-4c71-4838-8809-7bbb98fd3de1|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "skew_out_of_range|102867400|89716585|09f58fab-ba33-4f5e-af0b-6284effa5d8f|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "skew_out_of_range|102867400|90516585|d995b602-b667-4624-b7f2-1887a9ec0601|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "skew_out_of_range|103667400|93716585|8bd795d2-c42e-4c27-a074-bea79acd3aaa|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "skew_out_of_range|104467400|90516585|c3f00004-3add-43ba-87a7-e79dfcad9dc6|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -352,10 +328,6 @@
           ""
         ],
         [
-          "skew_out_of_range|91667400|90516585|cbb6a3c2-33c4-45e3-8946-416283d70180|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "skew_out_of_range|92467400|89716585|6fc7d0f2-c7b7-49ab-89f0-981340ad4944|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -365,10 +337,6 @@
         ],
         [
           "skew_out_of_range|92467400|91316585|1e5d8e52-8a98-45d2-9c5d-4de2451663b8|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "skew_out_of_range|93267400|90516585|fb4bd706-5c54-434f-a010-435af44b792c|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -932,7 +900,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1184,
+        "track_width": 0.0,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -960,28 +928,13 @@
       {
         "bus_width": 12,
         "diff_pair_gap": 0.12,
-        "diff_pair_width": 0.1184,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "DSI_100ohm_DIFF",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "diff_pair_gap": 0.12,
         "diff_pair_width": 0.1019,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "HS_intrf",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -996,7 +949,7 @@
         "microvia_drill": 0.1,
         "name": "MPU_PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -1011,7 +964,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -1026,7 +979,7 @@
         "microvia_drill": 0.1,
         "name": "RCC_BOOT_RST_DEBUG",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -1041,7 +994,7 @@
         "microvia_drill": 0.1,
         "name": "SDMMC1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1102,
         "wire_width": 6
@@ -1055,7 +1008,7 @@
         "microvia_drill": 0.1,
         "name": "SDMMC3",
         "pcb_color": "rgb(247, 255, 121)",
-        "priority": 8,
+        "priority": 7,
         "schematic_color": "rgb(88, 208, 255)",
         "track_width": 0.1102,
         "wire_width": 6
@@ -1069,7 +1022,7 @@
         "microvia_drill": 0.1,
         "name": "WIFI_BLE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 9,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -1215,20 +1168,16 @@
         "DDR_AC"
       ],
       "/DDR/DDR_DQS0_N": [
-        "100_ohm_diff",
-        "DDR_DQ"
+        "100_ohm_diff"
       ],
       "/DDR/DDR_DQS0_P": [
-        "100_ohm_diff",
-        "DDR_DQ"
+        "100_ohm_diff"
       ],
       "/DDR/DDR_DQS1_N": [
-        "100_ohm_diff",
-        "DDR_DQ"
+        "100_ohm_diff"
       ],
       "/DDR/DDR_DQS1_P": [
-        "100_ohm_diff",
-        "DDR_DQ"
+        "100_ohm_diff"
       ],
       "/DDR/DDR_ODT": [
         "DDR_AC"
