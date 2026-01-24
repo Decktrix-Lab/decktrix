@@ -16,68 +16,7 @@
     (constraint track_width (opt 0.1148mm))
 )
 
-# DDR ////////////////////////////////////////////////////////////////////////////////////////
 
-# DDR_CLK ( DDR_CLK_class)  must be the longest signal in DDR bus
-
-# That said, the longest signal trace is DDR_DQ0 at 27.9mm, so the DDR_CLK should 
-# 	be length-matched to at least 28mm.
-
-(rule "target length and skew for DDR_CLK_class"
-      (condition "A.hasNetclass('DDR_CLK_class')")
-      (constraint length (min 32mm) (opt 33mm) (max 33mm))
-      (constraint skew (max 0.1mm))
-)
-# Length of A/C must be from 0 to 40 mils (1.016 mm) shorter than CLK_N / CLK_P length 
-
-(rule "target length and skew for DDR_AC"
-      (condition "A.hasNetclass('DDR_AC')")
-      (constraint length (min 32mm) (opt 33mm) (max 33mm))
-      (constraint skew (max 0.1mm))
-)
-
-# Length of DQS_N/DQS_P must be from 0 to 590 mils (14.986 mm) shorter than CLK_N / CLK_P length 
-# DQ/DQM to DQS_N/DQS_P +/- 40 mils (1.016 mm)
-
-(rule "target length and skew for DDR_DQ"
-      (condition "A.hasNetclass('DDR_DQ')")
-      (constraint length (min 32mm) (opt 33mm) (max 33mm))
-     (constraint skew (max 0.1mm))
-)
-
-
-#DDR single width setting ///////////////////////////////////////////
-#DDR DDR_AC
-(rule "Track Width for DDR_AC at 1L"
-    (condition "A.NetClass == 'DDR_AC' && A.Layer == '1L.Cu'")
-    (constraint track_width (opt 0.1102mm))
-)
-
-(rule "Track Width for DDR_AC at 3L"
-    (condition "A.NetClass == 'DDR_AC' && A.Layer == '3L.Cu'")
-    (constraint track_width (opt 0.1054mm))
-)
-
-(rule "Track Width for DDR_AC at 8L"
-    (condition "A.NetClass == 'DDR_AC' && A.Layer == '8L.Cu'")
-    (constraint track_width (opt 0.1102mm))
-)
-
-#DDR DDR_DQ
-(rule "Track Width for DDR_DQ at 1L"
-    (condition "A.NetClass == 'DDR_DQ' && A.Layer == '1L.Cu'")
-    (constraint track_width (opt 0.1102mm))
-)
-
-(rule "Track Width for DDR_DQ at 3L"
-    (condition "A.NetClass == 'DDR_DQ' && A.Layer == '3L.Cu'")
-    (constraint track_width (opt 0.1054mm))
-)
-
-(rule "Track Width for DDR_DQ at 8L"
-    (condition "A.NetClass == 'DDR_DQ' && A.Layer == '8L.Cu'")
-    (constraint track_width (opt 0.1102mm))
-)
 
 #DDR dif width setting  /////////////////////////////////////////////////////////////////////////
 
@@ -86,22 +25,23 @@
     (layer "1L.Cu")
     (condition "A.hasNetclass('100_ohm_diff')")
     (constraint track_width (opt 0.1034mm))
-    (constraint diff_pair_gap (opt 0.15mm))
+   # (constraint diff_pair_gap (opt 0.15mm))
 )
-
 
 (rule "DDR_100_ohm_diff_3L"
 	(layer "3L.Cu")
     (condition "A.hasNetclass('100_ohm_diff')")
-    (constraint track_width (min 0.1029mm) (opt 0.1029mm) (max 0.1029mm))
-    (constraint diff_pair_gap (min 0.17mm) (opt 0.17mm) (max 0.17mm))
+	(constraint diff_pair_gap (min 0.17mm) (opt 0.17mm) (max 0.17mm))
+	(constraint track_width (min 0.1029mm) (opt 0.1029mm) (max 0.1029mm))
+    
 )
+
 
 (rule "Track Width for 100_ohm_diff at 8L"
     (layer "8L.Cu")
     (condition "A.hasNetclass('100_ohm_diff')")
     (constraint track_width (opt 0.1034mm))
-    (constraint diff_pair_gap (opt 0.15mm))
+  #  (constraint diff_pair_gap (opt 0.15mm))
 )
 
 
