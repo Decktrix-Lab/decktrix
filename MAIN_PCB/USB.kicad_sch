@@ -1739,16 +1739,6 @@
 		)
 		(uuid "61a692ef-bd1d-4c56-987d-145eb8b2b34b")
 	)
-	(text "Need R calc\n"
-		(exclude_from_sim no)
-		(at 256.54 183.642 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d6f546a0-588c-41cc-b958-0e03ca010f54")
-	)
 	(junction
 		(at 97.79 105.41)
 		(diameter 0)
@@ -3162,7 +3152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05a22476-2df6-45da-8006-b069a830eeca")
-		(property "Reference" "U2"
+		(property "Reference" "U1101"
 			(at 146.05 161.29 0)
 			(effects
 				(font
@@ -3370,7 +3360,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "U2")
+					(reference "U1101")
 					(unit 1)
 				)
 			)
@@ -3386,7 +3376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0759f3f8-1c63-4cf4-8279-09fe521da709")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR01112"
 			(at 245.11 204.47 0)
 			(effects
 				(font
@@ -3436,7 +3426,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR029")
+					(reference "#PWR01112")
 					(unit 1)
 				)
 			)
@@ -3451,7 +3441,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15a27526-85f4-4663-8e32-ebd494d7d909")
-		(property "Reference" "#PWR01107"
+		(property "Reference" "#PWR01118"
 			(at 331.47 119.38 0)
 			(effects
 				(font
@@ -3501,7 +3491,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01107")
+					(reference "#PWR01118")
 					(unit 1)
 				)
 			)
@@ -3517,7 +3507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cae06cc-b33f-47d0-b326-bcac49cbe998")
-		(property "Reference" "D1"
+		(property "Reference" "D1101"
 			(at 151.13 105.4099 90)
 			(effects
 				(font
@@ -3634,7 +3624,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "D1")
+					(reference "D1101")
 					(unit 1)
 				)
 			)
@@ -3649,7 +3639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23009ecb-2ce5-4e71-b495-22310e0cff8e")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR01108"
 			(at 184.15 113.03 0)
 			(effects
 				(font
@@ -3699,7 +3689,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR016")
+					(reference "#PWR01108")
 					(unit 1)
 				)
 			)
@@ -3714,7 +3704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26c68322-07e7-4199-9202-faf65d4bfbd1")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR01102"
 			(at 97.79 105.41 0)
 			(effects
 				(font
@@ -3764,7 +3754,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR010")
+					(reference "#PWR01102")
 					(unit 1)
 				)
 			)
@@ -3780,7 +3770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "353bffa3-a35e-4391-bf87-571416dece5a")
-		(property "Reference" "J1101"
+		(property "Reference" "J1102"
 			(at 303.53 105.41 0)
 			(effects
 				(font
@@ -4058,7 +4048,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "J1101")
+					(reference "J1102")
 					(unit 1)
 				)
 			)
@@ -4074,7 +4064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e2094c0-2861-499d-a326-b742e627da9e")
-		(property "Reference" "R1102"
+		(property "Reference" "R1105"
 			(at 384.81 139.954 0)
 			(effects
 				(font
@@ -4198,7 +4188,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "R1102")
+					(reference "R1105")
 					(unit 1)
 				)
 			)
@@ -4213,7 +4203,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57df266b-0a76-430c-b052-dde6a2a46c34")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR01107"
 			(at 148.59 116.84 0)
 			(effects
 				(font
@@ -4263,7 +4253,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR015")
+					(reference "#PWR01107")
 					(unit 1)
 				)
 			)
@@ -4278,7 +4268,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5de60da8-25ed-4e09-afea-8e353921d1b9")
-		(property "Reference" "C1103"
+		(property "Reference" "C1106"
 			(at 273.05 109.982 0)
 			(effects
 				(font
@@ -4411,7 +4401,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "C1103")
+					(reference "C1106")
 					(unit 1)
 				)
 			)
@@ -4426,7 +4416,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a9924a7-58d6-4c2c-837d-824ce57629b7")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR01103"
 			(at 101.6 148.59 0)
 			(effects
 				(font
@@ -4476,7 +4466,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR011")
+					(reference "#PWR01103")
 					(unit 1)
 				)
 			)
@@ -4491,7 +4481,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d1f617b-aed8-478e-a541-f2d08a3c3adc")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR01109"
 			(at 195.58 113.03 0)
 			(effects
 				(font
@@ -4541,7 +4531,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR017")
+					(reference "#PWR01109")
 					(unit 1)
 				)
 			)
@@ -4556,7 +4546,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "72f0e1cd-a08d-4e6b-a3dd-fd1b83982dc8")
-		(property "Reference" "C9"
+		(property "Reference" "C1103"
 			(at 90.17 107.442 0)
 			(effects
 				(font
@@ -4689,7 +4679,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "C9")
+					(reference "C1103")
 					(unit 1)
 				)
 			)
@@ -4704,7 +4694,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8eb76c34-a2ff-4e28-a459-37b037d610c3")
-		(property "Reference" "#PWR01105"
+		(property "Reference" "#PWR01116"
 			(at 325.12 106.68 0)
 			(effects
 				(font
@@ -4754,7 +4744,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01105")
+					(reference "#PWR01116")
 					(unit 1)
 				)
 			)
@@ -4770,7 +4760,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "931640da-2af1-4531-ae4b-c7e15a6a5553")
-		(property "Reference" "D1101"
+		(property "Reference" "D1103"
 			(at 334.01 107.9499 90)
 			(effects
 				(font
@@ -4887,7 +4877,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "D1101")
+					(reference "D1103")
 					(unit 1)
 				)
 			)
@@ -4902,7 +4892,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9563640b-c223-40aa-a1bd-bcb9ff79aea3")
-		(property "Reference" "C8"
+		(property "Reference" "C1102"
 			(at 78.994 108.204 0)
 			(effects
 				(font
@@ -5035,7 +5025,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "C8")
+					(reference "C1102")
 					(unit 1)
 				)
 			)
@@ -5051,7 +5041,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95703fc2-6518-4c0a-85b4-c431aa2708ca")
-		(property "Reference" "R1101"
+		(property "Reference" "R1104"
 			(at 374.65 139.954 0)
 			(effects
 				(font
@@ -5175,7 +5165,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "R1101")
+					(reference "R1104")
 					(unit 1)
 				)
 			)
@@ -5191,7 +5181,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98a1e746-aa43-4fe4-bfcf-02fd588476d7")
-		(property "Reference" "#PWR01104"
+		(property "Reference" "#PWR01115"
 			(at 313.69 200.66 0)
 			(effects
 				(font
@@ -5241,7 +5231,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01104")
+					(reference "#PWR01115")
 					(unit 1)
 				)
 			)
@@ -5257,7 +5247,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e3d71dd-6d06-434f-bbad-e23506213889")
-		(property "Reference" "#PWR01109"
+		(property "Reference" "#PWR01120"
 			(at 381 151.13 0)
 			(effects
 				(font
@@ -5307,7 +5297,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01109")
+					(reference "#PWR01120")
 					(unit 1)
 				)
 			)
@@ -5322,7 +5312,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0885953-60f8-40b7-90ed-52cf8d7928fc")
-		(property "Reference" "#PWR01101"
+		(property "Reference" "#PWR01110"
 			(at 240.03 124.46 0)
 			(effects
 				(font
@@ -5372,7 +5362,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01101")
+					(reference "#PWR01110")
 					(unit 1)
 				)
 			)
@@ -5451,7 +5441,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 330.2 104.14 0)
 			(effects
 				(font
@@ -5496,6 +5486,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser P/N" "DNI"
+			(at 330.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
+			(at 330.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "52d06cce-3e5d-4ec3-a593-a1c58fd00922")
 		)
@@ -5518,7 +5526,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad1ee4ce-c320-4d70-8461-22ddc9d3a6fa")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR01104"
 			(at 130.81 198.12 0)
 			(effects
 				(font
@@ -5568,7 +5576,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR012")
+					(reference "#PWR01104")
 					(unit 1)
 				)
 			)
@@ -5583,7 +5591,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b351fe7f-c08b-488f-bb67-7d7cd55f5885")
-		(property "Reference" "#PWR01102"
+		(property "Reference" "#PWR01113"
 			(at 280.67 107.95 0)
 			(effects
 				(font
@@ -5633,7 +5641,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01102")
+					(reference "#PWR01113")
 					(unit 1)
 				)
 			)
@@ -5648,7 +5656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b83c11b4-d60e-496c-9d09-5d974731f4c1")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR01105"
 			(at 142.24 104.14 0)
 			(effects
 				(font
@@ -5698,7 +5706,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR013")
+					(reference "#PWR01105")
 					(unit 1)
 				)
 			)
@@ -5713,7 +5721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8917797-34a2-4691-bc79-1ae4e2300ca5")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR01111"
 			(at 245.11 179.07 0)
 			(effects
 				(font
@@ -5763,7 +5771,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR030")
+					(reference "#PWR01111")
 					(unit 1)
 				)
 			)
@@ -5778,7 +5786,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd805cf5-ecd5-42fb-b75e-b6ec77ace09e")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR01106"
 			(at 142.24 148.59 0)
 			(effects
 				(font
@@ -5828,7 +5836,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR014")
+					(reference "#PWR01106")
 					(unit 1)
 				)
 			)
@@ -5844,7 +5852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2a53a9c-cdd2-42fd-9f76-4ee17c765146")
-		(property "Reference" "R7"
+		(property "Reference" "R1103"
 			(at 247.65 180.3399 0)
 			(effects
 				(font
@@ -5853,7 +5861,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "240"
 			(at 247.65 182.8799 0)
 			(effects
 				(font
@@ -5916,7 +5924,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25094"
 			(at 245.11 181.61 0)
 			(effects
 				(font
@@ -5970,7 +5978,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "R7")
+					(reference "R1103")
 					(unit 1)
 				)
 			)
@@ -5986,7 +5994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d443f531-a753-4f83-8a86-cf24efca8ecd")
-		(property "Reference" "D7"
+		(property "Reference" "D1102"
 			(at 248.92 192.0874 90)
 			(effects
 				(font
@@ -6112,7 +6120,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "D7")
+					(reference "D1102")
 					(unit 1)
 				)
 			)
@@ -6127,7 +6135,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8e94c9d-ad67-4524-919c-32c26cdf1ee5")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR01101"
 			(at 57.15 121.92 0)
 			(effects
 				(font
@@ -6177,7 +6185,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR09")
+					(reference "#PWR01101")
 					(unit 1)
 				)
 			)
@@ -6192,7 +6200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ddca35da-3ea0-41be-aa05-3fdbda8b29e7")
-		(property "Reference" "C7"
+		(property "Reference" "C1101"
 			(at 65.532 108.204 0)
 			(effects
 				(font
@@ -6316,7 +6324,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "C7")
+					(reference "C1101")
 					(unit 1)
 				)
 			)
@@ -6332,7 +6340,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e015e03c-a4a8-4d27-80c3-8853130fb669")
-		(property "Reference" "R5"
+		(property "Reference" "R1101"
 			(at 187.96 113.284 0)
 			(effects
 				(font
@@ -6402,7 +6410,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C114756"
 			(at 184.15 114.3 0)
 			(effects
 				(font
@@ -6456,7 +6464,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "R5")
+					(reference "R1101")
 					(unit 1)
 				)
 			)
@@ -6472,7 +6480,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2293cdc-baaf-4ff2-9030-2341ec6304b2")
-		(property "Reference" "#PWR01108"
+		(property "Reference" "#PWR01119"
 			(at 370.84 151.13 0)
 			(effects
 				(font
@@ -6522,7 +6530,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01108")
+					(reference "#PWR01119")
 					(unit 1)
 				)
 			)
@@ -6537,7 +6545,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e92a2484-b5dc-4b68-bda5-72d39fa9e771")
-		(property "Reference" "C1102"
+		(property "Reference" "C1105"
 			(at 261.874 110.744 0)
 			(effects
 				(font
@@ -6670,7 +6678,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "C1102")
+					(reference "C1105")
 					(unit 1)
 				)
 			)
@@ -6687,7 +6695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee307c9f-96ae-4f65-8839-aca6cf5328d1")
-		(property "Reference" "U1101"
+		(property "Reference" "U1102"
 			(at 328.93 163.83 0)
 			(effects
 				(font
@@ -6895,7 +6903,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "U1101")
+					(reference "U1102")
 					(unit 1)
 				)
 			)
@@ -6911,7 +6919,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2f07880-2406-46b7-8c98-cb8996be1e18")
-		(property "Reference" "R4"
+		(property "Reference" "R1102"
 			(at 199.39 113.284 0)
 			(effects
 				(font
@@ -6981,7 +6989,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C114756"
 			(at 195.58 114.3 0)
 			(effects
 				(font
@@ -7035,7 +7043,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "R4")
+					(reference "R1102")
 					(unit 1)
 				)
 			)
@@ -7050,7 +7058,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb7b90d3-fd2f-4be7-95a1-55b214cf3c33")
-		(property "Reference" "#PWR01106"
+		(property "Reference" "#PWR01117"
 			(at 325.12 151.13 0)
 			(effects
 				(font
@@ -7100,7 +7108,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01106")
+					(reference "#PWR01117")
 					(unit 1)
 				)
 			)
@@ -7115,7 +7123,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcfefdb5-ab2a-4623-aa97-e0935e02aab4")
-		(property "Reference" "#PWR01103"
+		(property "Reference" "#PWR01114"
 			(at 284.48 151.13 0)
 			(effects
 				(font
@@ -7165,7 +7173,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "#PWR01103")
+					(reference "#PWR01114")
 					(unit 1)
 				)
 			)
@@ -7180,7 +7188,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fef2383c-7fcb-40e6-a04c-43f2b3e4599b")
-		(property "Reference" "C1101"
+		(property "Reference" "C1104"
 			(at 248.412 110.744 0)
 			(effects
 				(font
@@ -7304,7 +7312,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "C1101")
+					(reference "C1104")
 					(unit 1)
 				)
 			)
@@ -7320,7 +7328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ffb004f4-f1f2-4128-9b3e-89d65d4f56c2")
-		(property "Reference" "J1"
+		(property "Reference" "J1101"
 			(at 120.65 102.87 0)
 			(effects
 				(font
@@ -7598,7 +7606,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/e858ea8a-86d0-4700-bf02-f0e8f8d24e5c"
-					(reference "J1")
+					(reference "J1101")
 					(unit 1)
 				)
 			)

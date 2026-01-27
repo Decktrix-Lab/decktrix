@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 5,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -172,7 +172,6 @@
       "Net-(U202-VLX4)",
       "Net-(Q201-D)",
       "Net-(U202-~{RST})",
-      "Net-(U402-ZQ)",
       "Net-(U901A-CONFIG0)",
       "unconnected-(U4D-PE2-PadT1)",
       "unconnected-(U4C-PD14-PadF3)",
@@ -231,11 +230,6 @@
       "unconnected-(U202-SWIN-Pad37)",
       "unconnected-(U202-VLXBST-Pad33)",
       "unconnected-(U202-VBUSOTG-Pad35)",
-      "unconnected-(U402-NC__3-PadL9)",
-      "unconnected-(U402-NC-PadJ1)",
-      "unconnected-(U402-NC__2-PadL1)",
-      "unconnected-(U402-A15-PadM7)",
-      "unconnected-(U402-NC__1-PadJ9)",
       "unconnected-(U501-I{slash}O_4-Pad5)",
       "1V8_WIFI",
       "Net-(U201-SW)",
@@ -285,22 +279,14 @@
       "BT_DEV_WAKE",
       "WLAN_DEV_WAKE",
       "/WIFI/SLP_CLK",
-      "Net-(U1-CLK_OUT)",
-      "unconnected-(U1-NC-Pad1)",
-      "unconnected-(J1-SBU2-PadB8)",
-      "unconnected-(J1-SBU1-PadA8)",
-      "Net-(D7-A)",
       "MOD_ADC3{slash}TIM3_CH1",
       "MOD_ADC5{slash}TIM3_CH4",
       "MOD_ADC9{slash}TIM3_CH3",
       "unconnected-(U4D-PE9-PadW7)",
-      "Net-(U703-I{slash}O_4)",
-      "unconnected-(U2-I{slash}O_1-Pad1)",
-      "unconnected-(U2-I{slash}O_4-Pad5)",
       "USB_M_CC2",
       "USB_M_CC1"
     ],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -311,17 +297,17 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": true,
-      "footprints": true,
-      "graphics": true,
-      "keepouts": true,
+      "dimensions": false,
+      "footprints": false,
+      "graphics": false,
+      "keepouts": false,
       "lockedItems": false,
-      "otherItems": true,
-      "pads": true,
+      "otherItems": false,
+      "pads": false,
       "text": true,
-      "tracks": true,
-      "vias": true,
-      "zones": true
+      "tracks": false,
+      "vias": false,
+      "zones": false
     },
     "visible_items": [
       "vias",
@@ -341,7 +327,7 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_aaaaaaa0_a0aaff7f",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_d7ff00a1",
     "zone_display_mode": 0
   },
   "git": {

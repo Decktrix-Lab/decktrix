@@ -8213,7 +8213,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C96676"
 			(at 255.27 208.28 0)
 			(effects
 				(font
@@ -8693,7 +8693,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 375.92 163.83 0)
 			(effects
 				(font
@@ -8730,6 +8730,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 375.92 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 375.92 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 375.92 163.83 0)
 			(effects
 				(font
@@ -9184,7 +9202,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 377.19 191.77 0)
 			(effects
 				(font
@@ -9221,6 +9239,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 377.19 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 377.19 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 377.19 191.77 0)
 			(effects
 				(font
@@ -10729,7 +10765,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 377.19 233.68 0)
 			(effects
 				(font
@@ -10766,6 +10802,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 377.19 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 377.19 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 377.19 233.68 0)
 			(effects
 				(font
@@ -11138,7 +11192,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 377.19 205.74 0)
 			(effects
 				(font
@@ -11175,6 +11229,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 377.19 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 377.19 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 377.19 205.74 0)
 			(effects
 				(font
@@ -13102,7 +13174,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f1d8b82-6c05-4295-a668-cb5dd4c39729")
-		(property "Reference" "S2"
+		(property "Reference" "S201"
 			(at 236.22 259.0876 90)
 			(effects
 				(font
@@ -13158,6 +13230,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C963349"
+			(at 229.87 260.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a0131e22-af21-4380-8dac-34f468fb2c03")
 		)
@@ -13167,7 +13248,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
-					(reference "S2")
+					(reference "S201")
 					(unit 1)
 				)
 			)
@@ -13377,7 +13458,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 377.19 219.71 0)
 			(effects
 				(font
@@ -13414,6 +13495,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 377.19 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 377.19 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 377.19 219.71 0)
 			(effects
 				(font
@@ -13703,7 +13802,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 298.45 35.56 0)
 			(effects
 				(font
@@ -13740,6 +13839,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 298.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 298.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 298.45 35.56 0)
 			(effects
 				(font
@@ -13833,7 +13950,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 386.08 77.47 0)
 			(effects
 				(font
@@ -13870,6 +13987,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 386.08 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 386.08 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 386.08 77.47 0)
 			(effects
 				(font
@@ -14146,6 +14281,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2071859"
+			(at 109.22 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -14682,7 +14826,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 375.92 149.86 0)
 			(effects
 				(font
@@ -14719,6 +14863,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 375.92 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 375.92 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 375.92 149.86 0)
 			(effects
 				(font
@@ -15325,7 +15487,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 386.08 35.56 0)
 			(effects
 				(font
@@ -15362,6 +15524,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 386.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 386.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 386.08 35.56 0)
 			(effects
 				(font
@@ -15715,7 +15895,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 386.08 63.5 0)
 			(effects
 				(font
@@ -15752,6 +15932,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 386.08 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 386.08 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 386.08 63.5 0)
 			(effects
 				(font
@@ -15883,6 +16081,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 143.51 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C337893"
 			(at 143.51 53.34 0)
 			(effects
 				(font
@@ -16134,7 +16341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8312244-8ddf-4872-acca-8f4b7d91fa5b")
-		(property "Reference" "D3"
+		(property "Reference" "D201"
 			(at 254 252.7299 90)
 			(effects
 				(font
@@ -16372,7 +16579,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/355c85ef-822d-4607-91cf-41bd60068331"
-					(reference "D3")
+					(reference "D201")
 					(unit 1)
 				)
 			)
@@ -17488,7 +17695,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "DNI"
 			(at 386.08 49.53 0)
 			(effects
 				(font
@@ -17525,6 +17732,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 386.08 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "DNI"
+			(at 386.08 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "DNI"
 			(at 386.08 49.53 0)
 			(effects
 				(font

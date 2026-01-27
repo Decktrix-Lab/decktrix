@@ -8474,7 +8474,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db96544f-1581-432b-8ac4-47657841669b")
-		(property "Reference" "U4"
+		(property "Reference" "U301"
 			(at -68.58 240.03 0)
 			(effects
 				(font
@@ -8575,6 +8575,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 87.63 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "511-STM32MP157FAB1"
+			(at 87.63 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "STM32MP157FAB1"
 			(at 87.63 82.55 0)
 			(effects
 				(font
@@ -9648,7 +9666,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/9899e005-10ba-4bf4-b936-8d0d8a1813b9"
-					(reference "U4")
+					(reference "U301")
 					(unit 6)
 				)
 			)

@@ -18372,7 +18372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7de64624-261b-4fd7-a379-75eb10547414")
-		(property "Reference" "U4"
+		(property "Reference" "U301"
 			(at 43.18 284.48 0)
 			(effects
 				(font
@@ -18475,6 +18475,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 199.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "511-STM32MP157FAB1"
+			(at 199.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "STM32MP157FAB1"
 			(at 199.39 127 0)
 			(effects
 				(font
@@ -19552,7 +19570,7 @@
 					(unit 1)
 				)
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/f922126e-a4bd-4f88-a222-a0ba90de18ce"
-					(reference "U4")
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -23920,6 +23938,24 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 139.7 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser P/N" "628-CPH3225A"
+			(at 139.7 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "REC P/N" "CPH3225A"
 			(at 139.7 26.67 90)
 			(effects
 				(font

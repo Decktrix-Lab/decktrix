@@ -5337,7 +5337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7bdedd2-1acc-4cca-9dc0-431214fd3078")
-		(property "Reference" "R8"
+		(property "Reference" "R504"
 			(at 304.8 120.6499 0)
 			(effects
 				(font
@@ -5463,7 +5463,7 @@
 		(instances
 			(project "MPU_MOD"
 				(path "/65890f61-d586-475b-928a-b635a5e4e59e/ec317a3c-922b-4ac6-af1a-f2cdb70bc7c5"
-					(reference "R8")
+					(reference "R504")
 					(unit 1)
 				)
 			)
