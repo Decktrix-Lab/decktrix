@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.5,
-          "width": 0.5
+          "height": 0.84,
+          "width": 0.23
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -156,10 +156,10 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_height_ratio": 1.0,
+          "td_height_ratio": 0.7,
           "td_length_ratio": 0.5,
-          "td_maxheight": 2.0,
-          "td_maxlen": 1.0,
+          "td_maxheight": 1.0,
+          "td_maxlen": 0.05,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_round_shape",
           "td_width_to_size_filter_ratio": 0.9
@@ -167,10 +167,10 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_height_ratio": 1.0,
+          "td_height_ratio": 0.6,
           "td_length_ratio": 0.5,
-          "td_maxheight": 2.0,
-          "td_maxlen": 1.0,
+          "td_maxheight": 0.5,
+          "td_maxlen": 0.15,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_rect_shape",
           "td_width_to_size_filter_ratio": 0.9
