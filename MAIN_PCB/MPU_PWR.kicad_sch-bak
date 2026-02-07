@@ -22911,7 +22911,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uH"
+		(property "Value" "1uH"
 			(at 105.156 110.236 90)
 			(effects
 				(font
