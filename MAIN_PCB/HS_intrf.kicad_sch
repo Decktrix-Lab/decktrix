@@ -7789,17 +7789,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "CHECKED 2.0 MG\n"
-		(exclude_from_sim no)
-		(at 101.346 44.45 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-				(color 97 255 51 1)
-			)
-		)
-		(uuid "962a4719-2717-4179-8bbb-4a3fd9875216")
-	)
 	(text_box "VSS_USBHS\n"
 		(exclude_from_sim no)
 		(at 62.23 87.63 0)

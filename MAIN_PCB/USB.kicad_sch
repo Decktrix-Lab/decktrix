@@ -1728,17 +1728,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "CHECKED 2.0 MG\n"
-		(exclude_from_sim no)
-		(at 178.308 54.864 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-				(color 97 255 51 1)
-			)
-		)
-		(uuid "61a692ef-bd1d-4c56-987d-145eb8b2b34b")
-	)
 	(junction
 		(at 97.79 105.41)
 		(diameter 0)

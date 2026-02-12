@@ -9919,17 +9919,6 @@
 		)
 		(uuid "2dbd4dc1-f971-4eaf-a677-91360a8225dd")
 	)
-	(text "CHECKED 2.0 MG\n"
-		(exclude_from_sim no)
-		(at 166.624 207.264 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-				(color 97 255 51 1)
-			)
-		)
-		(uuid "86cbfa16-a5f3-4112-b276-f223d8307f5e")
-	)
 	(text_box "Length of DQS_N/DQS_P must be from 0 to 590 mils (14.986 mm) shorter than\nCLK_N / CLK_P length (CLK_N/CLK_P must be the longest traces)."
 		(exclude_from_sim no)
 		(at 33.02 185.42 0)

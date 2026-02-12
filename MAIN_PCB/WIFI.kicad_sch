@@ -2473,17 +2473,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "CHECKED 2.0 MG\n"
-		(exclude_from_sim no)
-		(at 95.25 34.544 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-				(color 97 255 51 1)
-			)
-		)
-		(uuid "45d46162-93c3-491a-8d18-614e9f8166da")
-	)
 	(text "Conf settings during boot. internal pull-up exist. \nDon't interfere with it through UART or a pull-down on the input."
 		(exclude_from_sim no)
 		(at 196.342 198.374 0)

@@ -9548,17 +9548,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "CHECKED 2.0 MG\n"
-		(exclude_from_sim no)
-		(at 138.684 32.004 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-				(color 97 255 51 1)
-			)
-		)
-		(uuid "d2fc1936-7785-4e2b-a80d-8036453cf001")
-	)
 	(junction
 		(at 297.18 52.07)
 		(diameter 0)
@@ -15617,7 +15606,7 @@
 		(dnp no)
 		(uuid "bfadb471-168b-4519-81af-dcfe0160891d")
 		(property "Reference" "U301"
-			(at 35.56 270.51 0)
+			(at 196.85 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)

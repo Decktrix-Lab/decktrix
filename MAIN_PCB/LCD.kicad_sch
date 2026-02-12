@@ -2394,17 +2394,6 @@
 		)
 		(uuid "ccda9074-8eb1-45cd-91de-637c0841b014")
 	)
-	(text "CHECKED 2.0 MG\n"
-		(exclude_from_sim no)
-		(at 178.562 235.712 0)
-		(effects
-			(font
-				(size 12.7 12.7)
-				(color 97 255 51 1)
-			)
-		)
-		(uuid "f3b19e09-bc6f-4a37-b28e-d577a415b49f")
-	)
 	(junction
 		(at 222.25 33.02)
 		(diameter 0)
