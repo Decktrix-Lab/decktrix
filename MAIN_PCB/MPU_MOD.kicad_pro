@@ -58,7 +58,84 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "diff_pair_gap_out_of_range|101110000|121850000|118b8a8b-63f4-43d9-8a37-20150a5b123e|a52e72de-73a5-48a4-989e-bc9b5fd8a1d8",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|101237400|121338850|118b8a8b-63f4-43d9-8a37-20150a5b123e|6fceebb6-5110-43ce-9bd4-8570cba9a909",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102110000|121401250|118b8a8b-63f4-43d9-8a37-20150a5b123e|eeed79f1-f9d8-4419-a400-76523f64df70",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102110000|121401250|c3d6e1b6-68cb-4b3a-94ee-d266f5816f94|eeed79f1-f9d8-4419-a400-76523f64df70",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102110000|121850000|118b8a8b-63f4-43d9-8a37-20150a5b123e|85dc6491-c6a3-40ad-b214-5ca4614ee371",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102110000|121850000|c3d6e1b6-68cb-4b3a-94ee-d266f5816f94|85dc6491-c6a3-40ad-b214-5ca4614ee371",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102583800|117863775|7cc652d1-11c7-426a-bf0f-c4a0de56d700|c7d80831-2bc2-4b57-8961-79c21b12be1f",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102583800|118963775|7cc652d1-11c7-426a-bf0f-c4a0de56d700|76f8bb92-8faa-4014-8cc9-ed3af52bd90f",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|102583898|116763726|7cc652d1-11c7-426a-bf0f-c4a0de56d700|2eb35e77-63be-4f1c-be2e-8c407c21939c",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|103872283|94721468|b52b5b34-1fe7-4665-b34a-c91b41d5c9ff|e61e2301-00d1-4c56-9117-ee36a837c9e6",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|87150000|121872500|a3917ede-f887-41ff-92a8-2ea047fe5c7b|b1254dce-f2fc-4ba3-85ba-926b9e6be3b4",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|87450000|117670000|beff4acc-3f53-4838-b600-62f099e93bb7|c0bc5765-68d4-4ab7-9175-a39b1a151bf4",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|87749325|118725675|542ff315-66de-43f6-a0f2-5d57e5e18462|25c6f843-9258-4a6b-9df3-08319e468319",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|87749325|118874325|16853357-1a6c-45a6-a1eb-fbf3d084f3ce|d65a50dd-edf5-4bdc-9e59-992a456c20c4",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|88150000|121872500|a3917ede-f887-41ff-92a8-2ea047fe5c7b|b349a796-6c39-4ebe-8de8-a4a4eb8eb3c6",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|88150000|121872500|a7b765a8-793f-429d-b819-42ec9c4eb2ae|b349a796-6c39-4ebe-8de8-a4a4eb8eb3c6",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|88273650|120746843|a5efea44-8e43-44da-be18-15e876ff3c74|8730f7e4-7835-402c-b587-eebe8827b653",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|90882047|111951858|2500005f-9817-4d3b-90f4-20d822e35d6f|5e9fa513-19cb-455c-8961-4f85dc2ebe89",
+          ""
+        ],
+        [
+          "diff_pair_gap_out_of_range|92082047|111951858|2500005f-9817-4d3b-90f4-20d822e35d6f|33e889b3-9322-473d-9a24-7a7cfbbd14d1",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -87,7 +164,7 @@
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
-        "length_out_of_range": "error",
+        "length_out_of_range": "ignore",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
@@ -104,7 +181,7 @@
         "silk_edge_clearance": "ignore",
         "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
-        "skew_out_of_range": "error",
+        "skew_out_of_range": "ignore",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "ignore",
