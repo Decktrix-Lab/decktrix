@@ -292,7 +292,7 @@
       "unconnected-(U1101-I{slash}O_1-Pad1)",
       "unconnected-(U1101-I{slash}O_4-Pad5)"
     ],
-    "high_contrast_mode": 2,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
