@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TS5A3157DBVR")(type "KiCad")(uri "${KIPRJMOD}/lib/TS5A3157DBVR.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "74c59fe6-ffed-4c53-a520-4e7896f581c1")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 76.2 60.325)
+		(size 26.67 22.225)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "48d99d2c-b5b9-41ba-bfa7-e403a11929d5")
+		(property "Sheetname" "Analog_Input"
+			(at 76.2 59.6134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Analog_Input.kicad_sch"
+			(at 76.2 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "multimeter"
+				(path "/74c59fe6-ffed-4c53-a520-4e7896f581c1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
