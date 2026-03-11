@@ -10,6 +10,7 @@ readonly DEBOOTSTRAP_DIR="debootstrap"
 readonly DEBOOTSTRAP_PREFETCHED_DIR="debootstrap-prefetched"
 readonly KERNEL_DIR="board/linux/linux-v6.17"
 readonly UBOOT_DIR="board/u-boot/u-boot-v2025.04"
+readonly DMM_DIR="software/dmm"
 readonly DEPLOY_DIR="deploy"
 
 readonly STM32_DT="stm32mp157c-dk2.dtb"
@@ -293,6 +294,19 @@ use_prefetched_download() {
     sudo cp -p -r ${DEBOOTSTRAP_PREFETCHED_DIR} ${DEBOOTSTRAP_DIR}
 }
 
+build_and_install_dmm() {
+    echo "-I building and installing DMM"
+
+    cmake -DCMAKE_TOOLCHAIN_FILE=user_cross_compile_setup.cmake \
+          -DCONFIG=wayland -DCMAKE_SYSROOT=$(pwd)/${DEBOOTSTRAP_DIR} \
+          -B ${DMM_DIR}/build -S ${DMM_DIR}
+
+    make -C ${DMM_DIR}/build -j
+
+    sudo install --verbose --owner=root --group=root --mode=755 \
+         ${DMM_DIR}/build/bin/dmm ${DEBOOTSTRAP_DIR}/usr/bin/dmm
+}
+
 create_rootfs_ext4() {
     sudo rm -rf ${DEPLOY_DIR} && mkdir -p ${DEPLOY_DIR}
     sudo dd if=/dev/zero of=${DEPLOY_DIR}/rootfs.ext4 bs=1 count=0 seek=2500M
@@ -425,6 +439,8 @@ start_image_build() {
     install_device_tree
 
     enable_serial_console
+
+    build_and_install_dmm
 
     umount_vfs
 
