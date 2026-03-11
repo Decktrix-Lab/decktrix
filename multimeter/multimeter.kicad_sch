@@ -47,6 +47,90 @@
 			)
 		)
 	)
+	(sheet
+		(at 148.59 59.69)
+		(size 30.48 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "99b12dcd-4a2e-4e7d-9542-dff30e821992")
+		(property "Sheetname" "ADC_DIG"
+			(at 148.59 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC_DIG.kicad_sch"
+			(at 148.59 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "multimeter"
+				(path "/74c59fe6-ffed-4c53-a520-4e7896f581c1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 59.69)
+		(size 30.48 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "edeca1cc-1f98-4104-a71b-cbc65a4f8eda")
+		(property "Sheetname" "LCR"
+			(at 109.22 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LCR.kicad_sch"
+			(at 109.22 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "multimeter"
+				(path "/74c59fe6-ffed-4c53-a520-4e7896f581c1"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

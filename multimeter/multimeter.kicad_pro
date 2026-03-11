@@ -416,6 +416,14 @@
     [
       "48d99d2c-b5b9-41ba-bfa7-e403a11929d5",
       "Analog_Input"
+    ],
+    [
+      "edeca1cc-1f98-4104-a71b-cbc65a4f8eda",
+      "LCR"
+    ],
+    [
+      "99b12dcd-4a2e-4e7d-9542-dff30e821992",
+      "ADC_DIG"
     ]
   ],
   "text_variables": {}
