@@ -3,6 +3,7 @@ LV_COLOR_DEPTH 16
 # drivers
 LV_USE_WAYLAND 1
 LV_WAYLAND_WINDOW_DECORATIONS 0 // Set to 1 on weston or gnome
+LV_USE_EVDEV 1
 
 # Examples
 LV_BUILD_EXAMPLES 1

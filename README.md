@@ -91,6 +91,9 @@ swaymsg output DSI-1 transform 0
 ```
 export SWAYSOCK=/home/debian/sway-ipc.$(id -u).$(pgrep -x sway).sock
 swaymsg "exec /usr/bin/launcher -l -E /dev/input/by-path/platform-gpio-keys-event -A /etc/apps.toml"
+
+export SWAYSOCK=/home/debian/sway-ipc.$(id -u).$(pgrep -x sway).sock
+swaymsg "exec /usr/bin/dmm"
 ```
 
 ## Toggle sway bar
