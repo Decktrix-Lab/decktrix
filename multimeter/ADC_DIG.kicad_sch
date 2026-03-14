@@ -2,8 +2,8 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "0c524df1-1b04-4e03-b559-9a4d117e6034")
-	(paper "A4")
+	(uuid "77fe71fe-604b-488b-b83a-38989026727c")
+	(paper "A3")
 	(lib_symbols
 		(symbol "ADS131M06IRSNT:ADS131M06IRSNT"
 			(pin_names
