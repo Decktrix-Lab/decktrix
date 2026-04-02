@@ -16,6 +16,17 @@ readonly STM32_DT="stm32mp157c-dk2.dtb"
 readonly STM32_JADARD_DT="stm32mp157c-dk2-jadard.dtb"
 VARIANT="stm32"
 
+clean_submodules() {
+    echo "-I cleaning submodules"
+    # Configure git safe directory for container environment
+    git config --global --add safe.directory /workspace
+    git config --global --add safe.directory /workspace/board/linux/linux-v6.17
+    git config --global --add safe.directory /workspace/board/u-boot/u-boot-v2025.04
+    git config --global --add safe.directory /workspace/board/tfa/trusted-firmware-a-v2.10.19
+    git submodule foreach --recursive git reset --hard
+    git submodule foreach --recursive git clean -fd
+}
+
 prepare_toolchain() {
     echo "-I preparing toolchain for cross compilation"
 
@@ -25,24 +36,21 @@ prepare_toolchain() {
 }
 
 apply_kernel_patches() {
-    # Check if patches are already applied by looking for marker files
-    # Base patches (0001-0005) are needed for all variants
-    if [ ! -f "${KERNEL_DIR}/arch/arm/configs/decktrix_defconfig" ]; then
-        echo "-I applying kernel base patches"
-        git apply --reject --directory ${KERNEL_DIR} \
-            board/linux/patches/0001-defconfig-Add-separate-config-based-on-multi_v7_defc.patch \
-            board/linux/patches/0002-dts-Add-separate-device-tree-for-stm32-devboard-with.patch \
-            board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
-            board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
-            board/linux/patches/0005-dts-Add-support-for-home-button.patch
-    fi
+    # Always apply kernel patches after cleaning submodules
+    echo "-I applying kernel base patches"
+    git apply --reject --directory ${KERNEL_DIR} \
+        board/linux/patches/0001-defconfig-Add-separate-config-based-on-multi_v7_defc.patch \
+        board/linux/patches/0002-dts-Add-separate-device-tree-for-stm32-devboard-with.patch \
+        board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
+        board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
+        board/linux/patches/0005-dts-Add-support-for-home-button.patch
 }
 
 build_kernel() {
     echo "-I start kernel build"
 
     apply_kernel_patches
-    make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} decktrix_defconfig
+    make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} stm32mp157_defconfig
     make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} zImage modules dtbs -j$(nproc)
 }
 
@@ -395,6 +403,7 @@ start_image_build() {
     prepare_toolchain
 
     if [ "${skip_board}" = false ] ; then
+        clean_submodules
         build_kernel
         build_uboot
         build_tfa

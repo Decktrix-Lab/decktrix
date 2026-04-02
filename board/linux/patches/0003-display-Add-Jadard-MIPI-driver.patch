@@ -6,7 +6,7 @@ Subject: display: Add Jadard MIPI driver
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
  .../boot/dts/st/stm32mp157c-dk2-jadard.dts    |  10 +-
- arch/arm/configs/decktrix_defconfig           |   1 +
+ arch/arm/configs/stm32mp157_defconfig           |   1 +
  drivers/gpu/drm/panel/Kconfig                 |   8 +
  drivers/gpu/drm/panel/Makefile                |   1 +
  drivers/gpu/drm/panel/panel-jadard-jd9365tn.c | 489 ++++++++++++++++++
@@ -36,10 +36,10 @@ index e61ca05d4a27..b57dfb3facee 100644
  		status = "okay";
  
  		port {
-diff --git a/arch/arm/configs/decktrix_defconfig b/arch/arm/configs/decktrix_defconfig
+diff --git a/arch/arm/configs/stm32mp157_defconfig b/arch/arm/configs/stm32mp157_defconfig
 index 4f14482915cc..25bf6494a118 100644
---- a/arch/arm/configs/decktrix_defconfig
-+++ b/arch/arm/configs/decktrix_defconfig
+--- a/arch/arm/configs/stm32mp157_defconfig
++++ b/arch/arm/configs/stm32mp157_defconfig
 @@ -735,6 +735,7 @@ CONFIG_DRM_TEGRA=y
  CONFIG_DRM_STM=m
  CONFIG_DRM_STM_DSI=m

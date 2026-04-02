@@ -7,15 +7,15 @@ This is the base defconfig for future changes.
 
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
- arch/arm/configs/decktrix_defconfig | 1289 ++++++++++++++++++++++++++
+ arch/arm/configs/stm32mp157_defconfig | 1289 ++++++++++++++++++++++++++
  1 file changed, 1289 insertions(+)
- create mode 100644 arch/arm/configs/decktrix_defconfig
+ create mode 100644 arch/arm/configs/stm32mp157_defconfig
 
-diff --git a/arch/arm/configs/decktrix_defconfig b/arch/arm/configs/decktrix_defconfig
+diff --git a/arch/arm/configs/stm32mp157_defconfig b/arch/arm/configs/stm32mp157_defconfig
 new file mode 100644
 index 000000000000..4f14482915cc
 --- /dev/null
-+++ b/arch/arm/configs/decktrix_defconfig
++++ b/arch/arm/configs/stm32mp157_defconfig
 @@ -0,0 +1,1289 @@
 +CONFIG_SYSVIPC=y
 +CONFIG_NO_HZ_IDLE=y
