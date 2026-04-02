@@ -344,7 +344,7 @@ print_help() {
     echo "And will run apt install with custom packages"
     echo ""
     echo "And then to use this cache do:"
-    echo "    $0 --use-prefetch"
+    echo "    $0 --use-prefetch-debootstrap"
     echo ""
     echo "Options:"
     echo "    -h, --help    show this help message and exit"
@@ -356,6 +356,8 @@ print_help() {
 
 start_image_build() {
     skip_board=false
+    prefetch_debootstrap=false
+    use_prefetched_debootstrap=false
     selected_dt=${STM32_DT}
 
     POSITIONAL_ARGS=()
