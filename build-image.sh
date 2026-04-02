@@ -14,6 +14,7 @@ readonly DEPLOY_DIR="deploy"
 
 readonly STM32_DT="stm32mp157c-dk2.dtb"
 readonly STM32_JADARD_DT="stm32mp157c-dk2-jadard.dtb"
+VARIANT="stm32"
 
 prepare_toolchain() {
     echo "-I preparing toolchain for cross compilation"
@@ -24,14 +25,17 @@ prepare_toolchain() {
 }
 
 apply_kernel_patches() {
-    # The patch may already be applied on the second run which will return error
-    # so let's ignore it
-    git apply --reject --directory ${KERNEL_DIR} \
-        board/linux/patches/0001-defconfig-Add-separate-config-based-on-multi_v7_defc.patch \
-        board/linux/patches/0002-dts-Add-separate-device-tree-for-stm32-devboard-with.patch \
-        board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
-        board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
-        board/linux/patches/0005-dts-Add-support-for-home-button.patch || true
+    # Check if patches are already applied by looking for marker files
+    # Base patches (0001-0005) are needed for all variants
+    if [ ! -f "${KERNEL_DIR}/arch/arm/configs/decktrix_defconfig" ]; then
+        echo "-I applying kernel base patches"
+        git apply --reject --directory ${KERNEL_DIR} \
+            board/linux/patches/0001-defconfig-Add-separate-config-based-on-multi_v7_defc.patch \
+            board/linux/patches/0002-dts-Add-separate-device-tree-for-stm32-devboard-with.patch \
+            board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
+            board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
+            board/linux/patches/0005-dts-Add-support-for-home-button.patch
+    fi
 }
 
 build_kernel() {
@@ -43,8 +47,13 @@ build_kernel() {
 }
 
 apply_uboot_patches() {
-    git apply --reject --directory ${UBOOT_DIR} \
-        board/u-boot/patches/0001-DT-disable-DSI-node.patch || true
+    # Check if DSI disable patch already applied by looking for disabled panel node
+    if ! awk '/panel_in:/{found=1} found && /status = "disabled"/{ok=1; exit} END{exit !ok}' \
+         "${UBOOT_DIR}/arch/arm/dts/stm32mp157c-dk2.dts" 2>/dev/null; then
+        echo "-I applying U-Boot DSI disable patch"
+        git apply --reject --directory ${UBOOT_DIR} \
+             board/u-boot/patches/0001-DT-disable-DSI-node.patch
+    fi
 }
 
 build_uboot() {
@@ -301,7 +310,13 @@ create_rootfs_ext4() {
 
 generate_sdcard_img() {
     echo "-I generate sdcard image"
-    genimage --inputpath deploy --outputpath deploy --config genimage.cfg
+    # Use static config file per variant
+    CONFIG_FILE="genimage-${VARIANT}.cfg"
+    if [ ! -f "${CONFIG_FILE}" ]; then
+        echo "-E Config file ${CONFIG_FILE} not found"
+        exit 1
+    fi
+    genimage --inputpath deploy --outputpath deploy --config ${CONFIG_FILE}
 }
 
 print_help() {
@@ -349,8 +364,10 @@ start_image_build() {
         -v|--variant)
             if [ "$2" = "stm32" ]; then
                 selected_dt=${STM32_DT}
+                VARIANT="stm32"
             elif [ "$2" = "stm32-jadard" ]; then
                 selected_dt=${STM32_JADARD_DT}
+                VARIANT="stm32-jadard"
             else
                 echo "Invalid selected variant, valid are: [stm32, stm32-jadard]"
                 exit 1

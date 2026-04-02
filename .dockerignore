@@ -1,0 +1,21 @@
+# Ignore build outputs
+images/
+deploy/
+build*.log
+build.pid
+
+# Ignore submodule .git directories (but keep source)
+board/linux/linux-v6.17/.git
+board/u-boot/u-boot-v2025.04/.git
+board/tfa/trusted-firmware-a-v2.10.19/.git
+
+# Ignore temporary files
+*.bak
+*.tmp
+
+# Ignore large toolchain extracted directory (will be created inside container)
+toolchain/extracted/
+
+# Ignore Docker artifacts
+Dockerfile.backup
+Dockerfile.new
