@@ -26,7 +26,8 @@ clean_submodules() {
         # Mark submodule directory as safe for git operations in container
         git config --global --add safe.directory "/workspace/${submodule}"
         
-        if [ -d "${submodule}/.git" ]; then
+        # Check if it's a git repository (works for both .git files and directories)
+        if git -C "${submodule}" rev-parse --git-dir >/dev/null 2>&1; then
             echo "-I cleaning ${submodule}"
             (cd "${submodule}" && git reset --hard)
             (cd "${submodule}" && git clean -fdx)
