@@ -20,12 +20,12 @@ clean_submodules() {
     echo "-I cleaning submodules"
     # Configure git safe directory for container environment
     git config --global --add safe.directory /workspace
-    git config --global --add safe.directory /workspace/${KERNEL_DIR}
-    git config --global --add safe.directory /workspace/${UBOOT_DIR}
-    git config --global --add safe.directory /workspace/${TFA_DIR}
     
     # Check each submodule directory individually
     for submodule in ${KERNEL_DIR} ${UBOOT_DIR} ${TFA_DIR}; do
+        # Mark submodule directory as safe for git operations in container
+        git config --global --add safe.directory "/workspace/${submodule}"
+        
         if [ -d "${submodule}/.git" ]; then
             echo "-I cleaning ${submodule}"
             (cd "${submodule}" && git reset --hard)
