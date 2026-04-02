@@ -9,7 +9,7 @@ Luckily it works out of the box.
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
  .../boot/dts/st/stm32mp157c-dk2-jadard.dts    |   14 +-
- arch/arm/configs/stm32mp157_defconfig           |    2 +
+ arch/arm/configs/decktrix_defconfig           |    2 +
  drivers/input/touchscreen/Kconfig             |   10 +
  drivers/input/touchscreen/Makefile            |    1 +
  drivers/input/touchscreen/jdchipset/Kconfig   |    8 +
@@ -69,10 +69,10 @@ index b57dfb3facee..4d96ffcc4d5f 100644
  		status = "okay";
  	};
  };
-diff --git a/arch/arm/configs/stm32mp157_defconfig b/arch/arm/configs/stm32mp157_defconfig
+diff --git a/arch/arm/configs/decktrix_defconfig b/arch/arm/configs/decktrix_defconfig
 index 25bf6494a118..970298a259db 100644
---- a/arch/arm/configs/stm32mp157_defconfig
-+++ b/arch/arm/configs/stm32mp157_defconfig
+--- a/arch/arm/configs/decktrix_defconfig
++++ b/arch/arm/configs/decktrix_defconfig
 @@ -333,6 +333,8 @@ CONFIG_TOUCHSCREEN_WM97XX=m
  CONFIG_TOUCHSCREEN_ST1232=m
  CONFIG_TOUCHSCREEN_STMPE=y

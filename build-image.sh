@@ -23,8 +23,17 @@ clean_submodules() {
     git config --global --add safe.directory /workspace/board/linux/linux-v6.17
     git config --global --add safe.directory /workspace/board/u-boot/u-boot-v2025.04
     git config --global --add safe.directory /workspace/board/tfa/trusted-firmware-a-v2.10.19
-    git submodule foreach --recursive git reset --hard
-    git submodule foreach --recursive git clean -fd
+    
+    # Check each submodule directory individually
+    for submodule in board/linux/linux-v6.17 board/u-boot/u-boot-v2025.04 board/tfa/trusted-firmware-a-v2.10.19; do
+        if [ -d "${submodule}/.git" ]; then
+            echo "-I cleaning ${submodule}"
+            (cd "${submodule}" && git reset --hard)
+            (cd "${submodule}" && git clean -fd)
+        else
+            echo "-W ${submodule} is not a git repository, skipping git clean"
+        fi
+    done
 }
 
 prepare_toolchain() {
@@ -50,7 +59,7 @@ build_kernel() {
     echo "-I start kernel build"
 
     apply_kernel_patches
-    make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} stm32mp157_defconfig
+    make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} decktrix_defconfig
     make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} zImage modules dtbs -j$(nproc)
 }
 
