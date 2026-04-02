@@ -29,7 +29,7 @@ clean_submodules() {
         if [ -d "${submodule}/.git" ]; then
             echo "-I cleaning ${submodule}"
             (cd "${submodule}" && git reset --hard)
-            (cd "${submodule}" && git clean -fd)
+            (cd "${submodule}" && git clean -fdx)
         else
             echo "-W ${submodule} is not a git repository, skipping git clean"
         fi
@@ -64,13 +64,9 @@ build_kernel() {
 }
 
 apply_uboot_patches() {
-    # Check if DSI disable patch already applied by looking for disabled panel node
-    if ! awk '/panel_in:/{found=1} found && /status = "disabled"/{ok=1; exit} END{exit !ok}' \
-         "${UBOOT_DIR}/arch/arm/dts/stm32mp157c-dk2.dts" 2>/dev/null; then
-        echo "-I applying U-Boot DSI disable patch"
-        git apply --reject --directory ${UBOOT_DIR} \
-             board/u-boot/patches/0001-DT-disable-DSI-node.patch
-    fi
+    echo "-I applying U-Boot DSI disable patch"
+    git apply --reject --directory ${UBOOT_DIR} \
+         board/u-boot/patches/0001-DT-disable-DSI-node.patch
 }
 
 build_uboot() {
