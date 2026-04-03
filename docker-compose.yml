@@ -1,0 +1,8 @@
+services:
+  build:
+    build: .
+    privileged: true
+    volumes:
+      - ./deploy:/build/deploy
+      - ./debootstrap-prefetched:/build/debootstrap-prefetched
+    command: ["--use-prefetch-debootstrap"]

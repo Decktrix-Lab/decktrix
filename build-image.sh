@@ -3,6 +3,12 @@
 set -e # exit on error
 # set -x # debug
 
+if [ "$(id -u)" -eq 0 ]; then
+    MAYBE_SUDO=""
+else
+    MAYBE_SUDO="sudo"
+fi
+
 readonly TOOLCHAIN_NAME="x86_64-gcc-11.3.0-nolibc-arm-linux-gnueabi.tar.xz"
 readonly TOOLCHAIN_EXTRACTED_PATH="gcc-11.3.0-nolibc/arm-linux-gnueabi/bin/arm-linux-gnueabi-"
 readonly TFA_DIR="board/tfa/trusted-firmware-a-v2.10.19"
@@ -69,7 +75,7 @@ build_tfa() {
 }
 
 run_in_chroot() {
-    sudo chroot ${DEBOOTSTRAP_DIR} /usr/bin/qemu-arm-static /bin/sh -c "$1"
+    $MAYBE_SUDO chroot ${DEBOOTSTRAP_DIR} /usr/bin/qemu-arm-static /bin/sh -c "$1"
 }
 
 mount_vfs() {
@@ -86,21 +92,21 @@ umount_vfs() {
     run_in_chroot "umount /proc"
 }
 
-debootstrap() {
+run_debootstrap() {
     echo "-I starting debootstrap"
 
-    sudo umount ${DEBOOTSTRAP_DIR}/proc ${DEBOOTSTRAP_DIR}/sys || true
-    sudo rm -rf ${DEBOOTSTRAP_DIR}
+    $MAYBE_SUDO umount ${DEBOOTSTRAP_DIR}/proc ${DEBOOTSTRAP_DIR}/sys || true
+    $MAYBE_SUDO rm -rf ${DEBOOTSTRAP_DIR}
 
-    sudo debootstrap --arch=armhf --foreign trixie ${DEBOOTSTRAP_DIR}
-    sudo cp /usr/bin/qemu-arm-static ${DEBOOTSTRAP_DIR}/usr/bin
+    $MAYBE_SUDO command debootstrap --arch=armhf --foreign trixie ${DEBOOTSTRAP_DIR}
+    $MAYBE_SUDO cp /usr/bin/qemu-arm-static ${DEBOOTSTRAP_DIR}/usr/bin
 
     run_in_chroot "/debootstrap/debootstrap --second-stage"
 }
 
 save_debootstrap_prefetched() {
-    sudo rm -rf ${DEBOOTSTRAP_PREFETCHED_DIR}
-    sudo cp -r -p ${DEBOOTSTRAP_DIR} ${DEBOOTSTRAP_PREFETCHED_DIR}
+    $MAYBE_SUDO find ${DEBOOTSTRAP_PREFETCHED_DIR} -mindepth 1 -delete 2>/dev/null || true
+    $MAYBE_SUDO cp -a ${DEBOOTSTRAP_DIR}/. ${DEBOOTSTRAP_PREFETCHED_DIR}/
 }
 
 install_apt_packages() {
@@ -145,47 +151,47 @@ install_apt_packages() {
 install_overlays() {
     echo "-I installing files overlays"
 
-    sudo install --verbose --owner=root --group=root --mode=777 \
+    $MAYBE_SUDO install --verbose --owner=root --group=root --mode=777 \
          overlay/network/etc/resolv.conf ${DEBOOTSTRAP_DIR}/etc/resolv.conf
 
-    sudo install --verbose --owner=root --group=root --mode=664 \
+    $MAYBE_SUDO install --verbose --owner=root --group=root --mode=664 \
          overlay/sway/usr/lib/systemd/system/sway.service \
          ${DEBOOTSTRAP_DIR}/usr/lib/systemd/system/sway.service
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         overlay/weston/etc/xdg/weston/weston.ini \
         ${DEBOOTSTRAP_DIR}/etc/xdg/weston/weston.ini
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         overlay/weston/usr/lib/systemd/user/weston.service \
         ${DEBOOTSTRAP_DIR}/usr/lib/systemd/user/weston.service
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         overlay/weston/usr/lib/systemd/user/weston.socket \
         ${DEBOOTSTRAP_DIR}/usr/lib/systemd/user/weston.socket
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         overlay/weston/usr/lib/systemd/system/weston-graphical-session.service \
         ${DEBOOTSTRAP_DIR}/usr/lib/systemd/system/weston-graphical-session.service
 }
 
 install_opengles_lib() {
     echo "-I install opengles lib"
-    sudo install --verbose board/opengles-lib/* ${DEBOOTSTRAP_DIR}/lib || true
+    $MAYBE_SUDO install --verbose board/opengles-lib/* ${DEBOOTSTRAP_DIR}/lib || true
 }
 
 install_wifi_firmware() {
     echo "-I install wifi firmware"
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         board/wifi-firmware/brcmfmac43430-sdio.txt \
         ${DEBOOTSTRAP_DIR}/lib/firmware/brcm/brcmfmac43430-sdio.st,stm32mp157c-dk2.txt
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         board/wifi-firmware/cyfmac43430-sdio.bin \
         ${DEBOOTSTRAP_DIR}/lib/firmware/brcm/brcmfmac43430-sdio.bin
 
-    sudo install --verbose -D --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose -D --owner=root --group=root --mode=644 \
         board/wifi-firmware/cyfmac43430-sdio.1DX.clm_blob \
         ${DEBOOTSTRAP_DIR}/lib/firmware/brcm/brcmfmac43430-sdio.clm_blob
 }
@@ -252,20 +258,20 @@ setup_extlinux() {
 
 install_kernel_image() {
     echo "-I install kernel image"
-    sudo install --verbose --owner=root --group=root --mode=644 \
+    $MAYBE_SUDO install --verbose --owner=root --group=root --mode=644 \
         ${KERNEL_DIR}/arch/arm/boot/zImage ${DEBOOTSTRAP_DIR}/boot/vmlinuz-${KERNEL_VERSION}
 }
 
 install_kernel_modules() {
     echo "-I install kernel modules"
-    sudo make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} modules_install \
+    $MAYBE_SUDO make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} modules_install \
         INSTALL_MOD_PATH="../../../${DEBOOTSTRAP_DIR}/usr"
 }
 
 install_device_tree() {
     echo "-I install device tree"
     run_in_chroot "mkdir -p boot/dtbs/${KERNEL_VERSION}"
-    sudo make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} dtbs_install \
+    $MAYBE_SUDO make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} dtbs_install \
         INSTALL_DTBS_PATH="../../../${DEBOOTSTRAP_DIR}/boot/dtbs/${KERNEL_VERSION}"
 }
 
@@ -288,15 +294,15 @@ use_prefetched_download() {
         echo "Run this script with '-p|--prefetch-debootstrap' option first"
         exit 1
     fi
-    sudo umount ${DEBOOTSTRAP_DIR}/proc ${DEBOOTSTRAP_DIR}/sys || true
-    sudo rm -rf ${DEBOOTSTRAP_DIR}
-    sudo cp -p -r ${DEBOOTSTRAP_PREFETCHED_DIR} ${DEBOOTSTRAP_DIR}
+    $MAYBE_SUDO umount ${DEBOOTSTRAP_DIR}/proc ${DEBOOTSTRAP_DIR}/sys || true
+    $MAYBE_SUDO rm -rf ${DEBOOTSTRAP_DIR}
+    $MAYBE_SUDO cp -p -r ${DEBOOTSTRAP_PREFETCHED_DIR} ${DEBOOTSTRAP_DIR}
 }
 
 create_rootfs_ext4() {
-    sudo rm -rf ${DEPLOY_DIR} && mkdir -p ${DEPLOY_DIR}
-    sudo dd if=/dev/zero of=${DEPLOY_DIR}/rootfs.ext4 bs=1 count=0 seek=2500M
-    sudo mkfs.ext4 -F ${DEPLOY_DIR}/rootfs.ext4 -d ${DEBOOTSTRAP_DIR}
+    $MAYBE_SUDO rm -rf ${DEPLOY_DIR} && mkdir -p ${DEPLOY_DIR}
+    $MAYBE_SUDO dd if=/dev/zero of=${DEPLOY_DIR}/rootfs.ext4 bs=1 count=0 seek=2500M
+    $MAYBE_SUDO mkfs.ext4 -F ${DEPLOY_DIR}/rootfs.ext4 -d ${DEBOOTSTRAP_DIR}
 }
 
 generate_sdcard_img() {
@@ -385,7 +391,7 @@ start_image_build() {
 
     # Prefetch debootstrap and install apt packages
     if [ "${prefetch_debootstrap}" = true ] ; then
-        debootstrap
+        run_debootstrap
         mount_vfs
         install_apt_packages
         umount_vfs
@@ -396,7 +402,7 @@ start_image_build() {
     if [ "${use_prefetched_debootstrap}" = true ] ; then
         use_prefetched_download
     else
-        debootstrap
+        run_debootstrap
     fi
 
     mount_vfs
