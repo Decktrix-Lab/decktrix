@@ -69,8 +69,7 @@ apply_tfa_patches() {
     echo "-I apply tfa patches"
 
     git apply --reject --directory ${TFA_DIR} \
-        board/tfa/patches/0001-tfa-decktrix-Override-PMIC-LDO1-LDO6-voltages.patch \
-        board/tfa/patches/0002-tfa-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
+        board/tfa/patches/0001-tfa-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
 }
 
 build_uboot() {

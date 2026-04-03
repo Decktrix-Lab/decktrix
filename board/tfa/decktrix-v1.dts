@@ -4,8 +4,7 @@
  * Author: Kirill Yatsenko <kiriyatsenko@gmail.com>
  *
  * Decktrix v1 custom PCB based on STM32MP157F.
- * Same DDR, clock, and PMIC (STPMIC1) as STM32MP157C-DK2 but
- * LDO1 at 2.8V for display AVDD, LDO6 at 1.8V for display IOVCC.
+ * I2C4 pinctrl configured via patch in stm32mp15-pinctrl.dtsi.
  */
 
 /dts-v1/;

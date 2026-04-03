@@ -38,7 +38,7 @@ new file mode 100644
 index 000000000000..000000000000
 --- /dev/null
 +++ b/arch/arm/boot/dts/st/decktrix-v1.dts
-@@ -0,0 +1,124 @@
+@@ -0,0 +1,122 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 +/*
 + * Copyright (C) Decktrix Lab
@@ -106,8 +106,6 @@ index 000000000000..000000000000
 +
 +&dsi_out {
 +	remote-endpoint = <&panel_in>;
-+};
-+
 +};
 +
 +/* PMIC LDO1: 2.8V for display AVDD (2V8 rail on decktrix PCB) */
