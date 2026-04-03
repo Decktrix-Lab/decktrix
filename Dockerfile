@@ -1,10 +1,13 @@
 FROM ubuntu:noble
 
-RUN apt-get update
+ENV DEBIAN_FRONTEND=noninteractive
 
-RUN	apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
 		sudo \
 		wget \
+		curl \
+		ca-certificates \
+		git \
 		bc \
 		bison \
 		build-essential \
@@ -16,11 +19,20 @@ RUN	apt-get install -y \
 		python3-setuptools \
 		swig \
 		uuid-dev \
-		build-essential \
 		python3-cryptography \
 		python3-pyelftools \
-		build-essential \
 		device-tree-compiler \
 		dosfstools \
 		genimage \
 		mtools \
+		debootstrap \
+		qemu-user-static \
+	&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /build
+
+COPY . .
+
+RUN chmod +x build-image.sh
+
+ENTRYPOINT ["./build-image.sh"]
