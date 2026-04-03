@@ -20,6 +20,10 @@ readonly DEPLOY_DIR="deploy"
 
 readonly STM32_DT="stm32mp157c-dk2.dtb"
 readonly STM32_JADARD_DT="stm32mp157c-dk2-jadard.dtb"
+readonly DECKTRIX_DT="decktrix-v1.dtb"
+
+# Board DT name for TFA and U-Boot (differs for custom PCB)
+BOARD_DT="stm32mp157c-dk2"
 
 prepare_toolchain() {
     echo "-I preparing toolchain for cross compilation"
@@ -37,7 +41,8 @@ apply_kernel_patches() {
         board/linux/patches/0002-dts-Add-separate-device-tree-for-stm32-devboard-with.patch \
         board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
         board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
-        board/linux/patches/0005-dts-Add-support-for-home-button.patch || true
+        board/linux/patches/0005-dts-Add-support-for-home-button.patch \
+        board/linux/patches/0006-dts-Add-device-tree-for-decktrix-custom-PCB.patch || true
 }
 
 build_kernel() {
@@ -57,20 +62,37 @@ build_uboot() {
     echo "-I start u-boot build"
 
     apply_uboot_patches
+
+    if [ "${BOARD_DT}" = "decktrix-v1" ]; then
+        cp board/u-boot/decktrix-v1.dts ${UBOOT_DIR}/arch/arm/dts/
+        cp board/u-boot/decktrix-v1-u-boot.dtsi ${UBOOT_DIR}/arch/arm/dts/
+        # Add decktrix-v1 to the STM32MP15X DTB list if not already present
+        if ! grep -q "decktrix-v1" ${UBOOT_DIR}/arch/arm/dts/Makefile; then
+            sed -i '/stm32mp157c-dk2-scmi.dtb/a\\tdecktrix-v1.dtb \\' \
+                ${UBOOT_DIR}/arch/arm/dts/Makefile
+        fi
+    fi
+
     make -C ${UBOOT_DIR} CROSS_COMPILE=${CC} stm32mp15_trusted_defconfig
-    make -C ${UBOOT_DIR} CROSS_COMPILE=${CC} DEVICE_TREE=stm32mp157c-dk2 -j all
+    make -C ${UBOOT_DIR} CROSS_COMPILE=${CC} DEVICE_TREE=${BOARD_DT} -j all
 }
 
 build_tfa() {
     echo "-I start tfa build"
 
+    if [ "${BOARD_DT}" = "decktrix-v1" ]; then
+        cp board/tfa/decktrix-v1.dts ${TFA_DIR}/fdts/
+        cp board/tfa/decktrix-v1-fw-config.dts ${TFA_DIR}/fdts/
+    fi
+
     make -C ${TFA_DIR}  \
         PLAT=stm32mp1 ARCH=aarch32 ARM_ARCH_MAJOR=7 CROSS_COMPILE=${CC} \
         STM32MP_SDMMC=1 STM32MP_EMMC=1 \
         AARCH32_SP=sp_min \
-        DTB_FILE_NAME=stm32mp157c-dk2.dtb \
+        DTB_FILE_NAME=${BOARD_DT}.dtb \
         BL33_CFG=../../u-boot/u-boot-v2025.04/u-boot.dtb \
         BL33=../../u-boot/u-boot-v2025.04/u-boot-nodtb.bin \
+        STM32MP15=1 \
         all fip
 }
 
@@ -277,8 +299,9 @@ install_device_tree() {
 
 install_tfa() {
     echo "-I install TFA"
-    cp ${TFA_DIR}/build/stm32mp1/release/tf-a-stm32mp157c-dk2.stm32 \
-       ${TFA_DIR}/build/stm32mp1/release/fip.bin ${DEPLOY_DIR}
+    cp ${TFA_DIR}/build/stm32mp1/release/tf-a-${BOARD_DT}.stm32 \
+       ${DEPLOY_DIR}/tf-a-stm32mp157c-dk2.stm32
+    cp ${TFA_DIR}/build/stm32mp1/release/fip.bin ${DEPLOY_DIR}
 }
 
 enable_serial_console() {
@@ -329,7 +352,7 @@ print_help() {
     echo "    -p, --prefetch-debootstrap    downloads debian and saves the result"
     echo "    -u, --use-prefetch-debootstrap    use cached download folder"
     echo "    -s, --skip    skip tfa, u-boot and kernel builds"
-    echo "    -v, --variant [stm32, stm32-jadard]    select device variant"
+    echo "    -v, --variant [stm32, stm32-jadard, decktrix]    select device variant"
 }
 
 start_image_build() {
@@ -357,8 +380,11 @@ start_image_build() {
                 selected_dt=${STM32_DT}
             elif [ "$2" = "stm32-jadard" ]; then
                 selected_dt=${STM32_JADARD_DT}
+            elif [ "$2" = "decktrix" ]; then
+                selected_dt=${DECKTRIX_DT}
+                BOARD_DT="decktrix-v1"
             else
-                echo "Invalid selected variant, valid are: [stm32, stm32-jadard]"
+                echo "Invalid selected variant, valid are: [stm32, stm32-jadard, decktrix]"
                 exit 1
             fi
             shift

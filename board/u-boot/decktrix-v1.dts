@@ -1,0 +1,55 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
+/*
+ * Copyright (C) Decktrix Lab
+ * Author: Kirill Yatsenko <kiriyatsenko@gmail.com>
+ *
+ * Decktrix v1 custom PCB based on STM32MP157F.
+ * PMIC I2C4 is on PD12/PD13 instead of PZ4/PZ5.
+ * DSI disabled to avoid conflict with kernel Jadard driver.
+ */
+
+/dts-v1/;
+
+#include "stm32mp157.dtsi"
+#include "stm32mp15xc.dtsi"
+#include "stm32mp15-pinctrl.dtsi"
+#include "stm32mp15xxac-pinctrl.dtsi"
+#include "stm32mp15xx-dkx.dtsi"
+
+/ {
+	model = "Decktrix v1";
+	compatible = "decktrix,v1", "st,stm32mp157";
+
+	aliases {
+		ethernet0 = &ethernet0;
+	};
+
+	chosen {
+		stdout-path = "serial0:115200n8";
+	};
+};
+
+&cryp1 {
+	status = "okay";
+};
+
+&dsi {
+	status = "disabled";
+};
+
+/* PMIC (STPMIC1) on I2C4: SCL=PD12, SDA=PD13 (AF4) */
+&i2c4 {
+	pinctrl-0 = <&i2c4_pins_decktrix>;
+};
+
+&pinctrl {
+	i2c4_pins_decktrix: i2c4-decktrix {
+		pins {
+			pinmux = <STM32_PINMUX('D', 12, AF4)>,
+				 <STM32_PINMUX('D', 13, AF4)>;
+			bias-disable;
+			drive-open-drain;
+			slew-rate = <0>;
+		};
+	};
+};
