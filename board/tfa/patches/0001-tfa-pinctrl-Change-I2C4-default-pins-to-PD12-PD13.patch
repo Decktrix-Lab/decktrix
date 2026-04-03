@@ -12,10 +12,12 @@ Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/fdts/stm32mp15-pinctrl.dtsi b/fdts/stm32mp15-pinctrl.dtsi
-index aaaaaaa..bbbbbbb 100644
+index 70d1db1..7040c33 100644
 --- a/fdts/stm32mp15-pinctrl.dtsi
 +++ b/fdts/stm32mp15-pinctrl.dtsi
 @@ -440,8 +440,8 @@ i2c4_pins_a: i2c4-0 {
+ 	/omit-if-no-ref/
+ 	i2c4_pins_a: i2c4-0 {
  		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
 -				 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
@@ -25,6 +27,5 @@ index aaaaaaa..bbbbbbb 100644
  			drive-open-drain;
  			slew-rate = <0>;
  		};
- 	};
 --
 2.43.0

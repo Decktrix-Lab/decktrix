@@ -349,6 +349,12 @@ generate_sdcard_img() {
     genimage --inputpath deploy --outputpath deploy --config genimage.cfg
 }
 
+gzip_sdcard_img() {
+    echo "-I compress sdcard image"
+    gzip -f deploy/sdcard.img
+    echo "-I compressed: deploy/sdcard.img.gz ($(du -h deploy/sdcard.img.gz | cut -f1))"
+}
+
 print_help() {
     echo "Usage: $0 [options]"
     echo ""
@@ -482,6 +488,7 @@ start_image_build() {
     install_tfa
 
     generate_sdcard_img
+    gzip_sdcard_img
 }
 
 start_image_build "$@"

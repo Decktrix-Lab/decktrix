@@ -8,14 +8,16 @@ PD12 (SCL) and PD13 (SDA) instead of the default PZ4/PZ5.
 
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
- arch/arm/dts/stm32mp15-pinctrl.dtsi | 8 ++++----
- 1 file changed, 4 insertions(+), 4 deletions(-)
+ arch/arm/dts/stm32mp15-pinctrl.dtsi | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/arch/arm/dts/stm32mp15-pinctrl.dtsi b/arch/arm/dts/stm32mp15-pinctrl.dtsi
 index aaaaaaa..bbbbbbb 100644
 --- a/arch/arm/dts/stm32mp15-pinctrl.dtsi
 +++ b/arch/arm/dts/stm32mp15-pinctrl.dtsi
-@@ -2738,16 +2738,16 @@ i2c4_pins_a: i2c4-0 {
+@@ -2739,8 +2739,8 @@
+ 
+ 	i2c4_pins_a: i2c4-0 {
  		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
 -				 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
@@ -25,15 +27,5 @@ index aaaaaaa..bbbbbbb 100644
  			drive-open-drain;
  			slew-rate = <0>;
  		};
- 	};
-
- 	i2c4_sleep_pins_a: i2c4-sleep-0 {
- 		pins {
--			pinmux = <STM32_PINMUX('Z', 4, ANALOG)>, /* I2C4_SCL */
--				 <STM32_PINMUX('Z', 5, ANALOG)>; /* I2C4_SDA */
-+			pinmux = <STM32_PINMUX('D', 12, ANALOG)>, /* I2C4_SCL */
-+				 <STM32_PINMUX('D', 13, ANALOG)>; /* I2C4_SDA */
- 		};
- 	};
---
+-- 
 2.43.0

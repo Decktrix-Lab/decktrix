@@ -15,7 +15,9 @@ diff --git a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi b/arch/arm/boot/dts/st/
 index aaaaaaa..bbbbbbb 100644
 --- a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
 +++ b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
-@@ -3355,16 +3355,16 @@ i2c4_pins_a: i2c4-0 {
+@@ -3356,8 +3356,8 @@
+ 	/omit-if-no-ref/
+ 	i2c4_pins_a: i2c4-0 {
  		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
 -				 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
@@ -24,9 +26,8 @@ index aaaaaaa..bbbbbbb 100644
  			bias-disable;
  			drive-open-drain;
  			slew-rate = <0>;
- 		};
- 	};
-
+@@ -3366,8 +3366,8 @@
+ 
  	/omit-if-no-ref/
  	i2c4_sleep_pins_a: i2c4-sleep-0 {
  		pins {
@@ -36,5 +37,5 @@ index aaaaaaa..bbbbbbb 100644
 +				 <STM32_PINMUX('D', 13, ANALOG)>; /* I2C4_SDA */
  		};
  	};
---
+-- 
 2.43.0
