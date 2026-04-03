@@ -10,7 +10,7 @@ Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
  drivers/gpu/drm/panel/Kconfig                 |   8 +
  drivers/gpu/drm/panel/Makefile                |   1 +
  drivers/gpu/drm/panel/panel-jadard-jd9365tn.c | 489 ++++++++++++++++++
- 5 files changed, 506 insertions(+), 3 deletions(-)
+ 5 files changed, 494 insertions(+), 3 deletions(-)
  create mode 100644 drivers/gpu/drm/panel/panel-jadard-jd9365tn.c
 
 diff --git a/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts b/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
@@ -84,7 +84,7 @@ new file mode 100644
 index 000000000000..2537338a081b
 --- /dev/null
 +++ b/drivers/gpu/drm/panel/panel-jadard-jd9365tn.c
-@@ -0,0 +1,489 @@
+@@ -0,0 +1,477 @@
 +// SPDX-License-Identifier: GPL-2.0+
 +/*
 + * Author:
@@ -500,25 +500,13 @@ index 000000000000..2537338a081b
 +	}
 +
 +	/* VDD pin is connected to power regulator enable pin on adapter board */
-+	jadard->vdd = devm_gpiod_get(dev, "vdd", GPIOD_OUT_LOW);
-+	if (IS_ERR(jadard->vdd)) {
-+		DRM_DEV_ERROR(&dsi->dev, "failed to get vdd GPIO\n");
-+		return PTR_ERR(jadard->vdd);
-+	}
++	jadard->vdd = devm_gpiod_get_optional(dev, "vdd", GPIOD_OUT_LOW);
 +
 +	/* VCCIO pin is connected to power regulator enable pin on adapter board */
-+	jadard->vccio = devm_gpiod_get(dev, "vccio", GPIOD_OUT_LOW);
-+	if (IS_ERR(jadard->vccio)) {
-+		DRM_DEV_ERROR(&dsi->dev, "failed to get vccio GPIO\n");
-+		return PTR_ERR(jadard->vccio);
-+	}
++	jadard->vccio = devm_gpiod_get_optional(dev, "vccio", GPIOD_OUT_LOW);
 +
-+	/* DBG pin is used for osciloscope debugging */
-+	jadard->dbg = devm_gpiod_get(dev, "dbg", GPIOD_OUT_HIGH);
-+	if (IS_ERR(jadard->dbg)) {
-+		DRM_DEV_ERROR(&dsi->dev, "failed to get dbg GPIO\n");
-+		return PTR_ERR(jadard->dbg);
-+	}
++	/* DBG pin is used for oscilloscope debugging */
++	jadard->dbg = devm_gpiod_get_optional(dev, "dbg", GPIOD_OUT_HIGH);
 +
 +	drm_panel_init(&jadard->panel, dev, &jadard_funcs,
 +		       DRM_MODE_CONNECTOR_DSI);

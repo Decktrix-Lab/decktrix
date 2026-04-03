@@ -1,0 +1,40 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Thu, 03 Apr 2026 17:00:00 +0200
+Subject: dts: stm32mp15-pinctrl: Change I2C4 default pins to PD12/PD13
+
+On the decktrix v1 custom PCB, the PMIC (STPMIC1) I2C4 bus uses
+PD12 (SCL) and PD13 (SDA) instead of the default PZ4/PZ5.
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+ arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
+index aaaaaaa..bbbbbbb 100644
+--- a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
++++ b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
+@@ -3355,16 +3355,16 @@ i2c4_pins_a: i2c4-0 {
+ 		pins {
+-			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
+-				 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
++			pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
++				 <STM32_PINMUX('D', 13, AF4)>; /* I2C4_SDA */
+ 			bias-disable;
+ 			drive-open-drain;
+ 			slew-rate = <0>;
+ 		};
+ 	};
+
+ 	/omit-if-no-ref/
+ 	i2c4_sleep_pins_a: i2c4-sleep-0 {
+ 		pins {
+-			pinmux = <STM32_PINMUX('Z', 4, ANALOG)>, /* I2C4_SCL */
+-				 <STM32_PINMUX('Z', 5, ANALOG)>; /* I2C4_SDA */
++			pinmux = <STM32_PINMUX('D', 12, ANALOG)>, /* I2C4_SCL */
++				 <STM32_PINMUX('D', 13, ANALOG)>; /* I2C4_SDA */
+ 		};
+ 	};
+--
+2.43.0

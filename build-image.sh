@@ -42,7 +42,8 @@ apply_kernel_patches() {
         board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
         board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
         board/linux/patches/0005-dts-Add-support-for-home-button.patch \
-        board/linux/patches/0006-dts-Add-device-tree-for-decktrix-custom-PCB.patch || true
+        board/linux/patches/0006-dts-Add-device-tree-for-decktrix-custom-PCB.patch \
+        board/linux/patches/0009-dts-stm32mp15-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
 }
 
 build_kernel() {
@@ -54,8 +55,22 @@ build_kernel() {
 }
 
 apply_uboot_patches() {
-    git apply --reject --directory ${UBOOT_DIR} \
+    echo "-I apply u-boot patches"
+
+    git apply --check --directory ${UBOOT_DIR} \
         board/u-boot/patches/0001-DT-disable-DSI-node.patch || true
+
+    git apply --reject --directory ${UBOOT_DIR} \
+        board/u-boot/patches/0001-DT-disable-DSI-node.patch \
+        board/u-boot/patches/0002-dts-stm32mp15-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
+}
+
+apply_tfa_patches() {
+    echo "-I apply tfa patches"
+
+    git apply --reject --directory ${TFA_DIR} \
+        board/tfa/patches/0001-tfa-decktrix-Override-PMIC-LDO1-LDO6-voltages.patch \
+        board/tfa/patches/0002-tfa-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
 }
 
 build_uboot() {
@@ -79,6 +94,8 @@ build_uboot() {
 
 build_tfa() {
     echo "-I start tfa build"
+
+    apply_tfa_patches
 
     if [ "${BOARD_DT}" = "decktrix-v1" ]; then
         cp board/tfa/decktrix-v1.dts ${TFA_DIR}/fdts/

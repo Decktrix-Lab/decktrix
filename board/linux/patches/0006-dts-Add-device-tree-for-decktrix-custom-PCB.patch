@@ -4,19 +4,21 @@ Date: Thu, 03 Apr 2026 13:00:00 +0200
 Subject: dts: Add device tree for decktrix custom PCB
 
 The decktrix board is based on STM32MP157F with the same RAM as the
-Discovery Kit but uses a different pinout and peripherals:
+Discovery Kit but different pinout and peripherals:
 
 - Jadard JD9365TN display (different reset/backlight GPIOs)
 - Jadard touch controller on I2C1 (different IRQ/reset GPIOs)
-- Cypress CYW43438 WiFi/BT (different reset/shutdown GPIOs)
-- BT on UART7 instead of USART2 (no RTS/CTS)
 - STPMIC1 PMIC on I2C4 at PD12/PD13 instead of PZ4/PZ5
+- LDO1 at 2.8V for display AVDD (not 1.8V for audio)
+- LDO6 at 1.8V for display IOVCC (not 1.2V for HDMI)
+- Display powered by always-on PMIC regulators (no GPIO enable)
+- WiFi/BT disabled (u-blox MAYA-W166 uses SDMMC3/UART8, TBD)
 
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
  arch/arm/boot/dts/st/Makefile          |   1 +
- arch/arm/boot/dts/st/decktrix-v1.dts   | 163 ++++++++++++++++++++++++
- 2 files changed, 164 insertions(+)
+ arch/arm/boot/dts/st/decktrix-v1.dts   | 118 ++++++++++++++++++++++++
+ 2 files changed, 119 insertions(+)
  create mode 100644 arch/arm/boot/dts/st/decktrix-v1.dts
 
 diff --git a/arch/arm/boot/dts/st/Makefile b/arch/arm/boot/dts/st/Makefile
@@ -36,7 +38,7 @@ new file mode 100644
 index 000000000000..000000000000
 --- /dev/null
 +++ b/arch/arm/boot/dts/st/decktrix-v1.dts
-@@ -0,0 +1,163 @@
+@@ -0,0 +1,124 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 +/*
 + * Copyright (C) Decktrix Lab
@@ -46,9 +48,10 @@ index 000000000000..000000000000
 + * Same SoC and RAM as STM32MP157F-DK2 but with custom pinout:
 + *   - Jadard JD9365TN display (different reset/backlight GPIOs)
 + *   - Jadard touch on I2C1 (different IRQ/reset GPIOs)
-+ *   - Cypress CYW43438 WiFi/BT (different control GPIOs)
-+ *   - BT on UART7 (no RTS/CTS)
 + *   - STPMIC1 PMIC on I2C4 at PD12/PD13 (not PZ4/PZ5)
++ *   - LDO1 at 2.8V for display AVDD (not 1.8V for audio)
++ *   - LDO6 at 1.8V for display IOVCC (not 1.2V for HDMI)
++ *   - WiFi/BT disabled (u-blox MAYA-W166 uses SDMMC3/UART8, TBD)
 + */
 +
 +/dts-v1/;
@@ -65,16 +68,10 @@ index 000000000000..000000000000
 +
 +	aliases {
 +		ethernet0 = &ethernet0;
-+		serial3 = &uart7;
 +	};
 +
 +	chosen {
 +		stdout-path = "serial0:115200n8";
-+	};
-+
-+	wifi_pwrseq: wifi-pwrseq {
-+		compatible = "mmc-pwrseq-simple";
-+		reset-gpios = <&gpioe 6 GPIO_ACTIVE_LOW>;
 +	};
 +};
 +
@@ -111,10 +108,20 @@ index 000000000000..000000000000
 +	remote-endpoint = <&panel_in>;
 +};
 +
-+/* PMIC (STPMIC1) on I2C4: SCL=PD12, SDA=PD13 (AF4) */
-+&i2c4 {
-+	pinctrl-0 = <&i2c4_pins_decktrix>;
-+	pinctrl-1 = <&i2c4_sleep_pins_decktrix>;
++};
++
++/* PMIC LDO1: 2.8V for display AVDD (2V8 rail on decktrix PCB) */
++&v1v8_audio {
++	regulator-name = "ldo1";
++	regulator-min-microvolt = <2800000>;
++	regulator-max-microvolt = <2800000>;
++};
++
++/* PMIC LDO6: 1.8V for display IOVCC (1V8 rail on decktrix PCB) */
++&v1v2_hdmi {
++	regulator-name = "ldo6";
++	regulator-min-microvolt = <1800000>;
++	regulator-max-microvolt = <1800000>;
 +};
 +
 +&i2c1 {
@@ -146,74 +153,14 @@ index 000000000000..000000000000
 +	};
 +};
 +
-+&pinctrl {
-+	i2c4_pins_decktrix: i2c4-decktrix {
-+		pins {
-+			pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
-+				 <STM32_PINMUX('D', 13, AF4)>; /* I2C4_SDA */
-+			bias-disable;
-+			drive-open-drain;
-+			slew-rate = <0>;
-+		};
-+	};
-+
-+	/omit-if-no-ref/
-+	i2c4_sleep_pins_decktrix: i2c4-sleep-decktrix {
-+		pins {
-+			pinmux = <STM32_PINMUX('D', 12, ANALOG)>,
-+				 <STM32_PINMUX('D', 13, ANALOG)>;
-+		};
-+	};
-+};
-+
-+&rtc {
-+	pinctrl-names = "default";
-+	pinctrl-0 = <&rtc_rsvd_pins_a>;
-+
-+	rtc_lsco_pins_a: rtc-lsco-0 {
-+		pins = "out2_rmp";
-+		function = "lsco";
-+	};
-+};
-+
-+/* Wifi */
++/* WiFi disabled - u-blox MAYA-W166 uses SDMMC3, driver TBD */
 +&sdmmc2 {
-+	pinctrl-names = "default", "opendrain", "sleep";
-+	pinctrl-0 = <&sdmmc2_b4_pins_a>;
-+	pinctrl-1 = <&sdmmc2_b4_od_pins_a>;
-+	pinctrl-2 = <&sdmmc2_b4_sleep_pins_a>;
-+	non-removable;
-+	cap-sdio-irq;
-+	st,neg-edge;
-+	bus-width = <4>;
-+	vmmc-supply = <&v3v3>;
-+	mmc-pwrseq = <&wifi_pwrseq>;
-+	#address-cells = <1>;
-+	#size-cells = <0>;
-+	status = "okay";
-+
-+	brcmf: wifi@1 {
-+		reg = <1>;
-+		compatible = "brcm,bcm4329-fmac";
-+		pinctrl-names = "default";
-+		pinctrl-0 = <&rtc_lsco_pins_a>;
-+	};
++	status = "disabled";
 +};
 +
-+/* Bluetooth - Cypress CYW43438 on UART7 (no RTS/CTS) */
++/* BT disabled - u-blox MAYA-W166 uses UART8, driver TBD */
 +&uart7 {
-+	pinctrl-names = "default", "sleep";
-+	pinctrl-0 = <&uart7_pins_c>;
-+	pinctrl-1 = <&uart7_sleep_pins_c>;
-+	status = "okay";
-+
-+	bluetooth {
-+		shutdown-gpios = <&gpiob 10 GPIO_ACTIVE_HIGH>;
-+		compatible = "brcm,bcm43438-bt";
-+		max-speed = <3000000>;
-+		vbat-supply = <&v3v3>;
-+		vddio-supply = <&v3v3>;
-+	};
++	status = "disabled";
 +};
 -- 
 2.43.0

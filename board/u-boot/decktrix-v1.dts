@@ -4,7 +4,6 @@
  * Author: Kirill Yatsenko <kiriyatsenko@gmail.com>
  *
  * Decktrix v1 custom PCB based on STM32MP157F.
- * PMIC I2C4 is on PD12/PD13 instead of PZ4/PZ5.
  * DSI disabled to avoid conflict with kernel Jadard driver.
  */
 
@@ -35,21 +34,4 @@
 
 &dsi {
 	status = "disabled";
-};
-
-/* PMIC (STPMIC1) on I2C4: SCL=PD12, SDA=PD13 (AF4) */
-&i2c4 {
-	pinctrl-0 = <&i2c4_pins_decktrix>;
-};
-
-&pinctrl {
-	i2c4_pins_decktrix: i2c4-decktrix {
-		pins {
-			pinmux = <STM32_PINMUX('D', 12, AF4)>,
-				 <STM32_PINMUX('D', 13, AF4)>;
-			bias-disable;
-			drive-open-drain;
-			slew-rate = <0>;
-		};
-	};
 };

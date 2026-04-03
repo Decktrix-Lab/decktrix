@@ -1,0 +1,30 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Thu, 03 Apr 2026 18:00:00 +0200
+Subject: stm32mp15-pinctrl: Change I2C4 default pins to PD12/PD13
+
+On the decktrix v1 custom PCB, the PMIC (STPMIC1) I2C4 bus uses
+PD12 (SCL) and PD13 (SDA) instead of the default PZ4/PZ5.
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+ fdts/stm32mp15-pinctrl.dtsi | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/fdts/stm32mp15-pinctrl.dtsi b/fdts/stm32mp15-pinctrl.dtsi
+index aaaaaaa..bbbbbbb 100644
+--- a/fdts/stm32mp15-pinctrl.dtsi
++++ b/fdts/stm32mp15-pinctrl.dtsi
+@@ -440,8 +440,8 @@ i2c4_pins_a: i2c4-0 {
+ 		pins {
+-			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
+-				 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
++			pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
++				 <STM32_PINMUX('D', 13, AF4)>; /* I2C4_SDA */
+ 			bias-disable;
+ 			drive-open-drain;
+ 			slew-rate = <0>;
+ 		};
+ 	};
+--
+2.43.0
