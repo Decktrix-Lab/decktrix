@@ -9,3 +9,4 @@ toolchain/extracted
 *.xml
 *.bak
 pcb/
+opencode.json
