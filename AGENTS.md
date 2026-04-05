@@ -95,9 +95,3 @@ The refresh token expires after 7 days. When this happens:
 3. It prints an OAuth URL - open it, approve, paste the code
 4. Token file is updated automatically
 5. Run `gdrive-upload.sh` again
-
-### Google Cloud project
-
-- Project: decktrix
-- OAuth Client ID: `236838812265-94votd2clqtuoc10ang7lidqegrqlbdh.apps.googleusercontent.com`
-- Folder: `1GEBlgEZuuIjffJXl2PR23m1ojAJ_IQYR`
