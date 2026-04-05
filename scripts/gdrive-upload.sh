@@ -4,13 +4,15 @@
 #
 # Usage: ./scripts/gdrive-upload.sh <file>
 #
-# Credentials stored in: ~/.config/opencode/gdrive-token.json
+# Credentials stored in: .config/opencode/gdrive-token.json
 # If token expires, run: ./scripts/gdrive-auth.sh
 #
 
 set -e
 
-TOKEN_FILE="${HOME}/.config/opencode/gdrive-token.json"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+TOKEN_FILE="${PROJECT_ROOT}/.config/opencode/gdrive-token.json"
 
 if [ -z "$1" ]; then
     echo "Usage: $0 <file>"

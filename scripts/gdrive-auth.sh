@@ -15,7 +15,9 @@
 
 set -e
 
-TOKEN_FILE="${HOME}/.config/opencode/gdrive-token.json"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+TOKEN_FILE="${PROJECT_ROOT}/.config/opencode/gdrive-token.json"
 
 if [ ! -f "$TOKEN_FILE" ]; then
     echo "Error: Token file not found: $TOKEN_FILE"

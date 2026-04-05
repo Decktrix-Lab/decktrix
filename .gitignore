@@ -10,3 +10,4 @@ toolchain/extracted
 *.bak
 pcb/
 opencode.json
+.config/
