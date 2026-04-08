@@ -3,6 +3,11 @@ services:
     build: .
     privileged: true
     volumes:
+      - ./board:/build/board
+      - ./scripts:/build/scripts
+      - ./toolchain:/build/toolchain
+      - ./overlay:/build/overlay
+      - ./genimage.cfg:/build/genimage.cfg
       - ./deploy:/build/deploy
       - ./debootstrap-prefetched:/build/debootstrap-prefetched
     command: ["--use-prefetch-debootstrap"]

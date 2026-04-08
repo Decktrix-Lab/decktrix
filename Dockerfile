@@ -31,8 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /build
 
-COPY . .
-
+COPY build-image.sh .
 RUN chmod +x build-image.sh
 
 ENTRYPOINT ["./build-image.sh"]
