@@ -3,6 +3,7 @@ services:
     build: .
     privileged: true
     volumes:
+      - ./.git:/build/.git
       - ./board:/build/board
       - ./scripts:/build/scripts
       - ./toolchain:/build/toolchain

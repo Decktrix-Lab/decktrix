@@ -6,21 +6,17 @@ Subject: dts: stm32mp15-pinctrl: Move I2C4 to PD12/PD13
 On the decktrix v1 custom PCB, the PMIC (STPMIC1) I2C4 bus uses
 PD12 (SCL) and PD13 (SDA) instead of the default PZ4/PZ5.
 
-Move the i2c4 pinctrl nodes to the top of the controller section.
-
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
- arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi | 36 ++++++++++++++-------
- 1 file changed, 22 insertions(+), 14 deletions(-)
+ arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi | 43 +++++++++++++------
+ 1 file changed, 28 insertions(+), 15 deletions(-)
 
-diff --git a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
-index 534a03da2..9abd1125a 100644
---- a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
-+++ b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
-@@ -25,6 +25,23 @@ pins {
- 		};
+--- a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi	2026-04-09 13:14:54.318397270 +0200
++++ b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi	2026-04-09 13:14:54.332397664 +0200
+@@ -19,6 +19,25 @@
  	};
  
+ 	/omit-if-no-ref/
 +	i2c4_pins_a: i2c4-0 {
 +		pins {
 +			pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
@@ -31,6 +27,7 @@ index 534a03da2..9abd1125a 100644
 +		};
 +	};
 +
++	/omit-if-no-ref/
 +	i2c4_sleep_pins_a: i2c4-sleep-0 {
 +		pins {
 +			pinmux = <STM32_PINMUX('D', 12, ANALOG)>, /* I2C4_SCL */
@@ -38,13 +35,15 @@ index 534a03da2..9abd1125a 100644
 +		};
 +	};
 +
++	/omit-if-no-ref/
  	adc1_in6_pins_a: adc1-in6-0 {
  		pins {
  			pinmux = <STM32_PINMUX('F', 12, ANALOG)>;
-@@ -2831,22 +2848,6 @@ pins {
+@@ -3353,24 +3372,6 @@
  		};
  	};
  
+-	/omit-if-no-ref/
 -	i2c4_pins_a: i2c4-0 {
 -		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
@@ -55,6 +54,7 @@ index 534a03da2..9abd1125a 100644
 -		};
 -	};
 -
+-	/omit-if-no-ref/
 -	i2c4_sleep_pins_a: i2c4-sleep-0 {
 -		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, ANALOG)>, /* I2C4_SCL */
@@ -62,7 +62,7 @@ index 534a03da2..9abd1125a 100644
 -		};
 -	};
  
+ 	/omit-if-no-ref/
  	i2c6_pins_a: i2c6-0 {
- 		pins {
 -- 
 2.43.0

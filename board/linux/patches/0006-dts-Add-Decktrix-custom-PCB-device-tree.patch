@@ -1,0 +1,225 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Thu, 03 Apr 2026 13:00:00 +0200
+Subject: dts: Add device tree for decktrix custom PCB
+
+The decktrix board is based on STM32MP157F with the same RAM as the
+Discovery Kit but different pinout and peripherals:
+
+- STPMIC1 PMIC on I2C4 at PD12/PD13 instead of PZ4/PZ5
+- LDO1 at 2.8V for display AVDD (not 1.8V for audio)
+- LDO6 at 1.8V for display IOVCC (not 1.2V for HDMI)
+- Display powered by always-on PMIC regulators (no GPIO enable)
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+ arch/arm/boot/dts/st/Makefile        |   1 +
+ arch/arm/boot/dts/st/decktrix-v1.dts | 184 ++++++++++++++++++++++++++
+ 2 files changed, 185 insertions(+)
+ create mode 100644 arch/arm/boot/dts/st/decktrix-v1.dts
+
+diff --git a/arch/arm/boot/dts/st/Makefile b/arch/arm/boot/dts/st/Makefile
+index 75346d084d2d..8b3d8d4c9e1f 100644
+--- a/arch/arm/boot/dts/st/Makefile
++++ b/arch/arm/boot/dts/st/Makefile
+@@ -62,6 +62,7 @@ dtb-$(CONFIG_ARCH_STM32) += \
+ 	stm32mp157c-dk2.dtb \
+ 	stm32mp157c-dk2-scmi.dtb \
+ 	stm32mp157c-dk2-jadard.dtb \
++	decktrix-v1.dtb \
+ 	stm32mp157c-ed1.dtb \
+ 	stm32mp157c-ed1-scmi.dtb \
+ 	stm32mp157c-emsbc-argon.dtb \
+diff --git a/arch/arm/boot/dts/st/decktrix-v1.dts b/arch/arm/boot/dts/st/decktrix-v1.dts
+new file mode 100644
+index 000000000000..000000000000
+--- /dev/null
++++ b/arch/arm/boot/dts/st/decktrix-v1.dts
+@@ -0,0 +1,184 @@
++#include "stm32mp157c-dk2.dts"
++
++/ {
++	model = "Decktrix v1";
++	compatible = "decktrix,v1", "st,stm32mp157";
++};
++
++&i2c4 {
++	pinctrl-names = "default", "sleep";
++	pinctrl-0 = <&i2c4_pins_a>;
++	pinctrl-1 = <&i2c4_sleep_pins_a>;
++	i2c-scl-rising-time-ns = <185>;
++	i2c-scl-falling-time-ns = <20>;
++	clock-frequency = <400000>;
++	status = "okay";
++
++	pmic: stpmic@33 {
++		compatible = "st,stpmic1";
++		reg = <0x33>;
++		interrupts-extended = <&exti 55 IRQ_TYPE_EDGE_FALLING>;
++		interrupt-controller;
++		#interrupt-cells = <2>;
++		status = "okay";
++
++		regulators {
++			compatible = "st,stpmic1-regulators";
++			status = "okay";
++
++			ldo1-supply = <&v3v3>;
++			ldo2-supply = <&v3v3>;
++			ldo3-supply = <&vdd_ddr>;
++			ldo5-supply = <&v3v3>;
++			ldo6-supply = <&v3v3>;
++			pwr_sw1-supply = <&bst_out>;
++			pwr_sw2-supply = <&bst_out>;
++
++			vddcore: buck1 {
++				regulator-name = "vddcore";
++				regulator-min-microvolt = <1200000>;
++				regulator-max-microvolt = <1350000>;
++				regulator-active-discharge = <1>;
++				regulator-always-on;
++				regulator-initial-mode = <0>;
++				regulator-state-mem {
++					regulator-off-in-suspend;
++				};
++			};
++
++			vdd_ddr: buck2 {
++				regulator-name = "vdd_ddr";
++				regulator-min-microvolt = <1350000>;
++				regulator-max-microvolt = <1350000>;
++				regulator-always-on;
++				regulator-active-discharge = <1>;
++				regulator-initial-mode = <0>;
++				regulator-state-mem {
++					regulator-on-in-suspend;
++					regulator-suspend-microvolt = <1350000>;
++				};
++			};
++
++			vdd: buck3 {
++				regulator-name = "vdd";
++				regulator-min-microvolt = <3300000>;
++				regulator-max-microvolt = <3300000>;
++				regulator-active-discharge = <1>;
++				regulator-always-on;
++				st,mask-reset;
++				regulator-initial-mode = <0>;
++				regulator-state-mem {
++					regulator-off-in-suspend;
++				};
++			};
++
++			v3v3: buck4 {
++				regulator-name = "v3v3";
++				regulator-min-microvolt = <3300000>;
++				regulator-max-microvolt = <3300000>;
++				regulator-boot-on;
++				regulator-always-on;
++				regulator-active-discharge = <1>;
++				regulator-initial-mode = <0>;
++				regulator-state-mem {
++					regulator-on-in-suspend;
++					regulator-suspend-microvolt = <3300000>;
++				};
++			};
++
++			ldo1 {
++				regulator-name = "ldo1";
++				regulator-min-microvolt = <2800000>;
++				regulator-max-microvolt = <2800000>;
++				regulator-active-discharge = <1>;
++				regulator-always-on;
++				interrupts = <IT_CURLIM_LDO1 0>;
++			};
++
++			v2v8: ldo2 {
++				regulator-name = "ldo2";
++				regulator-min-microvolt = <2800000>;
++				regulator-max-microvolt = <2800000>;
++				regulator-active-discharge = <1>;
++				regulator-always-on;
++				interrupts = <IT_CURLIM_LDO2 0>;
++			};
++
++			ldo3 {
++				regulator-name = "ldo3";
++				regulator-min-microvolt = <3300000>;
++				regulator-max-microvolt = <3300000>;
++				regulator-boot-on;
++				regulator-always-on;
++				regulator-active-discharge = <1>;
++				interrupts = <IT_CURLIM_LDO3 0>;
++			};
++
++			vdd_usb: ldo4 {
++				regulator-name = "ldo4";
++				regulator-min-microvolt = <3300000>;
++				regulator-max-microvolt = <3300000>;
++				regulator-boot-on;
++				regulator-active-discharge = <1>;
++				interrupts = <IT_CURLIM_LDO4 0>;
++			};
++
++			vdd_sd: ldo5 {
++				regulator-name = "ldo5";
++				regulator-min-microvolt = <3300000>;
++				regulator-max-microvolt = <3300000>;
++				regulator-boot-on;
++				regulator-active-discharge = <1>;
++				regulator-always-on;
++				interrupts = <IT_CURLIM_LDO5 0>;
++				regulator-state-mem {
++					regulator-suspend-microvolt = <3300000>;
++					regulator-on-in-suspend;
++				};
++			};
++
++			ldo6 {
++				regulator-name = "ldo6";
++				regulator-min-microvolt = <1800000>;
++				regulator-max-microvolt = <1800000>;
++				regulator-active-discharge = <1>;
++				regulator-always-on;
++				interrupts = <IT_CURLIM_LDO6 0>;
++			};
++
++			vref_ddr: vref_ddr {
++				regulator-name = "vref_ddr";
++				regulator-always-on;
++				regulator-state-mem {
++					regulator-on-in-suspend;
++				};
++			};
++
++			bst_out: boost {
++				regulator-name = "bst_out";
++				interrupts = <IT_OCP_BOOST 0>;
++			};
++
++			vbus_otg: pwr_sw1 {
++				regulator-name = "vbus_otg";
++				interrupts = <IT_OCP_OTG 0>;
++				regulator-active-discharge = <1>;
++			};
++
++			vbus_sw: pwr_sw2 {
++				regulator-name = "vbus_sw";
++				interrupts = <IT_OCP_SWOUT 0>;
++				regulator-active-discharge = <1>;
++				regulator-boot-on;
++			};
++		};
++	};
++};
++
++&sdmmc2 {
++	status = "disabled";
++};
++
++&uart7 {
++	status = "disabled";
++};
+--
+2.43.0
+

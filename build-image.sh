@@ -28,28 +28,29 @@ BOARD_DT="stm32mp157c-dk2"
 prepare_toolchain() {
     echo "-I preparing toolchain for cross compilation"
 
+    # Allow git operations inside Docker (different file ownership)
+    git config --global --add safe.directory "*"
+
     mkdir -p toolchain/extracted
     tar -xf $(pwd)/toolchain/${TOOLCHAIN_NAME} -C toolchain/extracted
     CC="$(pwd)/toolchain/extracted/${TOOLCHAIN_EXTRACTED_PATH}"
 }
 
 apply_kernel_patches() {
-    # The patch may already be applied on the second run which will return error
-    # so let's ignore it
-    git apply --reject --directory ${KERNEL_DIR} \
-        board/linux/patches/0001-defconfig-Add-separate-config-based-on-multi_v7_defc.patch \
-        board/linux/patches/0002-dts-Add-separate-device-tree-for-stm32-devboard-with.patch \
-        board/linux/patches/0003-display-Add-Jadard-MIPI-driver.patch \
-        board/linux/patches/0004-display-Add-Jadard-touch-driver.patch \
-        board/linux/patches/0005-dts-Add-support-for-home-button.patch \
-        board/linux/patches/0006-dts-Add-device-tree-for-decktrix-custom-PCB.patch \
-        board/linux/patches/0009-dts-stm32mp15-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
+    git -C ${KERNEL_DIR} reset --hard HEAD
+    git -C ${KERNEL_DIR} clean -fd
+
+    for p in board/linux/patches/*.patch; do
+        echo "  Applying $(basename $p)"
+        git apply --directory ${KERNEL_DIR} "$p"
+    done
 }
 
 build_kernel() {
     echo "-I start kernel build"
 
     apply_kernel_patches
+
     make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} decktrix_defconfig
     make -C ${KERNEL_DIR} ARCH=arm CROSS_COMPILE=${CC} zImage modules dtbs -j$(nproc)
 }
@@ -57,35 +58,31 @@ build_kernel() {
 apply_uboot_patches() {
     echo "-I apply u-boot patches"
 
-    git apply --check --directory ${UBOOT_DIR} \
-        board/u-boot/patches/0001-DT-disable-DSI-node.patch || true
+    git -C ${UBOOT_DIR} reset --hard HEAD
+    git -C ${UBOOT_DIR} clean -fd
 
-    git apply --reject --directory ${UBOOT_DIR} \
-        board/u-boot/patches/0001-DT-disable-DSI-node.patch \
-        board/u-boot/patches/0002-dts-stm32mp15-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
+    for p in board/u-boot/patches/*.patch; do
+        echo "  Applying $(basename $p)"
+        git apply --directory ${UBOOT_DIR} "$p"
+    done
 }
 
 apply_tfa_patches() {
     echo "-I apply tfa patches"
 
-    git apply --reject --directory ${TFA_DIR} \
-        board/tfa/patches/0001-tfa-pinctrl-Change-I2C4-default-pins-to-PD12-PD13.patch || true
+    git -C ${TFA_DIR} reset --hard HEAD
+    git -C ${TFA_DIR} clean -fd
+
+    for p in board/tfa/patches/*.patch; do
+        echo "  Applying $(basename $p)"
+        git apply --directory ${TFA_DIR} "$p"
+    done
 }
 
 build_uboot() {
     echo "-I start u-boot build"
 
     apply_uboot_patches
-
-    if [ "${BOARD_DT}" = "decktrix-v1" ]; then
-        cp board/u-boot/decktrix-v1.dts ${UBOOT_DIR}/arch/arm/dts/
-        cp board/u-boot/decktrix-v1-u-boot.dtsi ${UBOOT_DIR}/arch/arm/dts/
-        # Add decktrix-v1 to the STM32MP15X DTB list if not already present
-        if ! grep -q "decktrix-v1" ${UBOOT_DIR}/arch/arm/dts/Makefile; then
-            sed -i '/stm32mp157c-dk2-scmi.dtb/a\\tdecktrix-v1.dtb \\' \
-                ${UBOOT_DIR}/arch/arm/dts/Makefile
-        fi
-    fi
 
     make -C ${UBOOT_DIR} CROSS_COMPILE=${CC} stm32mp15_trusted_defconfig
     make -C ${UBOOT_DIR} CROSS_COMPILE=${CC} DEVICE_TREE=${BOARD_DT} -j all
@@ -95,11 +92,6 @@ build_tfa() {
     echo "-I start tfa build"
 
     apply_tfa_patches
-
-    if [ "${BOARD_DT}" = "decktrix-v1" ]; then
-        cp board/tfa/decktrix-v1.dts ${TFA_DIR}/fdts/
-        cp board/tfa/decktrix-v1-fw-config.dts ${TFA_DIR}/fdts/
-    fi
 
     make -C ${TFA_DIR}  \
         PLAT=stm32mp1 ARCH=aarch32 ARM_ARCH_MAJOR=7 CROSS_COMPILE=${CC} \
@@ -379,7 +371,8 @@ print_help() {
 
 start_image_build() {
     skip_board=false
-    selected_dt=${STM32_DT}
+    selected_dt=${DECKTRIX_DT}
+    BOARD_DT="decktrix-v1"
 
     POSITIONAL_ARGS=()
 

@@ -53,6 +53,17 @@ Display is powered by PMIC regulators (always-on):
 
 Jadard driver uses `devm_gpiod_get_optional()` for vdd/vccio/dbg GPIOs.
 
+## Creating patches
+
+**Do NOT write patch files manually.** Always:
+1. Reset the relevant git tree to clean state
+2. Apply existing patches in order
+3. Make the desired changes to the source files
+4. Run `git diff` (or `git diff --cached` after `git add`)
+5. Wrap the diff in a proper patch header (From/Date/Subject/Signed-off-by)
+6. Save as the next numbered patch file in the `patches/` directory
+7. Remove any standalone files that should be in the patch (not copied)
+
 ## TODO
 
 - WiFi/BT: u-blox MAYA-W166 (NXP IW416) driver, SDMMC3, UART8
