@@ -64,10 +64,6 @@ Jadard driver uses `devm_gpiod_get_optional()` for vdd/vccio/dbg GPIOs.
 6. Save as the next numbered patch file in the `patches/` directory
 7. Remove any standalone files that should be in the patch (not copied)
 
-## TODO
-
-- WiFi/BT: u-blox MAYA-W166 (NXP IW416) driver, SDMMC3, UART8
-
 ## Google Drive upload
 
 ```bash
