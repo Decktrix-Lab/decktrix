@@ -338,7 +338,7 @@ create_rootfs_ext4() {
 
 generate_sdcard_img() {
     echo "-I generate sdcard image"
-    genimage --inputpath deploy --outputpath deploy --config genimage.cfg
+    $MAYBE_SUDO genimage --inputpath deploy --outputpath deploy --config genimage.cfg
 }
 
 gzip_sdcard_img() {
