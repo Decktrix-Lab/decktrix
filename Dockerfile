@@ -29,9 +29,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		qemu-user-static \
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN echo "ubuntu ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/builduser \
+	&& chmod 0440 /etc/sudoers.d/builduser
+
 WORKDIR /build
 
 COPY build-image.sh .
 RUN chmod +x build-image.sh
+
+USER ubuntu
 
 ENTRYPOINT ["./build-image.sh"]
