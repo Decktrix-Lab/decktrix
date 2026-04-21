@@ -8,3 +8,6 @@ toolchain/extracted
 *.tsv
 *.xml
 *.bak
+pcb/
+opencode.json
+.config/

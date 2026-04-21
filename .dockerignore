@@ -1,0 +1,5 @@
+.git
+debootstrap
+debootstrap-prefetched
+deploy
+toolchain/extracted

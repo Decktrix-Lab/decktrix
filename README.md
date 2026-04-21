@@ -17,7 +17,25 @@ design and features are expected.
 git submodule update --init --recursive --depth 1
 ```
 
-2. Prefetch debootstrap on first run to speed next iterations
+### Using Docker (recommended)
+
+No need to install dependencies on the host or provide sudo password.
+
+2. Prefetch debootstrap on first run to speed up next iterations
+
+```
+docker compose run build --prefetch-debootstrap
+```
+
+3. Build SD card image
+
+```
+docker compose run build --use-prefetch-debootstrap
+```
+
+### Using host directly
+
+2. Prefetch debootstrap on first run to speed up next iterations
 
 ```
 sudo ./build-image.sh --prefetch-debootstrap

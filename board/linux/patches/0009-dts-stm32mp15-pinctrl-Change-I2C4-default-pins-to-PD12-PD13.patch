@@ -1,0 +1,94 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Thu, 03 Apr 2026 17:00:00 +0200
+Subject: dts: stm32mp15-pinctrl: Move I2C4 to PD12/PD13, add I2C1 PB7/PB8
+
+On the decktrix v1 custom PCB:
+- PMIC (STPMIC1) I2C4 bus uses PD12 (SCL) and PD13 (SDA) instead of PZ4/PZ5
+- Touchscreen I2C1 uses PB7 (SCL) and PB8 (SDA) instead of PD12/PF15
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+diff --git a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
+index 40605ea85..dd0e34eb6 100644
+--- a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
++++ b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
+@@ -18,6 +18,25 @@ pins {
+ 		};
+ 	};
+
++	/omit-if-no-ref/
++	i2c4_pins_a: i2c4-0 {
++		pins {
++			pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
++				 <STM32_PINMUX('D', 13, AF4)>; /* I2C4_SDA */
++			bias-disable;
++			drive-open-drain;
++			slew-rate = <0>;
++		};
++	};
++
++	/omit-if-no-ref/
++	i2c4_sleep_pins_a: i2c4-sleep-0 {
++		pins {
++			pinmux = <STM32_PINMUX('D', 12, ANALOG)>, /* I2C4_SCL */
++				 <STM32_PINMUX('D', 13, ANALOG)>; /* I2C4_SDA */
++		};
++	};
++
+ 	/omit-if-no-ref/
+ 	adc1_in6_pins_a: adc1-in6-0 {
+ 		pins {
+@@ -788,6 +807,25 @@ pins {
+ 		};
+ 	};
+
++	/omit-if-no-ref/
++	i2c1_pins_d: i2c1-3 {
++		pins {
++			pinmux = <STM32_PINMUX('B', 7, AF4)>, /* I2C1_SCL */
++				 <STM32_PINMUX('B', 8, AF4)>; /* I2C1_SDA */
++			bias-disable;
++			drive-open-drain;
++			slew-rate = <0>;
++		};
++	};
++
++	/omit-if-no-ref/
++	i2c1_sleep_pins_d: i2c1-sleep-3 {
++		pins {
++			pinmux = <STM32_PINMUX('B', 7, ANALOG)>, /* I2C1_SCL */
++				 <STM32_PINMUX('B', 8, ANALOG)>; /* I2C1_SDA */
++		};
++	};
++
+ 	/omit-if-no-ref/
+ 	i2c2_pins_a: i2c2-0 {
+ 		pins {
+@@ -3353,24 +3391,6 @@ pins {
+ 		};
+ 	};
+
+-	/omit-if-no-ref/
+-	i2c4_pins_a: i2c4-0 {
+-		pins {
+-			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
+-				 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
+-			bias-disable;
+-			drive-open-drain;
+-			slew-rate = <0>;
+-		};
+-	};
+-
+-	/omit-if-no-ref/
+-	i2c4_sleep_pins_a: i2c4-sleep-0 {
+-		pins {
+-			pinmux = <STM32_PINMUX('Z', 4, ANALOG)>, /* I2C4_SCL */
+-				 <STM32_PINMUX('Z', 5, ANALOG)>; /* I2C4_SDA */
+-		};
+-	};
+
+ 	/omit-if-no-ref/
+ 	i2c6_pins_a: i2c6-0 {
+--
+2.43.0

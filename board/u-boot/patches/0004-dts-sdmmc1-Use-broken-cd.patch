@@ -1,0 +1,29 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Thu, 17 Apr 2026 20:00:00 +0200
+Subject: dts: sdmmc1: Use broken-cd
+
+Decktrix v1 PCB has no card detect on PB7.
+Use broken-cd to skip GPIO card detect check.
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+ arch/arm/dts/decktrix-v1.dts | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/arch/arm/dts/decktrix-v1.dts b/arch/arm/dts/decktrix-v1.dts
+index c1ca7a1b..008dc8e3 100644
+--- a/arch/arm/dts/decktrix-v1.dts
++++ b/arch/arm/dts/decktrix-v1.dts
+@@ -49,3 +49,8 @@
+ 	regulator-min-microvolt = <1800000>;
+ 	regulator-max-microvolt = <1800000>;
+ };
++
++&sdmmc1 {
++	/delete-property/ cd-gpios;
++	broken-cd;
++};
+--
+2.43.0
+
