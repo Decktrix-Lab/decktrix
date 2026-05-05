@@ -1,0 +1,44 @@
+From 586c1a3b4d6acd1084834926d27aaad5ab010880 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Thu, 23 Apr 2026 10:10:25 +0200
+Subject: [PATCH] dts: Update panel GPIOs and disable LED
+
+---
+ arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts | 7 ++-----
+ arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi       | 2 ++
+ 2 files changed, 4 insertions(+), 5 deletions(-)
+
+diff --git a/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts b/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
+index e3a3ed1f9..ddfe066e7 100644
+--- a/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
++++ b/arch/arm/boot/dts/st/stm32mp157c-dk2-jadard.dts
+@@ -54,11 +54,8 @@ &dsi {
+ 	panel@0 {
+ 		compatible = "shenzen,z34014p30365ty1","jadard,jd9365tn";
+ 		reg = <0>;
+-		reset-gpios     = <&gpioe 4  GPIO_ACTIVE_HIGH>;
+-		vdd-gpios       = <&gpiob 12 GPIO_ACTIVE_HIGH>;
+-		vccio-gpios     = <&gpiof 1  GPIO_ACTIVE_HIGH>;
+-		dbg-gpios       = <&gpiof 0  GPIO_ACTIVE_HIGH>;
+-		backlight-gpios = <&gpioa 15 GPIO_ACTIVE_HIGH>;
++		reset-gpios     = <&gpiod 11 GPIO_ACTIVE_HIGH>;
++		backlight-gpios = <&gpiof 6  GPIO_ACTIVE_HIGH>;
+ 		status = "okay";
+ 
+ 		port {
+diff --git a/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi b/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
+index 03b7fab78..01fa4f33e 100644
+--- a/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
++++ b/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
+@@ -62,6 +62,8 @@ retram: retram@38000000 {
+ 	};
+ 
+ 	led {
++		/* Conflict with jadard reset line */
++		status = "disabled";
+ 		compatible = "gpio-leds";
+ 		led-blue {
+ 			label = "heartbeat";
+-- 
+2.43.0
+

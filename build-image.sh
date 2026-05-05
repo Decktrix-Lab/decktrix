@@ -372,7 +372,7 @@ print_help() {
 start_image_build() {
     skip_board=false
     selected_dt=${DECKTRIX_DT}
-    BOARD_DT="decktrix-v1"
+    BOARD_DT="stm32mp157c-dk2"
 
     POSITIONAL_ARGS=()
 

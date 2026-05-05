@@ -1,26 +1,22 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kirill Yatsenko <kiriyatsenko@gmail.com>
-Date: Thu, 03 Apr 2026 17:00:00 +0200
-Subject: dts: stm32mp15-pinctrl: Move I2C4 to PD12/PD13
+Date: Sat, 19 Apr 2026 12:00:00 +0200
+Subject: dts: stm32mp15 pinctrl and sdmmc1 for decktrix v1
 
-On the decktrix v1 custom PCB, the PMIC (STPMIC1) I2C4 bus uses
-PD12 (SCL) and PD13 (SDA) instead of the default PZ4/PZ5.
-
-Move the i2c4 pinctrl nodes to the top of the controller section.
+Move I2C4 pinctrl from PZ4/PZ5 to PD12/PD13 for decktrix PMIC.
+Replace cd-gpios with broken-cd on sdmmc1.
 
 Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
 ---
- arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi | 36 ++++++++++++++-------
- 1 file changed, 22 insertions(+), 14 deletions(-)
-
 diff --git a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
-index 534a03da2..9abd1125a 100644
+index 40605ea85..058928aef 100644
 --- a/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
 +++ b/arch/arm/boot/dts/st/stm32mp15-pinctrl.dtsi
-@@ -25,6 +25,23 @@ pins {
+@@ -18,6 +18,25 @@ pins {
  		};
  	};
  
++	/omit-if-no-ref/
 +	i2c4_pins_a: i2c4-0 {
 +		pins {
 +			pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
@@ -31,6 +27,7 @@ index 534a03da2..9abd1125a 100644
 +		};
 +	};
 +
++	/omit-if-no-ref/
 +	i2c4_sleep_pins_a: i2c4-sleep-0 {
 +		pins {
 +			pinmux = <STM32_PINMUX('D', 12, ANALOG)>, /* I2C4_SCL */
@@ -38,13 +35,14 @@ index 534a03da2..9abd1125a 100644
 +		};
 +	};
 +
+ 	/omit-if-no-ref/
  	adc1_in6_pins_a: adc1-in6-0 {
  		pins {
- 			pinmux = <STM32_PINMUX('F', 12, ANALOG)>;
-@@ -2831,22 +2848,6 @@ pins {
+@@ -3353,25 +3372,6 @@ pins {
  		};
  	};
  
+-	/omit-if-no-ref/
 -	i2c4_pins_a: i2c4-0 {
 -		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
@@ -55,14 +53,29 @@ index 534a03da2..9abd1125a 100644
 -		};
 -	};
 -
+-	/omit-if-no-ref/
 -	i2c4_sleep_pins_a: i2c4-sleep-0 {
 -		pins {
 -			pinmux = <STM32_PINMUX('Z', 4, ANALOG)>, /* I2C4_SCL */
 -				 <STM32_PINMUX('Z', 5, ANALOG)>; /* I2C4_SDA */
 -		};
 -	};
- 
+-
+ 	/omit-if-no-ref/
  	i2c6_pins_a: i2c6-0 {
  		pins {
+diff --git a/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi b/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
+index 46692d8f5..525aa5522 100644
+--- a/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
++++ b/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
+@@ -546,7 +546,7 @@ &sdmmc1 {
+ 	pinctrl-0 = <&sdmmc1_b4_pins_a>;
+ 	pinctrl-1 = <&sdmmc1_b4_od_pins_a>;
+ 	pinctrl-2 = <&sdmmc1_b4_sleep_pins_a>;
+-	cd-gpios = <&gpiob 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
++	broken-cd;
+ 	disable-wp;
+ 	st,neg-edge;
+ 	bus-width = <4>;
 -- 
 2.43.0

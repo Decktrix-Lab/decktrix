@@ -76,6 +76,8 @@ Jadard driver uses `devm_gpiod_get_optional()` for vdd/vccio/dbg GPIOs.
 
 Credentials in `.config/opencode/gdrive-token.json` (not in git).
 
+**Important:** SD card images are ~800MB. Use timeout of at least 3600000ms (60 min) when calling gdrive-upload.sh. The default 600000ms (10 min) is not enough.
+
 ### Initial setup (from scratch)
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)

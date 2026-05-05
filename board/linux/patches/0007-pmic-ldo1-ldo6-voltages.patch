@@ -1,0 +1,39 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kirill Yatsenko <kiriyatsenko@gmail.com>
+Date: Tue, 21 Apr 2026 00:00:00 +0000
+Subject: dts: Update PMIC LDO1 and LDO6 voltages for Decktrix v1
+
+LDO1 (1.8V -> 2.8V): Display AVDD supply
+LDO6 (1.2V -> 1.8V): Display IOVCC supply
+
+Signed-off-by: Kirill Yatsenko <kiriyatsenko@gmail.com>
+---
+ arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi b/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
+index 46692d8f5..a55ef6d3a 100644
+--- a/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
++++ b/arch/arm/boot/dts/st/stm32mp15xx-dkx.dtsi
+@@ -342,8 +342,8 @@ v3v3: buck4 {
+ 
+ 			v1v8_audio: ldo1 {
+ 				regulator-name = "v1v8_audio";
+-				regulator-min-microvolt = <1800000>;
+-				regulator-max-microvolt = <1800000>;
++				regulator-min-microvolt = <2800000>;
++				regulator-max-microvolt = <2800000>;
+ 				regulator-always-on;
+ 				interrupts = <IT_CURLIM_LDO1 0>;
+ 			};
+@@ -379,8 +379,8 @@ vdda: ldo5 {
+ 
+ 			v1v2_hdmi: ldo6 {
+ 				regulator-name = "v1v2_hdmi";
+-				regulator-min-microvolt = <1200000>;
+-				regulator-max-microvolt = <1200000>;
++				regulator-min-microvolt = <1800000>;
++				regulator-max-microvolt = <1800000>;
+ 				regulator-always-on;
+ 				interrupts = <IT_CURLIM_LDO6 0>;
+ 			};
